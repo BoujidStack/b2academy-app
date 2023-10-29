@@ -1,4 +1,4 @@
-{/*import { getFirestore, collection, addDoc } from "firebase/firestore";
+import { getFirestore, collection, addDoc } from "firebase/firestore";
 import firebaseApp from './FirebaseConfig';
 
 
@@ -16,7 +16,7 @@ const saveFormDataToFirestore = async (formData) => {
 
 
 
-const saveFormDataToOtherForm = async (formData) => {
+const saveFormDataToOtherFormBusinesses = async (formData) => {
   try {
     const db = getFirestore(firebaseApp);
     const formDataRef = collection(db, 'formSubmissionsBusinesses');
@@ -27,7 +27,7 @@ const saveFormDataToOtherForm = async (formData) => {
   }
 };
 
-
+{/*
 const saveFormDataToOtherFormPrograms = async (formData) => {
   try {
     const db = getFirestore(firebaseApp);
@@ -38,7 +38,7 @@ const saveFormDataToOtherFormPrograms = async (formData) => {
     console.error('Error saving form data:', error);
   }
 };
-
+*/}
 
 const saveFormDataToOtherFormEmails = async (formData) => {
   try {
@@ -52,5 +52,4 @@ const saveFormDataToOtherFormEmails = async (formData) => {
 };
 
 
-export { saveFormDataToFirestore, saveFormDataToOtherForm, saveFormDataToOtherFormPrograms, saveFormDataToOtherFormEmails };
-*/}
+export { saveFormDataToFirestore, saveFormDataToOtherFormBusinesses,/*saveFormDataToOtherFormPrograms,*/ saveFormDataToOtherFormEmails };

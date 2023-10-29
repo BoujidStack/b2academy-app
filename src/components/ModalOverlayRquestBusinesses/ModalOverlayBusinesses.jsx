@@ -3,6 +3,7 @@ import { FaTimes } from 'react-icons/fa';
 import Swal from 'sweetalert2';
 import './ModalOverlayBusinessesStyles.css';
 import { useTranslation } from 'react-i18next';
+import { saveFormDataToOtherFormBusinesses } from '../firebase/FirebaseUtils';
 
 function ModalOverlayBusinesses({ onClose }) {
     const [firstName, setFirstName] = useState('');
@@ -14,9 +15,47 @@ function ModalOverlayBusinesses({ onClose }) {
     const [isChecked, setIsChecked] = useState(false);
     const [errorMessage, setErrorMessage] = useState('');
     const { t } = useTranslation();
+
     const handleCheckboxChange = (e) => {
         setIsChecked(e.target.checked);
         setErrorMessage('');
+    };
+
+    const handleFormSubmit = async (e) => {
+        e.preventDefault();
+
+        try {
+            if (
+                firstName &&
+                lastName &&
+                email &&
+                phoneNumber &&
+                fieldofactivity &&
+                message
+            ) {
+                const formData = {
+                    firstName,
+                    lastName,
+                    email,
+                    phoneNumber,
+                    fieldofactivity,
+                    message,
+                    isChecked,
+                };
+
+                await saveFormDataToOtherFormBusinesses(formData);
+
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Success',
+                    text: 'Form data saved successfully!',
+                });
+            } else {
+                setErrorMessage('Please fill in all required fields.');
+            }
+        } catch (error) {
+            console.error('Error saving form data:', error);
+        }
     };
 
     useEffect(() => {
@@ -123,7 +162,7 @@ function ModalOverlayBusinesses({ onClose }) {
                     {errorMessage && <p className={`error-message ${isChecked ? '' : 'red-text'}`}>{errorMessage}</p>}
                     <br />
                     <div className="form-group button-container">
-                        <button type="button" className="modal-overlay-btn">
+                        <button onClick={handleFormSubmit} type="button" className="modal-overlay-btn">
                             <span>{t('ModalOverlayBusinesses.button')}</span>
                         </button>
                     </div>

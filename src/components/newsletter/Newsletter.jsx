@@ -1,11 +1,49 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './NewsletterStyles.css';
 import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from 'react-icons/fa';
 import Swal from 'sweetalert2';
 import { useTranslation } from 'react-i18next';
+import { saveFormDataToOtherFormEmails } from '../firebase/FirebaseUtils';
 
 const Newsletter = () => {
   const { t } = useTranslation();
+  const [formData, setFormData] = useState({
+    email: '',
+  });
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleFormSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      if (formData.email) {
+        await saveFormDataToOtherFormEmails(formData);
+
+        Swal.fire({
+          icon: 'success',
+          title: 'Success',
+          text: 'Email subscription saved successfully!',
+        });
+      } else {
+        Swal.fire({
+          icon: 'error',
+          title: 'Error',
+          text: 'Please enter a valid email address!',
+        });
+      }
+    } catch (error) {
+      console.error('Error saving form data:', error);
+    }
+  };
+
 
   return (
     <div className='newsletter'>
@@ -17,8 +55,9 @@ const Newsletter = () => {
           name="email"
           type="email"
           required
+          onChange={handleInputChange}
         />
-        <button className="button-newsletter"><span>{t('newsletter.button')}</span></button>
+        <button onClick={handleFormSubmit} className="button-newsletter"><span>{t('newsletter.button')}</span></button>
       </div>
       <div className='social-media-icons' data-aos="zoom-in" data-aos-duration="1000">
         {/*
