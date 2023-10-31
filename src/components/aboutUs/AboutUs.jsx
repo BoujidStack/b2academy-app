@@ -5,12 +5,6 @@ import { useTranslation } from 'react-i18next';
 
 const AboutUs = () => {
     const { t } = useTranslation();
-
-    const videoOptions = {
-        playerVars: {
-            autoplay: 1,
-        },
-    };
     const videoId = 'SsdE75J7d2Q';
 
     return (
@@ -42,7 +36,7 @@ const AboutUs = () => {
                 </div>
             </div>
             <div className="video-container">
-                <YouTube videoId={videoId} opts={videoOptions} />
+                <YouTube videoId={videoId}/>
             </div>
         </div>
     );

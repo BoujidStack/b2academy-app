@@ -145,6 +145,7 @@ function ContactUs() {
             {t('ContactUs.Terms and Conditions')}
           </label>
         </div>
+        <br />
         <div className="form-group button-container">
           <button
             type="submit"
