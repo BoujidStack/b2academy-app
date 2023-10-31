@@ -1,12 +1,20 @@
-import React from 'react'
-import './AboutUsStyles.css'
+import React from 'react';
+import YouTube from 'react-youtube';
+import './AboutUsStyles.css';
 import { useTranslation } from 'react-i18next';
 
 const AboutUs = () => {
     const { t } = useTranslation();
 
+    const videoOptions = {
+        playerVars: {
+            autoplay: 1,
+        },
+    };
+    const videoId = 'SsdE75J7d2Q';
+
     return (
-        <div name='aboutUs' className='aboutUs'>
+        <div name="aboutUs" className="aboutUs">
             <div class="section">
                 <div class="titleAboutUs">
                     <h1 data-aos="fade-down" data-aos-duration="1000">{t('AboutUs.AboutUs')}</h1>
@@ -33,8 +41,11 @@ const AboutUs = () => {
                     </div>
                 </div>
             </div>
+            <div className="video-container">
+                <YouTube videoId={videoId} opts={videoOptions} />
+            </div>
         </div>
-    )
-}
+    );
+};
 
-export default AboutUs
+export default AboutUs;

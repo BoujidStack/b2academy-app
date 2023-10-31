@@ -39,14 +39,12 @@ const Footer = () => {
                         <i className="fab fa-slack"></i>
                         <Link onClick={handleClose} activeClass="active" to="home" spy={true} smooth={true} duration={500}><img src={logo} alt='logo' className="logo_name" /></Link>
                     </div>
-                    {/*
                     <div className="media-icons">
-                        <a href="https://www.facebook.com/profile.php?id=61552695807806"><FaFacebook /></a>
-                        <a href="#"><FaLinkedin /></a>
-                        <a href="https://www.instagram.com/b2academys/"><FaInstagram /></a>
+                        <a href=""><FaFacebook /></a>
+                        <a href=""><FaLinkedin /></a>
+                        <a href=""><FaInstagram /></a>
                         <a href="https://www.youtube.com/channel/UCY8XFWyBLeRNze3yhSp-7oA"><FaYoutube /></a>
                     </div>
-                    */}
                 </div>
                 <div className="link-boxes">
                     <ul className="box">

@@ -144,14 +144,12 @@ const Navbar = ({ hideNavbarLinks }) => {
             <button onClick={handleGoToTalkPage} id="nav-menu-btn">
               <span>{t('navbar.letsTalk')}</span>
             </button>
-          {/*
             <div className="social-icons">
-              <a className="icon" href="https://www.facebook.com/profile.php?id=61552695807806"><FaFacebook /></a>
-              <a className="icon" href="#"><FaLinkedin /></a>
-              <a className="icon" href="https://www.instagram.com/b2academys/"><FaInstagram /></a>
+              <a className="icon" href=""><FaFacebook /></a>
+              <a className="icon" href=""><FaLinkedin /></a>
+              <a className="icon" href=""><FaInstagram /></a>
               <a className="icon" href="https://www.youtube.com/channel/UCY8XFWyBLeRNze3yhSp-7oA"><FaYoutube /></a>
             </div>
-          */}
           </div>
         </ul>
 

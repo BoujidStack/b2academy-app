@@ -146,6 +146,7 @@
   .programs {
     min-width: 200%;
     flex-direction: row;
+    min-height: 250vh;
   }
 
   #container {
