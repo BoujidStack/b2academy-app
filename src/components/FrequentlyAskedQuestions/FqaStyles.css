@@ -1,7 +1,7 @@
 .faq-container {
   width: 100%;
   min-height: 100vh;
-  background: url('../../assets/bg-website.png') no-repeat center center/cover;
+  background-color: #F2FBFF;
   margin: 0 auto;
   padding: 4rem;
 }
@@ -156,3 +156,36 @@
   }
 
 }
+
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .faq-container {
+    padding: 2rem;
+    min-width: 196.5%;
+  }
+
+  .container-content {
+    margin-top: 5rem;
+  }
+
+  .accordion .accordion-item {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .accordion button .icon {
+    right: -30px;
+  }
+
+  .contact-us {
+    font-size: 1.5rem;
+    padding-bottom: 50px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+	.faq-container  {
+	  width: 120%;
+	  min-height: 100vh;
+	}
+  }

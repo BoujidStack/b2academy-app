@@ -4,7 +4,7 @@
 	align-items: center;
 	justify-content: center;
 	height: 130vh;
-	background: url('../../assets/bg-website.png') no-repeat center center/cover;
+	background-color: #F2FBFF;
 }
 
 .section {
@@ -133,8 +133,6 @@
 	text-align: left;
 }
 
-
-
 .video-container {
 	text-align: center;
 	margin-top: 20px;
@@ -150,17 +148,81 @@
 
 @media screen and (max-width: 768px) {
 	.aboutUs {
-		height: 100vh;
+		height: 300vh;
 		min-width: 196.5%;
 	}
 
 	.titleAboutUs h1 {
-		font-size: 70px;
+		font-size: 3rem;
+	}
+
+	.containerAboutUs .content-section .content p {
+		font-size: 1.7rem;
+		width: 100%;
+	}
+
+	.content-section {
+		float: none;
+		width: 100%;
+		display: block;
+		margin: auto;
+	}
+
+	.image-section {
+		float: none;
+		width: 100%;
+
+	}
+
+	.image-section .img-aboutus {
+		width: 100%;
+		height: auto;
+		display: block;
+		margin: auto;
+	}
+
+	.content-section .title {
+		text-align: left;
+		font-size: 28px;
+	}
+
+	.pyramid-loader {
+		margin-top: 300px;
+		margin-left: 100px;
+	}
+
+	.pyramid-loader .wrapper .side {
+		width: 15rem;
+		height: 15rem;
+		top: -320px;
+	}
+
+	.pyramid-loader .wrapper .shadow {
+		width: 12rem;
+		height: 12rem;
+	}
+}
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+	.aboutUs {
+		width: 120%;
+		height: 100vh;
+	}
+}
+
+
+@media (min-width: 769px) and (max-width: 992px) {
+	.aboutUs {
+		height: 200vh;
+		min-width: 196.5%;
+	}
+
+	.titleAboutUs h1 {
+		font-size: 5rem;
 	}
 
 	.containerAboutUs .content-section .content p {
 		font-size: 30px;
-		width: 130%;
 	}
 
 	.containerAboutUs {
@@ -191,13 +253,13 @@
 	}
 
 	.content-section .title {
-		text-align: center;
+		text-align: left;
 		font-size: 35px;
 	}
 
 	.pyramid-loader {
 		margin-top: 300px;
-		margin-left: 100px;
+		margin-left: 25rem;
 	}
 
 	.pyramid-loader .wrapper .side {
@@ -210,11 +272,6 @@
 		width: 180px;
 		height: 180px;
 	}
-
 }
 
-@media only screen and (max-width: 640px) {
-	.aboutUs {
-		height: 300vh;
-	}
-}
+

@@ -15,7 +15,7 @@ const OurMethodology = () => {
                     <h1>{t('methodology.title')}</h1>
                 </div>
                 <div className="containerOurMethodology">
-                    <div className="content-section">
+                    <div className="ourMethodologycontent-section">
                         <div className="content">
                             <p data-aos="fade-right" data-aos-duration="1000" dangerouslySetInnerHTML={{ __html: t('methodology.description') }}></p>
                         </div>

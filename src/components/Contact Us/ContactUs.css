@@ -5,7 +5,7 @@
   justify-content: center;
   width: 100%;
   min-height: 120vh;
-  background: url('../../assets/bg-website.png') no-repeat center center/cover;
+  background-color: #F2FBFF;
 }
 
 .ContactUs h1 {
@@ -105,3 +105,18 @@
     min-width: 200%;
   }
 }
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .ContactUs {
+    min-width: 200%;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+	.ContactUs {
+	  width: 120%;
+	  min-height: 100vh;
+	}
+  }
+
+

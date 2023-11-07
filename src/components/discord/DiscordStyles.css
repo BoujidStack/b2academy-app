@@ -4,8 +4,9 @@
     align-items: center;
     width: 100%;
     height: 130vh;
-    background: url('../../assets/bg-website.png') no-repeat center center/cover;
     padding: 0 2rem;
+    background-color: #F2FBFF;
+
 }
 
 .discord-content {
@@ -123,7 +124,7 @@
         height: auto;
         flex-direction: column;
         align-items: center;
-        height: 120vh;
+        height: 180vh;
         min-width: 196.5%;
     }
 
@@ -162,9 +163,56 @@
     }
 }
 
-
-@media only screen and (max-width: 640px) {
+@media (min-width: 769px) and (max-width: 992px) {
     .discord {
-        height: 170vh;
+        padding: 0 1rem;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        height: 80vh;
+        min-width: 196.5%;
+    }
+
+    .discord-content {
+        max-width: 80%;
+        margin-right: 0;
+        height: auto;
+        margin-bottom: 15rem;
+    }
+
+    .discord-content p {
+        width: 100%;
+        font-size: 30px;
+    }
+
+    .discord-content .content-point h5 {
+        font-size: 28px;
+    }
+
+    .discord-content .content-point img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .light-button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+        position: absolute;
+    }
+
+    .light-button button.bt {
+        margin-right: 0;
+        margin-bottom: 0;
     }
 }
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+	.discord {
+	  width: 120%;
+	  min-height: 100vh;
+	}
+  }
+
+

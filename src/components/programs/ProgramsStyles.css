@@ -4,7 +4,7 @@
   align-items: center;
   width: 100%;
   min-height: 100vh;
-  background: url('../../assets/bg-website2.png') no-repeat center center/cover;
+  background-color: #F2FBFF;
 }
 
 .contentPrograms {
@@ -180,4 +180,52 @@
     left: 0;
   }
 
+}
+
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .programs {
+    width: 120%;
+    min-height: 100vh;
+  }
+}
+
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .programs {
+    min-width: 200%;
+    flex-direction: row;
+    min-height: 250vh;
+  }
+
+  #container {
+    width: 100%;
+    margin-top: 20px;
+    height: 100%;
+  }
+
+  #container .product-details>p {
+    font-size: 25px;
+  }
+
+  .ctaPrograms {
+    font-size: 23px;
+  }
+
+  .ctaPrograms span {
+    font-size: 23px;
+  }
+
+  .button-containerPrograms a {
+    font-size: 25px;
+  }
+
+  .product-details {
+    width: 100%;
+  }
+
+  .product-image {
+    width: 100%;
+    left: 0;
+  }
 }
