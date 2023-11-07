@@ -1,7 +1,7 @@
 .talk {
   width: 100%;
   height: 100vh;
-  background: url('../../assets/bg-website.png') no-repeat center center/cover;
+  background-color: #F2FBFF;
 }
 
 .content-talk {
@@ -63,6 +63,38 @@
   .centered-content button {
     font-size: 1.2rem;
   }
+}
 
 
+@media (min-width: 769px) and (max-width: 992px) {
+  .talk {
+    min-width: 196.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content-talk {
+    width: 80%;
+  }
+
+  .title-talk {
+    font-size: 3rem;
+  }
+
+  .text-talk {
+    font-size: 1.5rem;
+  }
+
+  .centered-content button {
+    font-size: 1.2rem;
+  }
+}
+
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .talk {
+    width: 120%;
+    min-height: 100vh;
+  }
 }

@@ -1,30 +1,32 @@
 .appointment {
     width: 100%;
     height: 200vh;
-    background: url('../../assets/bg-website.png') no-repeat center center/cover;
     display: flex;
+    background-color: #F2FBFF;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     padding-right: 20px;
+    overflow-x: hidden;
 }
 
 .appointment .calendly-inline-widget {
-    width: 80rem;
-    height: 800px;
+    width: 100rem;
+    height: 70rem;
 }
 
 .schedulingAppointment {
-    transform: scale(0.9);
+    margin: 0 auto; /* Center the div horizontally */
+    width: 100rem; /* Set the width as desired */
     margin-top: 20px;
-    margin-left: 2.5rem;
 }
 
 .appointment-details {
     margin-top: 20px;
     color: #211B59;
     text-align: center;
-    margin-left: 25rem;
+    margin: 0 auto; /* Center the div horizontally */
+
 }
 
 .appointment-details h1 {
@@ -43,20 +45,19 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 712px) {
     .appointment {
-        height: 200vh;
+        height: 300vh;
         min-width: 196.5%;
     }
 
     .schedulingAppointment {
-        transform: scale(0.7);
-        margin-left: -15rem;
+        margin-left: 10%;
         margin-top: 50rem;
     }
 
     .appointment-details {
-        margin-left: 4rem;
+        margin: 0 auto; /* Center the div horizontally */
     }
 
     .appointment-details p {
@@ -66,8 +67,75 @@
     .appointment-details .contact-info {
         font-size: 1.3rem;
     }
+
+
+    .appointment-details+.schedulingAppointment {
+        margin-top: 20px;
+    }
+
+
+    .appointment .calendly-inline-widget {
+        width: 35rem;
+        height: 70rem;
+    }
+
+
 }
 
-.appointment-details+.schedulingAppointment {
-    margin-top: 20px;
+
+@media (min-width: 714px) and (max-width: 992px) {
+   .appointment {
+        height: 250vh;
+        min-width: 196.5%;
+    }
+
+    .schedulingAppointment {
+        margin-left: 10%;
+        margin-top: 50rem;
+    }
+
+    .appointment-details {
+        margin: 0 auto; /* Center the div horizontally */
+    }
+
+    .appointment-details p {
+        font-size: 1.6rem;
+    }
+
+    .appointment-details .contact-info {
+        font-size: 1.3rem;
+    }
+
+
+    .appointment-details+.schedulingAppointment {
+        margin-top: 20px;
+    }
+
+
+    .appointment .calendly-inline-widget {
+        width: 100rem;
+        height: 70rem;
+    }
+
+    .schedulingAppointment {
+        margin: 0 auto; /* Center the div horizontally */
+        width: 100rem; /* Set the width as desired */
+        margin-top: 20px;
+    }
+    
+}
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+    .appointment {
+        width: 120%;
+        height: 100vh;
+    }
+
+    .schedulingAppointment {
+        margin: 0 auto; /* Center the div horizontally */
+        width: 100rem; /* Set the width as desired */
+        margin-top: 20px;
+        margin-left: -15%;
+    }
+    
 }

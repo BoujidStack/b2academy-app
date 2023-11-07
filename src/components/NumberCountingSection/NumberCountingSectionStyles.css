@@ -5,7 +5,7 @@
     flex-wrap: wrap;
     text-align: center;
     gap: 100px;
-    background: url('../../assets/bg-website.png') no-repeat center center/cover;
+    background-color: #F2FBFF;
 }
 
 .counting-item {
@@ -43,7 +43,7 @@
 .Brochure {
     width: 100%;
     height: 100vh;
-    background: url('../../assets/bg-website.png') no-repeat center center/cover;
+    background-color: #F2FBFF;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -181,3 +181,54 @@
     }
 
 }
+
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .number-counting-section {
+        min-width: 196.5%;
+        flex-direction: column;
+    }
+
+    .counting-item h2 {
+        font-size: 4rem;
+    }
+
+    .counting-item h3 {
+        font-size: 4rem;
+
+    }
+
+    .counting-item p {
+        font-size: 2rem;
+    }
+
+    .counting-item img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .Brochure-title {
+        font-size: 45px;
+    }
+
+    .Brochure-text {
+        font-size: 1.4rem;
+    }
+
+    .Brochure {
+        min-width: 196.5%;
+    }
+}
+
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+    .number-counting-section {
+      width: 120%;
+      min-height: 100vh;
+    }
+
+    .Brochure {
+        width: 120%;
+        min-height: 100vh;
+    }
+  }

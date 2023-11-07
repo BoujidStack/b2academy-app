@@ -1,7 +1,7 @@
 .Bdp {
   width: 100%;
   height: 100vh;
-  background: url('../../assets/bg-website.png') no-repeat center center/cover;
+  background-color: #F2FBFF;
 }
 
 .content-Bdp {
@@ -51,5 +51,29 @@
 
   .text-Bdp {
     font-size: 1.5rem;
+  }
+}
+
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .Bdp {
+    min-width: 196.5%;
+    height: 120vh;
+  }
+
+  .title-Bdp {
+    font-size: 3rem;
+  }
+
+  .text-Bdp {
+    font-size: 1.5rem;
+  }
+}
+
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .Bdp {
+    width: 120%;
+    min-height: 100vh;
   }
 }
