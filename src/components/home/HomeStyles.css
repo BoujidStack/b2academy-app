@@ -327,6 +327,47 @@
     .home {
         min-width: 200%;
     }
+
+    .logoDesign1 {
+        top: -27rem;
+        left: 20rem;
+    }
+
+    .logoDesign2 {
+        top: -32rem;
+        left: 9rem;
+    }
+
+    .logoDesign3 {
+        top: -25rem;
+        left: 15rem;
+    }
+
+    .logoDesign4 {
+        top: -27rem;
+        left: 5rem;
+    }
+
+    .logoDesign5 {
+        top: -18rem;
+        left: 14rem;
+    }
+
+    .logoDesign6 {
+        top: -17.5rem;
+        left: 3rem;
+    }
+
+    .logoDesign7 {
+        top: -12rem;
+        left: 6rem;
+    }
+
+    .logoDesign8 {
+        top: -10rem;
+        left: 14rem;
+    }
+
 }
 
 
@@ -362,18 +403,18 @@
     }
 
     .logoDesign3 {
-        top: -19.5rem;
+        top: -17rem;
         left: 10rem;
     }
 
     .logoDesign4 {
         top: -23rem;
-        left: 1.5rem;
+        left: 1.8rem;
     }
 
     .logoDesign5 {
-        top: -14rem;
-        left: 8.7rem;
+        top: -10rem;
+        left: 6rem;
     }
 
     .logoDesign6 {

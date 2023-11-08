@@ -16,7 +16,7 @@ const OurMethodology = () => {
                 </div>
                 <div className="containerOurMethodology">
                     <div className="ourMethodologycontent-section">
-                        <div className="content">
+                        <div className="content-point">
                             <p data-aos="fade-right" data-aos-duration="1000" dangerouslySetInnerHTML={{ __html: t('methodology.description') }}></p>
                         </div>
                         <div className="content-point">
