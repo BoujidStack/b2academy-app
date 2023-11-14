@@ -261,8 +261,8 @@
 
 @media (max-width: 576px) {
     .home {
-        min-width: 200%;
-        height: 200vh;
+        min-width: 100%;
+        height: 150vh;
     }
 
     .left {
@@ -271,17 +271,17 @@
     }
 
     .left h1 {
-        font-size: 5rem;
+        font-size: 3rem;
     }
 
     .titleHome {
-        font-size: 2rem;
+        font-size: 1rem;
         width: 160%;
     }
 
     .paragraphHome {
-        font-size: 1.6rem;
-        width: 160%;
+        font-size: 0.9rem;
+        width: 130%;
     }
 
     .right {
@@ -299,7 +299,7 @@
     }
 
     .cta span {
-        font-size: 1rem;
+        font-size: 0.8rem;
         padding-right: 10px;
     }
 
@@ -308,7 +308,7 @@
     }
 
     #btn-home {
-        font-size: 1.8rem;
+        font-size: 1rem;
     }
 }
 

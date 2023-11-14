@@ -45,17 +45,8 @@ function App() {
         <Routes>
           <Route path="/" element={
             <>
-              <Navbar />
               <Home />
-              <Programs />
-              <RoadMap />
-              <AboutUs />
-              <Discord />
-              <OurMethodology />
-              <Newsletter />
-              <ContactUs/>
-              <Fqa />
-              <Footer />
+              
             </>
           } />
           <Route path="/Talk" element={<Talk />} />
