@@ -45,8 +45,8 @@ function App() {
         <Routes>
           <Route path="/" element={
             <>
+              <Navbar />
               <Home />
-              
             </>
           } />
           <Route path="/Talk" element={<Talk />} />
