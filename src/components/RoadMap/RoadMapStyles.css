@@ -7,7 +7,6 @@
     width: 100%;
     min-height: 100vh;
     background-color: #F2FBFF;
-
 }
 
 .RoadMap h3,
@@ -188,7 +187,6 @@
     .RoadMap {
         min-width: 100%;
         min-height: 150vh;
-
     }
 
     #progress-bar-container {
@@ -197,11 +195,15 @@
     }
 
     #progress-content-section .section-content p {
-        font-size: 1rem;
+        font-size: 0.8rem;
+    }
+
+    .process-wrapper h1{
+        font-size: 35px;
     }
 
     .process-wrapper h3 {
-        font-size: 25px;
+        font-size: 20px;
     }
 }
 

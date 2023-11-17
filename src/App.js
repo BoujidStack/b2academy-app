@@ -48,6 +48,7 @@ function App() {
               <Navbar />
               <Home />
               <Programs />
+              <RoadMap />
             </>
           } />
           <Route path="/Talk" element={<Talk />} />
