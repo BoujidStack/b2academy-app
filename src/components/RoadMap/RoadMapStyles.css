@@ -190,8 +190,20 @@
     }
 
     #progress-bar-container {
-        width: 100%;
-        margin-left: 0;
+        width: 90%; /* Adjust width as needed */
+        max-width: 280px; /* Set a max-width to control its size */
+        margin: 150px auto 0; /* Center horizontally */
+        left: 0;
+        right: 0;
+    }
+    
+
+    #progress-content-section {
+        width: 70%;
+        margin: auto;
+        background: #0277b5;
+        border-radius: 4px;
+        overflow: hidden;
     }
 
     #progress-content-section .section-content p {
