@@ -183,7 +183,8 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
+
     .RoadMap {
         min-width: 100%;
         min-height: 150vh;
