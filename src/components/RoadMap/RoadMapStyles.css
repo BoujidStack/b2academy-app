@@ -211,7 +211,7 @@
     }
 
     .process-wrapper h1{
-        font-size: 35px;
+        font-size: 25px;
     }
 
     .process-wrapper h3 {
@@ -231,7 +231,7 @@
   @media (min-width: 769px) and (max-width: 992px) {
 
     .RoadMap {
-        min-width: 200%;
+        min-width: 100%;
     }
 
     #progress-bar-container {
