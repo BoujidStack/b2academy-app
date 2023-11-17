@@ -186,7 +186,9 @@
 
 @media (max-width: 768px) {
     .RoadMap {
-        min-width: 200%;
+        min-width: 100%;
+        min-height: 150vh;
+
     }
 
     #progress-bar-container {

@@ -146,15 +146,18 @@
 
 @media (max-width: 768px) {
   .programs {
-    min-width: 200%;
+    min-width: 100%;
     flex-direction: row;
-    min-height: 250vh;
   }
 
   #container {
     width: 100%;
     margin-top: 20px;
     height: 100%;
+  }
+
+  #container .product-details h1{
+    font-size: 30px;
   }
 
   #container .product-details>p {
@@ -166,11 +169,15 @@
   }
 
   .ctaPrograms span {
-    font-size: 23px;
+    font-size: 15px;
   }
 
+  .ctaPrograms svg {
+    font-size: 15px;
+}
+
   .button-containerPrograms a {
-    font-size: 25px;
+    font-size: 15px;
   }
 
   .product-details {

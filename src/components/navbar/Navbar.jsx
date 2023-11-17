@@ -34,12 +34,17 @@ const Navbar = ({ hideNavbarLinks }) => {
 
   };
 
+  const [languageDropdownOpen, setLanguageDropdownOpen] = useState(false); // New state to manage dropdown open/close
+
+  const toggleLanguageDropdown = () => {
+    setLanguageDropdownOpen(!languageDropdownOpen);
+  };
+
   const handleLanguageSelect = (language) => {
     setSelectedLanguage(language);
     i18n.changeLanguage(language.toLowerCase());
-
-    // Save the selected language to local storage
     localStorage.setItem('selectedLanguage', language);
+    setLanguageDropdownOpen(false); // Close dropdown after language selection
   };
 
   useEffect(() => {
@@ -129,14 +134,16 @@ const Navbar = ({ hideNavbarLinks }) => {
           )}
           <li>
             <div className="language-dropdown">
-              <div className="selected-language" onClick={handleLanguageSelect}>
+              <div className="selected-language" onClick={toggleLanguageDropdown}>
                 <span>{selectedLanguage}</span>
                 <FaChevronDown />
               </div>
-              <ul className="language-options">
-                <li onClick={() => handleLanguageSelect('GB')}>{t('navbar.gbEnglish')}</li>
-                <li onClick={() => handleLanguageSelect('FR')}>{t('navbar.frFrancais')}</li>
-              </ul>
+              {languageDropdownOpen && (
+                <ul className="language-options">
+                  <li onClick={() => handleLanguageSelect('GB')}>{t('navbar.gbEnglish')}</li>
+                  <li onClick={() => handleLanguageSelect('FR')}>{t('navbar.frFrancais')}</li>
+                </ul>
+              )}
             </div>
           </li>
 

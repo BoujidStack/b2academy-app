@@ -148,8 +148,8 @@
 
 @media screen and (max-width: 768px) {
 	.aboutUs {
-		height: 300vh;
-		min-width: 196.5%;
+		min-width: 100%;
+		min-height: 250vh;
 	}
 
 	.titleAboutUs h1 {
@@ -157,8 +157,10 @@
 	}
 
 	.containerAboutUs .content-section .content p {
-		font-size: 1.7rem;
-		width: 100%;
+		font-size: 1.3rem;
+		width: 85%;
+		text-align: left;
+margin-left: 120px;
 	}
 
 	.content-section {
@@ -184,23 +186,30 @@
 	.content-section .title {
 		text-align: left;
 		font-size: 28px;
+		margin-left: 120px;
+
 	}
 
 	.pyramid-loader {
 		margin-top: 300px;
-		margin-left: 100px;
+		margin-left: 80px;
 	}
 
 	.pyramid-loader .wrapper .side {
-		width: 15rem;
-		height: 15rem;
+		width: 12rem;
+		height: 12rem;
 		top: -320px;
 	}
 
 	.pyramid-loader .wrapper .shadow {
-		width: 12rem;
-		height: 12rem;
+		width: 10rem;
+		height: 10rem;
 	}
+
+	.video-container iframe {
+		width: 100%;
+		max-height: 150%;
+	  }
 }
 
 @media (min-width: 1024px) and (max-width: 1366px) {
