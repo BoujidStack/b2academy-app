@@ -19,6 +19,7 @@
 .discord-content p {
     width: 550px;
     font-size: 20px;
+    text-align: justify;
 }
 
 
@@ -124,12 +125,12 @@
         height: auto;
         flex-direction: column;
         align-items: center;
-        height: 150vh;
+        min-height: 200vh;
         min-width: 100%;
     }
 
     .discord-content {
-        max-width: 80%;
+        max-width: 60%;
         margin-right: 0;
         height: auto;
         margin-bottom: 15rem;
@@ -137,7 +138,7 @@
 
     .discord-content p {
         width: 100%;
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .discord-content .content-point h5 {

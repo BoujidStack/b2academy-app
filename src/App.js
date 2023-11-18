@@ -49,7 +49,8 @@ function App() {
               <Home />
               <Programs />
               <RoadMap />
-               <AboutUs />
+              <AboutUs />
+              <Discord />
             </>
           } />
           <Route path="/Talk" element={<Talk />} />
