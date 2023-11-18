@@ -49,6 +49,7 @@ function App() {
               <Home />
               <Programs />
               <RoadMap />
+               <AboutUs />
             </>
           } />
           <Route path="/Talk" element={<Talk />} />

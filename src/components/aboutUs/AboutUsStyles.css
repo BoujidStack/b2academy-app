@@ -130,7 +130,7 @@
 	font-family: sans-serif;
 	font-size: 18px;
 	line-height: 1.5;
-	text-align: left;
+	text-align: justify;
 }
 
 .video-container {
@@ -149,7 +149,7 @@
 @media screen and (max-width: 768px) {
 	.aboutUs {
 		min-width: 100%;
-		min-height: 250vh;
+        min-height: 150vh;
 	}
 
 	.titleAboutUs h1 {
@@ -158,10 +158,11 @@
 
 	.containerAboutUs .content-section .content p {
 		font-size: 1.3rem;
-		width: 85%;
-		text-align: left;
-margin-left: 120px;
+		width: 140%;
+		text-align: justify; /* Update this line to justify */
+		margin-left: 12px;
 	}
+	
 
 	.content-section {
 		float: none;
@@ -170,46 +171,33 @@ margin-left: 120px;
 		margin: auto;
 	}
 
-	.image-section {
-		float: none;
-		width: 100%;
-
-	}
-
-	.image-section .img-aboutus {
-		width: 100%;
-		height: auto;
-		display: block;
-		margin: auto;
-	}
 
 	.content-section .title {
 		text-align: left;
 		font-size: 28px;
-		margin-left: 120px;
+		margin-left: 12px;
 
 	}
 
 	.pyramid-loader {
-		margin-top: 300px;
-		margin-left: 80px;
+		display: none;
 	}
 
 	.pyramid-loader .wrapper .side {
-		width: 12rem;
-		height: 12rem;
+		width: 8rem;
+		height: 8rem;
 		top: -320px;
 	}
 
 	.pyramid-loader .wrapper .shadow {
-		width: 10rem;
-		height: 10rem;
+		width: 6rem;
+		height: 6rem;
 	}
 
 	.video-container iframe {
 		width: 100%;
 		max-height: 150%;
-	  }
+	}
 }
 
 @media (min-width: 1024px) and (max-width: 1366px) {
@@ -282,5 +270,3 @@ margin-left: 120px;
 		height: 180px;
 	}
 }
-
-
