@@ -159,8 +159,8 @@
 	.containerAboutUs .content-section .content p {
 		font-size: 1.3rem;
 		width: 140%;
-		text-align: justify; /* Update this line to justify */
-		margin-left: 12px;
+		text-align: justify; 
+		margin-left: 20px;
 	}
 	
 
@@ -175,8 +175,7 @@
 	.content-section .title {
 		text-align: left;
 		font-size: 28px;
-		margin-left: 12px;
-
+		margin-left: 20px;
 	}
 
 	.pyramid-loader {
