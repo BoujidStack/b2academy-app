@@ -164,45 +164,20 @@
 		margin: auto;
 	}
 
-	/* Update this section in your CSS */
+	.ourMethodologycontent-section .content-point p {
+		font-size: 15px;
+		position: absolute;
+	}
 
-/* Container for content points */
-.ourMethodologycontent-section .content-point {
-	position: relative; /* Ensure container has relative positioning */
-	margin-bottom: 200px; /* Add margin between content points */
-  }
-  
-  /* Logo within content points */
-  .ourMethodologycontent-section .content-point img {
-	width: 35px;
-	height: 35px;
-	position: absolute;
-	top: 0; /* Position from the top */
-	left: 0; /* Position from the left */
-  }
-  
-  /* Header within content points */
-  .ourMethodologycontent-section .content-point h5 {
-	font-size: 17px;
-	margin-left: 50px; /* Adjust to leave space for the logo */
-	margin-top: 0;
-  }
-  
-  /* Paragraph within content points */
-  .ourMethodologycontent-section .content-point p {
-	font-size: 15px;
-	position: absolute;
-	top: 25px; /* Adjust distance from the top */
-	left: 50px; /* Adjust distance from the left */
-	width: calc(110% - 5px); /* Set width to account for logo space */
-	margin: 0; /* Reset margins to prevent unwanted space */
-  }
+	.ourMethodologycontent-section .content-point h5 {
+		font-size: 20px;
+	}
 
+	.ourMethodologycontent-section .content-point img {
+		width: 30px;
+		height: 30px;
+	}
 
-  .ourMethodologycontent-section .content-point:nth-of-type(3) p {
-	width: calc(120% - -110px); /* Set a wider width for the second content point */
-  }
-  
 	.ourMethodologycontent-section {
 		float: none;
 		width: 100%;
