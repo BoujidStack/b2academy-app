@@ -165,22 +165,22 @@
 	}
 
 	.ourMethodologycontent-section .content-point {
-		margin-bottom: 150px; /* Add space between content points */
+		margin-bottom: 180px; /* Add space between content points */
 	  }
 	  
 
 	.ourMethodologycontent-section .content-point p {
 		font-size: 15px;
-		width: 120%; /* Enlarge the width of the content-point p */
+		width: 100%; /* Enlarge the width of the content-point p */
 		position: absolute;
 	}
 
 	.ourMethodologycontent-section .content-point:nth-child(3) p {
-		width: 230%; /* Enlarge the width of the content-point p */
+		width: 210%; /* Enlarge the width of the content-point p */
 	  }
 
 	  .ourMethodologycontent-section .content-point:nth-child(4) p {
-		width: 140%; /* Enlarge the width of the content-point p */
+		width: 120%; /* Enlarge the width of the content-point p */
 	  }
 	  
 
