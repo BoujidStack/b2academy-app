@@ -16,7 +16,7 @@ const OurMethodology = () => {
                 </div>
                 <div className="containerOurMethodology">
                     <div className="ourMethodologycontent-section">
-                        <div className="content-point">
+                        <div className="content">
                             <p data-aos="fade-right" data-aos-duration="1000" dangerouslySetInnerHTML={{ __html: t('methodology.description') }}></p>
                         </div>
                         <div className="content-point">
@@ -24,37 +24,6 @@ const OurMethodology = () => {
                             <div data-aos="fade-left" data-aos-duration="1000">
                                 <h5>DECENTRALIZED LEARNING :</h5>
                                 <p>{t('methodology.DecentralizedLwarning')}</p>
-                            </div>
-                        </div>
-                        <div className="content-point">
-                            <img src={logo} width={35} height={35} alt="Decentralized Learning" data-aos="zoom-in-up" data-aos-duration="1000" />
-                            <div data-aos="fade-left" data-aos-duration="1000">
-                                <h5>METAVERSE :</h5>
-                                <p>{t('methodology.Metaverse')}</p>
-                            </div>
-                        </div>
-                        <div className="content-point">
-                            <img src={logo} width={35} height={35} alt="Decentralized Learning" data-aos="zoom-in-up" data-aos-duration="1000" />
-                            <div data-aos="fade-left" data-aos-duration="1000">
-                                <h5>FLEXIBLE CURRICULUM :</h5>
-                                <p>{t('methodology.FlexibleCurriculum')}<br />
-                                    <strong> • {t('methodology.FlexibleCurriculum-point1')}</strong><br />
-                                    <strong> • {t('methodology.FlexibleCurriculum-point2')}</strong>
-                                </p>
-                            </div>
-                        </div>
-                        <div className="content-point">
-                            <img src={logo} width={35} height={35} alt="Decentralized Learning" data-aos="zoom-in-up" data-aos-duration="1000" />
-                            <div data-aos="fade-left" data-aos-duration="1000">
-                                <h5>MICROLEARNING : </h5>
-                                <p>{t('methodology.MicroLearning')}</p>
-                            </div>
-                        </div>
-                        <div className="content-point">
-                            <img src={logo} width={35} height={35} alt="Decentralized Learning" data-aos="zoom-in-up" data-aos-duration="1000" />
-                            <div data-aos="fade-left" data-aos-duration="1000">
-                                <h5>NFT CERTIFICATION : </h5>
-                                <p>{t('methodology.NftCertification')}</p>
                             </div>
                         </div>
                     </div>

@@ -139,7 +139,6 @@
 @media screen and (max-width: 768px) {
 	.ourMethodology {
 		height: 300vh;
-		min-width: 196.5%;
 	}
 
 	.image-section {
@@ -147,29 +146,38 @@
 	}
 
 	.containerOurMethodology {
-		width: 80%;
+		width: 100%;
 		display: block;
 		margin: auto;
 		padding-top: 50px;
 		text-align: left;
 	}
 
+	.titleOurMethodology h1 {
+		font-size: 50px;
+	}
+
 	.ourMethodologycontent-section .content p {
-		font-size: 30px;
-		width: 100%;
+		font-size: 25px;
+		width: 90%;
+		text-align: left;
+		margin: auto;
 	}
 
 	.ourMethodologycontent-section .content-point p {
-		font-size: 25px;
+		font-size: 15px;
+		text-align: justify;
+		width: 70%;
+
 	}
 
 	.ourMethodologycontent-section .content-point h5 {
-		font-size: 25px;
+		font-size: 20px;
 	}
 
 	.ourMethodologycontent-section .content-point img {
-		width: 50px;
-		height: 50px;
+		width: 30px;
+		height: 30px;
 	}
 
 	.ourMethodologycontent-section {
@@ -182,7 +190,6 @@
 	.image-section {
 		float: none;
 		width: 100%;
-
 	}
 
 	.image-section .img-OurMethodology {
@@ -199,7 +206,6 @@
 	.ourMethodologycontent-section .content .button a {
 		padding: 9px 30px;
 	}
-
 }
 
 
@@ -265,15 +271,13 @@
 	.ourMethodologycontent-section .content .button a {
 		padding: 9px 30px;
 	}
-		
+
 }
 
 
 @media (min-width: 1024px) and (max-width: 1366px) {
 	.ourMethodology {
-	  width: 120%;
-	  min-height: 100vh;
+		width: 120%;
+		min-height: 100vh;
 	}
-  }
-
-
+}
