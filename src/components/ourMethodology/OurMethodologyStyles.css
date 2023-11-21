@@ -165,10 +165,7 @@
 	}
 
 	.ourMethodologycontent-section .content-point p {
-		font-size: 15px;
-		text-align: justify;
-		width: 70%;
-
+		display: none;
 	}
 
 	.ourMethodologycontent-section .content-point h5 {
