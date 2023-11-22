@@ -53,7 +53,7 @@ function App() {
               <Discord />
               <OurMethodology />
               <Newsletter />
-              
+              <Footer />
 
             </>
           } />

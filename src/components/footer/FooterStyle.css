@@ -186,7 +186,7 @@ footer .bottom-details .bottom_text {
 
     footer {
         position: relative;
-        min-width: 196.5%;
+        min-width: 100%;
     }
 
     .content {
@@ -209,11 +209,11 @@ footer .bottom-details .bottom_text {
     }
 
     .content .link-boxes .box .link_name {
-        font-size: 28px;
+        font-size: 25px;
     }
 
     .content .link-boxes .box li a {
-        font-size: 23px;
+        font-size: 18px;
     }
 
     footer .content .link-boxes .box {
