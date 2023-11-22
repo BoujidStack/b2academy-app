@@ -120,11 +120,11 @@
 
 @media (max-width: 768px) {
     .newsletter {
-        min-width: 200%;
+        min-width: 100%;
     }
 
     .newsletter-title {
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .newsletter-input {

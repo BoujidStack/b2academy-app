@@ -52,6 +52,8 @@ function App() {
               <AboutUs />
               <Discord />
               <OurMethodology />
+              <Newsletter />
+              
 
             </>
           } />
