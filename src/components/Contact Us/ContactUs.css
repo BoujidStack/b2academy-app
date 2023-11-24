@@ -117,17 +117,14 @@
   }
 
   .modal-header {
-    max-width: 60%; /* Increase the maximum width slightly */
-    margin: 0 auto;
-    padding: 0 10px; /* Adjust padding for spacing */
+    display: none;
+
   }
 
-  .modal-header h2,
-  .modal-header p {
-    /* Adjust styles for better readability on smaller screens */
-    font-size: 13px; /* Reduce font size further */
-    word-wrap: break-word; /* Allow titles to wrap onto multiple lines */
-    /* Other styles as needed */
+ 
+.modal-header .title,
+.modal-header .description {
+    display: none;
   }
 }
 
