@@ -3,10 +3,10 @@ import firebaseApp from './FirebaseConfig';
 
 
 
-const saveFormDataToFirestore = async (formData) => {
+const saveFormDataB2academyContactUs = async (formData) => {
   try {
     const db = getFirestore(firebaseApp);
-    const formDataRef = collection(db, "formSubmissions");
+    const formDataRef = collection(db, "b2academyFormContactUs");
     await addDoc(formDataRef, formData);
     console.log("Form data saved successfully!");
   } catch (error) {
@@ -16,10 +16,10 @@ const saveFormDataToFirestore = async (formData) => {
 
 
 
-const saveFormDataToOtherFormBusinesses = async (formData) => {
+const saveFormDatab2academyBusinesses = async (formData) => {
   try {
     const db = getFirestore(firebaseApp);
-    const formDataRef = collection(db, 'formSubmissionsBusinesses');
+    const formDataRef = collection(db, 'b2academyFormBusinesses');
     await addDoc(formDataRef, formData);
     console.log('Form data saved successfully!');
   } catch (error) {
@@ -40,10 +40,10 @@ const saveFormDataToOtherFormPrograms = async (formData) => {
 };
 */}
 
-const saveFormDataToOtherFormEmails = async (formData) => {
+const saveFormDatab2academyEmail = async (formData) => {
   try {
     const db = getFirestore(firebaseApp);
-    const formDataRef = collection(db, 'formSubmissionsEmails');
+    const formDataRef = collection(db, 'b2academyFormEmail');
     await addDoc(formDataRef, formData);
     console.log('Form data saved successfully!');
   } catch (error) {
@@ -52,4 +52,4 @@ const saveFormDataToOtherFormEmails = async (formData) => {
 };
 
 
-export { saveFormDataToFirestore, saveFormDataToOtherFormBusinesses,/*saveFormDataToOtherFormPrograms,*/ saveFormDataToOtherFormEmails };
+export { saveFormDataB2academyContactUs, saveFormDatab2academyBusinesses,/*saveFormDataToOtherFormPrograms,*/ saveFormDatab2academyEmail };

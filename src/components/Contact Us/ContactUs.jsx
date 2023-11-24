@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './ContactUs.css';
 import { useTranslation } from 'react-i18next';
 import Swal from 'sweetalert2';
-import { saveFormDataToFirestore } from '../firebase/FirebaseUtils';
+import { saveFormDataB2academyContactUs } from '../firebase/FirebaseUtils';
 
 function ContactUs() {
   const { t } = useTranslation();
@@ -37,7 +37,7 @@ function ContactUs() {
         formData.message &&
         formData.isChecked
       ) {
-        await saveFormDataToFirestore(formData);
+        await saveFormDataB2academyContactUs(formData);
 
         Swal.fire({
           icon: 'success',
@@ -62,8 +62,8 @@ function ContactUs() {
         {t('ContactUs.ContactUstitle')}
       </h1>
       <div className="modal-header">
-        <h2 data-aos="fade-right" data-aos-duration="1000">{t('ContactUs.title')}</h2>
-        <p data-aos="fade-left" data-aos-duration="1000">{t('ContactUs.description')}</p>
+        <h2 data-aos="fade-right" data-aos-duration="1000" className="title">{t('ContactUs.title')}</h2>
+        <p data-aos="fade-left" data-aos-duration="1000" className="description">{t('ContactUs.description')}</p>
       </div>
       <form className="ContactUsform" onSubmit={handleFormSubmit}>
         <div className="ContactUsform-group ContactUsname-inputs">

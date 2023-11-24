@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './NumberCountingSectionStyles.css';
 import logoNumberCounting from '../../assets/logoNumberCounting.png';
-import { saveFormDataToOtherFormEmails } from '../firebase/FirebaseUtils';
+import { saveFormDatab2academyEmail } from '../firebase/FirebaseUtils';
 import { useTranslation } from 'react-i18next';
 
 const NumberCountingSection = () => {
@@ -23,7 +23,7 @@ const NumberCountingSection = () => {
       };
 
       try {
-        await saveFormDataToOtherFormEmails(formData);
+        await saveFormDatab2academyEmail(formData);
 
         const fileUrl = 'https://drive.google.com/file/d/1Je7bhms-JRtR0ARQIP6c7LYSMuTR8KkB/view?usp=sharing';
         window.open(fileUrl, '_blank');

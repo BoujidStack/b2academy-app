@@ -3,7 +3,7 @@ import { FaTimes } from 'react-icons/fa';
 import Swal from 'sweetalert2';
 import './ModalOverlayBusinessesStyles.css';
 import { useTranslation } from 'react-i18next';
-import { saveFormDataToOtherFormBusinesses } from '../firebase/FirebaseUtils';
+import { saveFormDatab2academyBusinesses } from '../firebase/FirebaseUtils';
 
 function ModalOverlayBusinesses({ onClose }) {
     const [firstName, setFirstName] = useState('');
@@ -43,7 +43,7 @@ function ModalOverlayBusinesses({ onClose }) {
                     isChecked,
                 };
 
-                await saveFormDataToOtherFormBusinesses(formData);
+                await saveFormDatab2academyBusinesses(formData);
 
                 Swal.fire({
                     icon: 'success',

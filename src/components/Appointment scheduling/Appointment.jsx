@@ -28,7 +28,7 @@ const Appointment = () => {
                 </div>
             </div>
             <div className='schedulingAppointment'>
-                <div data-aos="fade-left" data-aos-duration="1200" className="calendly-inline-widget" data-url="https://calendly.com/hamzaboujid24/hamzaboujid24" ></div>
+                <div data-aos="fade-left" data-aos-duration="1200" className="calendly-inline-widget" data-url="https://calendly.com/b2academyschool/30min" ></div>
             </div>
         </div>
     );

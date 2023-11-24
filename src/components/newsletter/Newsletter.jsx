@@ -3,7 +3,7 @@ import './NewsletterStyles.css';
 import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from 'react-icons/fa';
 import Swal from 'sweetalert2';
 import { useTranslation } from 'react-i18next';
-import { saveFormDataToOtherFormEmails } from '../firebase/FirebaseUtils';
+import { saveFormDatab2academyEmail } from '../firebase/FirebaseUtils';
 
 const Newsletter = () => {
   const { t } = useTranslation();
@@ -25,7 +25,7 @@ const Newsletter = () => {
 
     try {
       if (formData.email) {
-        await saveFormDataToOtherFormEmails(formData);
+        await saveFormDatab2academyEmail(formData);
 
         Swal.fire({
           icon: 'success',

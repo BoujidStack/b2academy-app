@@ -2,13 +2,13 @@ import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyABIREKNQSvSHstzmm5JVlIkH5TGy-c8N4",
-  authDomain: "academy-5d825.firebaseapp.com",
-  projectId: "academy-5d825",
-  storageBucket: "academy-5d825.appspot.com",
-  messagingSenderId: "669644456043",
-  appId: "1:669644456043:web:171b9a640715391033b12e",
-  measurementId: "G-D3FGLEWLGM"
+  apiKey: "AIzaSyB6s36zRYHnKziJgSPYPl2RM8kOkbfoQfc",
+  authDomain: "b2academy-116f7.firebaseapp.com",
+  projectId: "b2academy-116f7",
+  storageBucket: "b2academy-116f7.appspot.com",
+  messagingSenderId: "457289446332",
+  appId: "1:457289446332:web:9b52da87dde374b7f971b9",
+  measurementId: "G-6H8QYP8RQM"
 };
 
 const app = initializeApp(firebaseConfig);
