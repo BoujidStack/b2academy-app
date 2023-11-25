@@ -6,7 +6,7 @@ import { Link } from 'react-scroll'
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
-const Footer = (hideFooterLinks) => {
+const Footer = ({hideFooterLinks}) => {
     const [nav, setNav] = useState(false);
     const { t } = useTranslation();
 
