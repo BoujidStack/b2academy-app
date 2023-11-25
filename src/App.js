@@ -54,6 +54,7 @@ function App() {
               <OurMethodology />
               <Newsletter />
               <ContactUs/>
+              <Fqa />
               <Footer />
 
             </>

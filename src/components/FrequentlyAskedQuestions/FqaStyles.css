@@ -134,15 +134,19 @@
 @media (max-width: 768px) {
   .faq-container {
     padding: 2rem;
-    min-width: 196.5%;
+    min-width: 100%;
   }
 
   .container-content {
     margin-top: 5rem;
   }
 
+  .faq-container h1 {
+    font-size: 30px;
+  }
+
   .accordion .accordion-item {
-    width: 80%;
+    width: 50%;
     margin: 0 auto;
   }
 
@@ -151,8 +155,17 @@
   }
 
   .contact-us {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding-bottom: 50px;
+  }
+
+
+  .accordion button .accordion-title {
+    font-size: 1rem;
+  }
+
+  .accordion .accordion-content p {
+    font-size: 0.8rem;
   }
 
 }
