@@ -222,7 +222,8 @@ footer .bottom-details .bottom_text {
 
     .bottom-details .bottom_text span,
     .bottom-details .bottom_text a {
-        font-size: 13px;
+        font-size: 15px;
+        text-align: center;
     }
 
 

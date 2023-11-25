@@ -6,7 +6,7 @@ import { Link } from 'react-scroll'
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
-const Footer = () => {
+const Footer = (hideFooterLinks) => {
     const [nav, setNav] = useState(false);
     const { t } = useTranslation();
 
@@ -48,11 +48,16 @@ const Footer = () => {
                 </div>
                 <div className="link-boxes">
                     <ul className="box">
-                        <li className="link_name">B<sup>2</sup>Academy</li>
-                        <li><Link onClick={handleClose} activeClass="active" to="home" spy={true} smooth={true} duration={500}><a href="#">{t('footer.Home')}</a></Link></li>
-                        <li><Link onClick={handleClose} activeClass="active" to="programs" spy={true} smooth={true} duration={500}><a href="#">{t('footer.programs')}</a></Link></li>
-                        <li><Link onClick={handleClose} activeClass="active" to="aboutUs" spy={true} smooth={true} duration={500}><a href="#">{t('footer.aboutUs')}</a></Link></li>
-                        <li><Link onClick={handleClose} activeClass="active" to="ourMethodology" spy={true} smooth={true} duration={500}><a href="#">{t('footer.ourMethodology')}</a></Link></li>
+                        {!hideFooterLinks && (
+                            <>
+
+
+                                <li className="link_name">B<sup>2</sup>Academy</li>
+                                <li><Link onClick={handleClose} activeClass="active" to="home" spy={true} smooth={true} duration={500}><a href="#">{t('footer.Home')}</a></Link></li>
+                                <li><Link onClick={handleClose} activeClass="active" to="programs" spy={true} smooth={true} duration={500}><a href="#">{t('footer.programs')}</a></Link></li>
+                                <li><Link onClick={handleClose} activeClass="active" to="aboutUs" spy={true} smooth={true} duration={500}><a href="#">{t('footer.aboutUs')}</a></Link></li>
+                                <li><Link onClick={handleClose} activeClass="active" to="ourMethodology" spy={true} smooth={true} duration={500}><a href="#">{t('footer.ourMethodology')}</a></Link></li>
+                            </>)}
                     </ul>
                     <ul className="box">
                         <li className="link_name">Contact</li>

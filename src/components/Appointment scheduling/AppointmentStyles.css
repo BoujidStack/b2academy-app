@@ -48,7 +48,7 @@
 @media (max-width: 712px) {
     .appointment {
         height: 300vh;
-        min-width: 196.5%;
+        min-width: 100%;
     }
 
     .schedulingAppointment {
@@ -57,7 +57,7 @@
     }
 
     .appointment-details {
-        margin: 0 auto; /* Center the div horizontally */
+        margin: 0 auto; 
     }
 
     .appointment-details p {
@@ -75,7 +75,7 @@
 
 
     .appointment .calendly-inline-widget {
-        width: 35rem;
+        width: 22rem;
         height: 70rem;
     }
 
