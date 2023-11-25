@@ -117,8 +117,8 @@
 
   .advantages-container {
     text-align: center;
-    width: 200%;
-    min-height: 160vh;
+    min-width: 100%;
+        min-height: 160vh;
   }
 
   .content-advantages {

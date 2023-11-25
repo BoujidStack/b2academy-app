@@ -56,7 +56,7 @@ p {
 
 @media (max-width: 768px) {
   .Terms {
-    min-width: 200%;
+    min-width: 100%;
   }
 
   .Terms .contentTerms {

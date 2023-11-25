@@ -12,6 +12,7 @@ import { useTranslation } from 'react-i18next';
 import FooterTwo from '../footerForTalk&Bdp/FooterTwo'
 import Navbar from '../navbar/Navbar'
 import ContactUs from '../Contact Us/ContactUs'
+import Footer from '../footer/Footer'
 
 const Bdp = () => {
     const { t } = useTranslation();
@@ -34,15 +35,11 @@ const Bdp = () => {
                 </div>
             </div>
             {showModal && <ModalOverlayEnroll onClose={handleCloseModal} />}
-            <NumberCountingSection />
-            <ProgramModules />
-            <Enrolltoday />
-            <Advantages />
-            <Business />
+            
             <Newsletter />
             <ContactUs />
             <Fqa />
-            <FooterTwo />
+            <Footer hideFooterLinks={true} />
         </>
     )
 }

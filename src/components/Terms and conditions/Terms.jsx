@@ -3,6 +3,7 @@ import './TermsStyles.css';
 import { useTranslation } from 'react-i18next';
 import FooterTwo from '../footerForTalk&Bdp/FooterTwo';
 import Navbar from '../navbar/Navbar';
+import Footer from '../footer/Footer';
 
 function Terms() {
     const { t } = useTranslation();
@@ -38,7 +39,7 @@ function Terms() {
                     <p>{t('Terms&Conditions.textTitle11')}</p>
                 </div>
             </div>
-            <FooterTwo hideFQAContactLinks={true} />
+            <Footer hideFooterLinks={true} />
         </div>
     );
 }

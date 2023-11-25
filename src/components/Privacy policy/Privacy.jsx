@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import React from 'react';
 import FooterTwo from '../footerForTalk&Bdp/FooterTwo';
 import Navbar from '../navbar/Navbar';
+import Footer from '../footer/Footer';
 
 
 function Privacy() {
@@ -39,7 +40,7 @@ function Privacy() {
                     <p>{t('Terms&Conditions.textTitle11')}</p>
                 </div>
             </div>
-            <FooterTwo hideFQAContactLinks={true} />
+            <Footer hideFooterLinks={true} />
         </div>
     )
 }

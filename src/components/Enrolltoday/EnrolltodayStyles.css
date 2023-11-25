@@ -93,8 +93,8 @@
 @media screen and (max-width: 768px) {
   .enrolltoday {
     height: 130vh;
-    min-width: 196.5%;
-  }
+    min-width: 100%;
+    }
 
   .containerEnrolltoday {
     width: 80%;

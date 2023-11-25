@@ -171,8 +171,8 @@
 
 @media (max-width: 768px) {
   .programModules {
-    min-width: 196.5%;
-  }
+    min-width: 100%;
+    }
 
   .programModulesImage {
     margin-left: 10px;

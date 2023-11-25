@@ -56,7 +56,6 @@ function App() {
               <ContactUs/>
               <Fqa />
               <Footer />
-
             </>
           } />
           <Route path="/Talk" element={<Talk />} />

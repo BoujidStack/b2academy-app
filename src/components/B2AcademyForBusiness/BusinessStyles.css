@@ -89,8 +89,8 @@
 
 @media (max-width: 768px) {
   .business-section {
-    min-width: 196.5%;
-  }
+    min-width: 100%;
+    }
 
   .business-content {
     display: flex;
