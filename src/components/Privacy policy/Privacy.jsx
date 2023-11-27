@@ -1,7 +1,6 @@
 import './PrivacyStyles.css';
 import { useTranslation } from 'react-i18next';
 import React from 'react';
-import FooterTwo from '../footerForTalk&Bdp/FooterTwo';
 import Navbar from '../navbar/Navbar';
 import Footer from '../footer/Footer';
 

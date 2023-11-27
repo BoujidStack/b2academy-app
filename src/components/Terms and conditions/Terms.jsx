@@ -1,7 +1,6 @@
 import React from 'react';
 import './TermsStyles.css';
 import { useTranslation } from 'react-i18next';
-import FooterTwo from '../footerForTalk&Bdp/FooterTwo';
 import Navbar from '../navbar/Navbar';
 import Footer from '../footer/Footer';
 
