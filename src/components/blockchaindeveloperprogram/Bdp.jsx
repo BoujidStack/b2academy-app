@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './BdpStyles.css';
 import Newsletter from '../newsletter/Newsletter';
+import NumberCountingSection from '../NumberCountingSection/NumberCountingSection'
+import Enrolltoday from '../Enrolltoday/Enrolltoday'
+import ProgramModules from '../programModules/ProgramModules'
 import Fqa from '../FrequentlyAskedQuestions/Fqa';
 import ModalOverlayEnroll from '../ModalOverlayEnrollNow/ModalOverlayEnroll';
 import { useTranslation } from 'react-i18next';
@@ -42,7 +45,9 @@ const Bdp = () => {
                 </div>
             </div>
             {showModal && <ModalOverlayEnroll onClose={handleCloseModal} />}
-            
+            <NumberCountingSection />
+            <ProgramModules />
+            <Enrolltoday />
             <Newsletter />
             <ContactUs />
             <Fqa />

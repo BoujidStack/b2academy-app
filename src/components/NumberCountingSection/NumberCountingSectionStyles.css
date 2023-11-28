@@ -59,8 +59,6 @@
     text-align: center;
 }
 
-
-
 .Brochure-input {
     display: flex;
     margin-top: 20px;
@@ -151,16 +149,15 @@
     }
 
     .counting-item h2 {
-        font-size: 4rem;
+        font-size: 2.5rem;
     }
 
     .counting-item h3 {
-        font-size: 4rem;
-
+        font-size: 2.5rem;
     }
 
     .counting-item p {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .counting-item img {
@@ -169,16 +166,51 @@
     }
 
     .Brochure-title {
-        font-size: 45px;
+        font-size: 35px;
+        text-align: center;
     }
 
     .Brochure-text {
         font-size: 1.4rem;
     }
+    
+    .Brochure-input {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 
-    .Brochure {
-        min-width: 100%;
-        }
+    .input-Brochure {
+        flex: 1;
+        max-width: calc(50% - 1px); /* Adjust width of input field */
+        margin-right: 1px; /* No gap between input and button */
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .button-Brochure {
+        flex: 1;
+        max-width: calc(50% - 1px); /* Adjust width of button */
+        margin-left: 1px; /* No gap between input and button */
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        font-size: 15px;
+    }
+
+    .checkbox-label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 10px;
+        width: 100%; /* Occupy full width */
+    }
+
+    .error-message{
+        text-align: center;
+    }
 
 }
 
@@ -223,12 +255,12 @@
 
 @media (min-width: 1024px) and (max-width: 1366px) {
     .number-counting-section {
-      width: 120%;
-      min-height: 100vh;
+        width: 120%;
+        min-height: 100vh;
     }
 
     .Brochure {
         width: 120%;
         min-height: 100vh;
     }
-  }
+}
