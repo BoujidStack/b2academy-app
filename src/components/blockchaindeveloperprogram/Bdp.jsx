@@ -4,6 +4,7 @@ import Newsletter from '../newsletter/Newsletter';
 import NumberCountingSection from '../NumberCountingSection/NumberCountingSection'
 import Advantages from '../Advantages/Advantages'
 import Enrolltoday from '../Enrolltoday/Enrolltoday'
+import Business from '../B2AcademyForBusiness/Business'
 import ProgramModules from '../programModules/ProgramModules'
 import Fqa from '../FrequentlyAskedQuestions/Fqa';
 import ModalOverlayEnroll from '../ModalOverlayEnrollNow/ModalOverlayEnroll';
@@ -50,7 +51,7 @@ const Bdp = () => {
             <ProgramModules />
             <Enrolltoday />
             <Advantages />
-
+            <Business />
             <Newsletter />
             <ContactUs />
             <Fqa />
