@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './BdpStyles.css';
 import Newsletter from '../newsletter/Newsletter';
 import NumberCountingSection from '../NumberCountingSection/NumberCountingSection'
+import Advantages from '../Advantages/Advantages'
 import Enrolltoday from '../Enrolltoday/Enrolltoday'
 import ProgramModules from '../programModules/ProgramModules'
 import Fqa from '../FrequentlyAskedQuestions/Fqa';
@@ -48,6 +49,8 @@ const Bdp = () => {
             <NumberCountingSection />
             <ProgramModules />
             <Enrolltoday />
+            <Advantages />
+
             <Newsletter />
             <ContactUs />
             <Fqa />

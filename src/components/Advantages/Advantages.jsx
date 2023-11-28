@@ -53,16 +53,7 @@ const Advantages = () => {
                     </div>
                 </div>
                 <h2 className="advantages-subtitle" data-aos="fade-down" data-aos-duration="1000">{t('advantages.subtitle2')}</h2>
-                <div className="advantages-cards">
-                    <div className="advantages-card" data-aos="fade-right" data-aos-duration="1000">
-                        <h2>{t('advantages.advantages-card3-point1')}</h2>
-                        <h4>{t('advantages.advantages-card3-point2')}</h4>
-                    </div>
-                    <div className="advantages-card" data-aos="fade-left" data-aos-duration="1000">
-                        <h2>{t('advantages.advantages-card4-point3')}</h2>
-                        <h4>{t('advantages.advantages-card4-point4')}</h4>
-                    </div>
-                </div>
+                
 
                 <div className="advantages-cards">
                     <div className="advantages-card" data-aos="fade-right" data-aos-duration="1000">

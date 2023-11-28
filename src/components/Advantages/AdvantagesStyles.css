@@ -118,11 +118,11 @@
   .advantages-container {
     text-align: center;
     min-width: 100%;
-        min-height: 160vh;
+    min-height: 160vh;
   }
 
   .content-advantages {
-    width: 70%;
+    width: 50%;
   }
 
   .advantages-card {
@@ -130,11 +130,11 @@
   }
 
   .advantages-title {
-    font-size: 5.2rem;
+    font-size: 3rem;
   }
 
   .advantages-subtitle {
-    font-size: 40px;
+    font-size: 25px;
   }
 
   .advantages-card {
@@ -144,15 +144,15 @@
   }
 
   .advantages-card h2 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .advantages-card h3 {
-    font-size: 35px;
+    font-size: 20px;
   }
 
   .advantages-card h4 {
-    font-size: 25px;
+    font-size: 15px;
   }
 
   .advantages-card ul {
@@ -160,8 +160,8 @@
   }
 
   .advantages-card img {
-    width: 250px;
-    height: 250px;
+    width: 100px;
+    height: 100px;
   }
 
   .advantages-card-NFT {
@@ -173,14 +173,14 @@
   }
 
   .advantages-card-NFT img {
-    transform: scale(1.8);
+    transform: scale(1);
   }
 
 
   .advantages-card-NFT h4 {
-    font-size: 25px;
+    font-size: 18px;
     margin-right: 0;
-    text-align: center;
+    text-align: justify;
   }
 }
 
