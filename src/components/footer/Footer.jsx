@@ -6,7 +6,7 @@ import { Link } from 'react-scroll'
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
-const Footer = ({hideFooterLinks}) => {
+const Footer = ({ hideFooterLinks }) => {
     const [nav, setNav] = useState(false);
     const { t } = useTranslation();
 
@@ -40,9 +40,9 @@ const Footer = ({hideFooterLinks}) => {
                         <Link onClick={handleClose} activeClass="active" to="home" spy={true} smooth={true} duration={500}><img src={logo} alt='logo' className="logo_name" /></Link>
                     </div>
                     <div className="media-icons">
-                        <a href=""><FaFacebook /></a>
-                        <a href=""><FaLinkedin /></a>
-                        <a href=""><FaInstagram /></a>
+                        <a href="https://www.facebook.com/profile.php?id=61553818017478"><FaFacebook /></a>
+                        <a href="https://www.linkedin.com/company/b2a-blockchain-business-academy/about/?viewAsMember=true"><FaLinkedin /></a>
+                        <a href="https://www.instagram.com/b2a_africa/"><FaInstagram /></a>
                         <a href="https://www.youtube.com/channel/UCY8XFWyBLeRNze3yhSp-7oA"><FaYoutube /></a>
                     </div>
                 </div>
@@ -50,8 +50,6 @@ const Footer = ({hideFooterLinks}) => {
                     <ul className="box">
                         {!hideFooterLinks && (
                             <>
-
-
                                 <li className="link_name">B<sup>2</sup>Academy</li>
                                 <li><Link onClick={handleClose} activeClass="active" to="home" spy={true} smooth={true} duration={500}><a href="#">{t('footer.Home')}</a></Link></li>
                                 <li><Link onClick={handleClose} activeClass="active" to="programs" spy={true} smooth={true} duration={500}><a href="#">{t('footer.programs')}</a></Link></li>

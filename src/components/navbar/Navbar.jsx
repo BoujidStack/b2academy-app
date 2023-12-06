@@ -152,9 +152,9 @@ const Navbar = ({ hideNavbarLinks }) => {
               <span>{t('navbar.letsTalk')}</span>
             </button>
             <div className="social-icons">
-              <a className="icon" href=""><FaFacebook /></a>
-              <a className="icon" href=""><FaLinkedin /></a>
-              <a className="icon" href=""><FaInstagram /></a>
+              <a className="icon" href="https://www.facebook.com/profile.php?id=61553818017478"><FaFacebook /></a>
+              <a className="icon" href="https://www.linkedin.com/company/b2a-blockchain-business-academy/about/?viewAsMember=true"><FaLinkedin /></a>
+              <a className="icon" href="https://www.instagram.com/b2a_africa/"><FaInstagram /></a>
               <a className="icon" href="https://www.youtube.com/channel/UCY8XFWyBLeRNze3yhSp-7oA"><FaYoutube /></a>
             </div>
           </div>

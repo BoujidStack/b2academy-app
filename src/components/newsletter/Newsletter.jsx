@@ -61,9 +61,9 @@ const Newsletter = () => {
       </div>
       <div className='social-media-icons' data-aos="zoom-in" data-aos-duration="1000">
         <div className="media-icons" >
-          <a href=""><FaFacebook /></a>
-          <a href=""><FaLinkedin /></a>
-          <a href=""><FaInstagram /></a>
+          <a href="https://www.facebook.com/profile.php?id=61553818017478"><FaFacebook /></a>
+          <a href="https://www.linkedin.com/company/b2a-blockchain-business-academy/about/?viewAsMember=true"><FaLinkedin /></a>
+          <a href="https://www.instagram.com/b2a_africa/"><FaInstagram /></a>
           <a href="https://www.youtube.com/channel/UCY8XFWyBLeRNze3yhSp-7oA"><FaYoutube /></a>
         </div>
       </div>

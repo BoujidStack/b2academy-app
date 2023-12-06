@@ -17,24 +17,42 @@ const NumberCountingSection = () => {
   };
 
   const handleDownloadButtonClick = async () => {
-    if (isChecked && isValidEmail(email)) {
+    if (isChecked) {
+      if (!isValidEmail(email)) {
+        setErrorMessage('Please enter a valid email address.');
+        return;
+      }
+  
       const formData = {
         email,
       };
-
+  
       try {
         await saveFormDatab2academyEmail(formData);
-
+  
         const fileUrl = 'https://drive.google.com/file/d/1Je7bhms-JRtR0ARQIP6c7LYSMuTR8KkB/view?usp=sharing';
         window.open(fileUrl, '_blank');
+  
+        // Reset form values after the file download link is opened
+        setEmail('');
+        setIsChecked(false);
+        setErrorMessage('');
       } catch (error) {
         console.error('Error saving email:', error);
         setErrorMessage('There was an error while processing your request. Please try again later.');
       }
     } else {
-      setErrorMessage('Please accept the terms and conditions and provide a valid email address.');
+      setErrorMessage('Please accept the terms and conditions.');
     }
   };
+  
+  const handleFormSubmit = (e) => {
+    e.preventDefault(); // Prevents the default form submission behavior
+  
+    // Validate email and perform necessary actions
+    handleDownloadButtonClick();
+  };
+
 
   const isValidEmail = (email) => {
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -135,32 +153,31 @@ const NumberCountingSection = () => {
           {t('Brochure.description2')}
         </p>
         <div className='Brochure-input' data-aos="zoom-in" data-aos-duration="1000">
-          <form>
-            <input
-              placeholder={t('Brochure.email')}
-              className="input-Brochure"
-              name="email"
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-            />
-            <button className="button-Brochure" onClick={handleDownloadButtonClick}>
-              <span>{t('Brochure.button')}</span>
-            </button>
-            <div className="form-group">
-              <label className="checkbox-label">
-                <input
-                  type="checkbox"
-                  checked={isChecked}
-                  onChange={handleCheckboxChange}
-                />
-                {t('Brochure.Terms and Conditions')}
-
-              </label>
-            </div>
-            {errorMessage && <p className="error-message">{errorMessage}</p>}
-          </form>
+          <form onSubmit={handleFormSubmit}>
+  <input
+    placeholder={t('Brochure.email')}
+    className="input-Brochure"
+    name="email"
+    type="email"
+    value={email}
+    onChange={(e) => setEmail(e.target.value)}
+    required
+  />
+  <button type="submit" className="button-Brochure">
+    <span>{t('Brochure.button')}</span>
+  </button>
+  <div className="form-group">
+    <label className="checkbox-label">
+      <input
+        type="checkbox"
+        checked={isChecked}
+        onChange={handleCheckboxChange}
+      />
+      {t('Brochure.Terms and Conditions')}
+    </label>
+  </div>
+  {errorMessage && <p className="error-message">{errorMessage}</p>}
+</form>
         </div>
       </div>
     </>
