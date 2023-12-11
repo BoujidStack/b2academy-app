@@ -30,7 +30,7 @@ const NumberCountingSection = () => {
       try {
         await saveFormDatab2academyEmail(formData);
   
-        const fileUrl = 'https://drive.google.com/file/d/1Je7bhms-JRtR0ARQIP6c7LYSMuTR8KkB/view?usp=sharing';
+        const fileUrl = 'https://drive.google.com/file/d/1q4KHgb8fyt-1V4InkDyxA7TkztQCKGjE/view?usp=sharing';
         window.open(fileUrl, '_blank');
   
         // Reset form values after the file download link is opened
