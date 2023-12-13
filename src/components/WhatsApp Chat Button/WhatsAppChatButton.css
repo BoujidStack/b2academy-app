@@ -1,0 +1,33 @@
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    animation: floatAnimation 3s ease-in-out infinite alternate;
+  }
+  
+  .whatsapp-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+  }
+  
+  @keyframes floatAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+  

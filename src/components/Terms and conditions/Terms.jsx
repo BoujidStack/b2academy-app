@@ -3,6 +3,7 @@ import './TermsStyles.css';
 import { useTranslation } from 'react-i18next';
 import Navbar from '../navbar/Navbar';
 import Footer from '../footer/Footer';
+import WhatsAppChatButton from '../WhatsApp Chat Button/WhatsAppChatButton';
 
 function Terms() {
     const { t } = useTranslation();
@@ -39,6 +40,7 @@ function Terms() {
                 </div>
             </div>
             <Footer hideFooterLinks={true} />
+            <WhatsAppChatButton/>
         </div>
     );
 }

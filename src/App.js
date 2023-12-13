@@ -20,6 +20,7 @@ import Terms from './components/Terms and conditions/Terms';
 import Privacy from './components/Privacy policy/Privacy';
 import Subscription from './components/Subscription/Subscription';
 import ContactUs from './components/Contact Us/ContactUs';
+import WhatsAppChatButton from './components/WhatsApp Chat Button/WhatsAppChatButton';
 
 i18n.use(initReactI18next).init({
   resources: {
@@ -56,6 +57,7 @@ function App() {
               <ContactUs/>
               <Fqa />
               <Footer />
+              <WhatsAppChatButton/>
             </>
           } />
           <Route path="/Talk" element={<Talk />} />

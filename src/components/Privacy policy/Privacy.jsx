@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import React from 'react';
 import Navbar from '../navbar/Navbar';
 import Footer from '../footer/Footer';
+import WhatsAppChatButton from '../WhatsApp Chat Button/WhatsAppChatButton';
 
 
 function Privacy() {
@@ -40,6 +41,7 @@ function Privacy() {
                 </div>
             </div>
             <Footer hideFooterLinks={true} />
+            <WhatsAppChatButton/>
         </div>
     )
 }

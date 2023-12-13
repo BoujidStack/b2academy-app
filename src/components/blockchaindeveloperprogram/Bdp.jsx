@@ -14,6 +14,7 @@ import ContactUs from '../Contact Us/ContactUs';
 import Footer from '../footer/Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import WhatsAppChatButton from '../WhatsApp Chat Button/WhatsAppChatButton';
 
 const Bdp = () => {
     const { t } = useTranslation();
@@ -56,6 +57,7 @@ const Bdp = () => {
             <ContactUs />
             <Fqa />
             <Footer hideFooterLinks={true} />
+            <WhatsAppChatButton/>
         </>
     );
 };
