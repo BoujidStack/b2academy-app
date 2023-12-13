@@ -2,7 +2,7 @@ import React from 'react';
 import './WhatsAppChatButton.css';
 
 const WhatsAppChatButton = () => {
-    const phoneNumber = '651025852';
+    const phoneNumber = '617946100';
     const openWhatsAppChat = () => {
         const url = `https://wa.me/${phoneNumber}`;
         window.open(url, '_blank');
