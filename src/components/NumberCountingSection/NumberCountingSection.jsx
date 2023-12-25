@@ -4,7 +4,7 @@ import logoNumberCounting from '../../assets/logoNumberCounting.png';
 import { saveFormDatab2academyEmail } from '../firebase/FirebaseUtils';
 import { useTranslation } from 'react-i18next';
 
-const NumberCountingSection = () => {
+const NumberCountingSection = ({ i18n }) => {
   const countingRef = useRef(null);
   const [isChecked, setIsChecked] = useState(false);
   const [email, setEmail] = useState('');
@@ -30,10 +30,17 @@ const NumberCountingSection = () => {
       try {
         await saveFormDatab2academyEmail(formData);
   
-        const fileUrl = 'https://drive.google.com/file/d/1q4KHgb8fyt-1V4InkDyxA7TkztQCKGjE/view?usp=sharing';
+        let fileUrl = '';
+  
+        // Check the selected language and set the appropriate brochure link
+        if (i18n.language.toLowerCase() === 'fr') {
+          fileUrl = 'https://drive.google.com/file/d/13sKm_lC5lTuTvDjQaqBbyOhe8uU-w03z/view?usp=drive_link'; // Replace with your French brochure link
+        } else {
+          fileUrl = 'https://drive.google.com/file/d/1Rz2Zz5omVJOF1VgUiRZP7mTDC18oY0Ak/view?usp=drive_link'; // Replace with your English brochure link
+        }
+  
         window.open(fileUrl, '_blank');
   
-        // Reset form values after the file download link is opened
         setEmail('');
         setIsChecked(false);
         setErrorMessage('');
@@ -46,10 +53,10 @@ const NumberCountingSection = () => {
     }
   };
   
+
   const handleFormSubmit = (e) => {
-    e.preventDefault(); // Prevents the default form submission behavior
-  
-    // Validate email and perform necessary actions
+    e.preventDefault();
+
     handleDownloadButtonClick();
   };
 
@@ -154,30 +161,30 @@ const NumberCountingSection = () => {
         </p>
         <div className='Brochure-input' data-aos="zoom-in" data-aos-duration="1000">
           <form onSubmit={handleFormSubmit}>
-  <input
-    placeholder={t('Brochure.email')}
-    className="input-Brochure"
-    name="email"
-    type="email"
-    value={email}
-    onChange={(e) => setEmail(e.target.value)}
-    required
-  />
-  <button type="submit" className="button-Brochure">
-    <span>{t('Brochure.button')}</span>
-  </button>
-  <div className="form-group">
-    <label className="checkbox-label">
-      <input
-        type="checkbox"
-        checked={isChecked}
-        onChange={handleCheckboxChange}
-      />
-      {t('Brochure.Terms and Conditions')}
-    </label>
-  </div>
-  {errorMessage && <p className="error-message">{errorMessage}</p>}
-</form>
+            <input
+              placeholder={t('Brochure.email')}
+              className="input-Brochure"
+              name="email"
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
+            <button type="submit" className="button-Brochure">
+              <span>{t('Brochure.button')}</span>
+            </button>
+            <div className="form-group">
+              <label className="checkbox-label">
+                <input
+                  type="checkbox"
+                  checked={isChecked}
+                  onChange={handleCheckboxChange}
+                />
+                {t('Brochure.Terms and Conditions')}
+              </label>
+            </div>
+            {errorMessage && <p className="error-message">{errorMessage}</p>}
+          </form>
         </div>
       </div>
     </>

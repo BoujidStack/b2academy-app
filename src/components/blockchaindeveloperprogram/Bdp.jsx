@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import './BdpStyles.css';
 import Newsletter from '../newsletter/Newsletter';
-import NumberCountingSection from '../NumberCountingSection/NumberCountingSection'
-import Advantages from '../Advantages/Advantages'
-import Enrolltoday from '../Enrolltoday/Enrolltoday'
-import Business from '../B2AcademyForBusiness/Business'
-import ProgramModules from '../programModules/ProgramModules'
+import NumberCountingSection from '../NumberCountingSection/NumberCountingSection';
+import Advantages from '../Advantages/Advantages';
+import Enrolltoday from '../Enrolltoday/Enrolltoday';
+import Business from '../B2AcademyForBusiness/Business';
+import ProgramModules from '../programModules/ProgramModules';
 import Fqa from '../FrequentlyAskedQuestions/Fqa';
 import ModalOverlayEnroll from '../ModalOverlayEnrollNow/ModalOverlayEnroll';
 import { useTranslation } from 'react-i18next';
@@ -17,12 +17,11 @@ import 'aos/dist/aos.css';
 import WhatsAppChatButton from '../WhatsApp Chat Button/WhatsAppChatButton';
 
 const Bdp = () => {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
     const [showModal, setShowModal] = useState(false);
 
     useEffect(() => {
-        AOS.init({
-        });
+        AOS.init({});
     }, []);
 
     const handleCloseModal = () => {
@@ -48,7 +47,7 @@ const Bdp = () => {
                 </div>
             </div>
             {showModal && <ModalOverlayEnroll onClose={handleCloseModal} />}
-            <NumberCountingSection />
+            <NumberCountingSection i18n={i18n} /> {/* Pass i18n as a prop */}
             <ProgramModules />
             <Enrolltoday />
             <Advantages />
