@@ -34,7 +34,7 @@ const Navbar = ({ hideNavbarLinks }) => {
 
   };
 
-  const [languageDropdownOpen, setLanguageDropdownOpen] = useState(false); // New state to manage dropdown open/close
+  const [languageDropdownOpen, setLanguageDropdownOpen] = useState(false);
 
   const toggleLanguageDropdown = () => {
     setLanguageDropdownOpen(!languageDropdownOpen);
@@ -44,11 +44,10 @@ const Navbar = ({ hideNavbarLinks }) => {
     setSelectedLanguage(language);
     i18n.changeLanguage(language.toLowerCase());
     localStorage.setItem('selectedLanguage', language);
-    setLanguageDropdownOpen(false); // Close dropdown after language selection
+    setLanguageDropdownOpen(false);
   };
 
   useEffect(() => {
-    // Retrieve the selected language from local storage
     const storedLanguage = localStorage.getItem('selectedLanguage');
     if (storedLanguage) {
       setSelectedLanguage(storedLanguage);

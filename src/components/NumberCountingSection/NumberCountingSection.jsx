@@ -22,25 +22,24 @@ const NumberCountingSection = ({ i18n }) => {
         setErrorMessage('Please enter a valid email address.');
         return;
       }
-  
+
       const formData = {
         email,
       };
-  
+
       try {
         await saveFormDatab2academyEmail(formData);
-  
+
         let fileUrl = '';
-  
-        // Check the selected language and set the appropriate brochure link
+
         if (i18n.language.toLowerCase() === 'fr') {
-          fileUrl = 'https://drive.google.com/file/d/13sKm_lC5lTuTvDjQaqBbyOhe8uU-w03z/view?usp=drive_link'; // Replace with your French brochure link
+          fileUrl = 'https://drive.google.com/file/d/13sKm_lC5lTuTvDjQaqBbyOhe8uU-w03z/view?usp=drive_link';
         } else {
-          fileUrl = 'https://drive.google.com/file/d/1Rz2Zz5omVJOF1VgUiRZP7mTDC18oY0Ak/view?usp=drive_link'; // Replace with your English brochure link
+          fileUrl = 'https://drive.google.com/file/d/1Rz2Zz5omVJOF1VgUiRZP7mTDC18oY0Ak/view?usp=drive_link';
         }
-  
+
         window.open(fileUrl, '_blank');
-  
+
         setEmail('');
         setIsChecked(false);
         setErrorMessage('');
@@ -52,7 +51,7 @@ const NumberCountingSection = ({ i18n }) => {
       setErrorMessage('Please accept the terms and conditions.');
     }
   };
-  
+
 
   const handleFormSubmit = (e) => {
     e.preventDefault();

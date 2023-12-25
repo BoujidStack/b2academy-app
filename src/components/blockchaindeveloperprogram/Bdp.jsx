@@ -47,7 +47,7 @@ const Bdp = () => {
                 </div>
             </div>
             {showModal && <ModalOverlayEnroll onClose={handleCloseModal} />}
-            <NumberCountingSection i18n={i18n} /> {/* Pass i18n as a prop */}
+            <NumberCountingSection i18n={i18n} />
             <ProgramModules />
             <Enrolltoday />
             <Advantages />
@@ -56,7 +56,7 @@ const Bdp = () => {
             <ContactUs />
             <Fqa />
             <Footer hideFooterLinks={true} />
-            <WhatsAppChatButton/>
+            <WhatsAppChatButton />
         </>
     );
 };
