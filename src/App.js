@@ -21,6 +21,8 @@ import Privacy from './components/Privacy policy/Privacy';
 import Subscription from './components/Subscription/Subscription';
 import ContactUs from './components/Contact Us/ContactUs';
 import WhatsAppChatButton from './components/WhatsApp Chat Button/WhatsAppChatButton';
+import Lessons from './components/programs/Lessons/Lessons';
+import Ai from './components/programs/Ai/Ai';
 
 i18n.use(initReactI18next).init({
   resources: {
@@ -65,6 +67,8 @@ function App() {
           <Route path="/Subscription" element={<Subscription />} />
           <Route path="/Privacy&Policy" element={<Privacy />} />
           <Route path="/blockchain" element={<Bdp />} />
+          <Route path="/Lessons" element={<Lessons />} />
+          <Route path="/Ai" element={<Ai />} />
         </Routes>
       </BrowserRouter>
     </>
