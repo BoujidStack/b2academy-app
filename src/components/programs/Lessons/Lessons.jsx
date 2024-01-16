@@ -46,7 +46,7 @@ const Lessons = () => {
             <Navbar hideNavbarLinks={true} />
             <div name="Lessons" className="Lessons">
                 <div className="contentLessons">
-                    <h1 data-aos="fade-down" data-aos-duration="1000">{t('Lessons.titleSection')}</h1>
+                    <h1 data-aos="fade-down" data-aos-duration="1000">{t('programs.titleSection')}</h1>
                     <div id="container" data-aos="fade-right" data-aos-duration="1000">
                         <div className="product-details" data-aos="fade-zoom-in" data-aos-duration="1000">
                             <h1>{t('Lessons.titleBlockchain')}</h1>
@@ -64,8 +64,11 @@ const Lessons = () => {
                                     <a className="open-enrollment-link" onClick={() => setShowModal(true)}>
                                         • {t('programs.buttonTwo')}
                                     </a>
+                                    <a className='price'>6000Dh</a>
+                                    <a className='price'>{t('programs.timeProgram')}</a>
                                 </div>
                             </div>
+
                         </div>
                         <div className="product-image">
                             <img src={imageBlockchain} alt="" />
@@ -91,6 +94,8 @@ const Lessons = () => {
                                     <a className="open-enrollment-link" onClick={() => setShowModal(true)}>
                                         • {t('programs.buttonTwo')}
                                     </a>
+                                    <a className='price'>6000Dh</a>
+                                    <a className='price'>{t('programs.timeProgram')}</a>
                                 </div>
                             </div>
                         </div>

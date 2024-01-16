@@ -1,24 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './ProgramsStyles.css';
 import image from '../../assets/imgProgramm.png';
 import { FaArrowRight } from 'react-icons/fa';
-import ModalOverlayEnroll from '../ModalOverlayEnrollNow/ModalOverlayEnroll';
 import { useTranslation } from 'react-i18next';
 
 const Programs = () => {
-  const [nav, setNav] = useState(false);
-  const [showModal, setShowModal] = useState(false);
   const { t } = useTranslation();
-
-  const handleClose = () => {
-    setNav(!nav);
-  };
-
-  const handleCloseModal = () => {
-    setShowModal(false);
-  };
-
   const navigate = useNavigate();
   const handleGoToBdp = () => {
     navigate('/Lessons');
@@ -43,9 +31,6 @@ const Programs = () => {
                   </a>
                   <FaArrowRight />
                 </button>
-                <a className="open-enrollment-link" onClick={() => setShowModal(true)}>
-                  • {t('programs.buttonTwo')}
-                </a>
               </div>
             </div>
           </div>
@@ -54,7 +39,6 @@ const Programs = () => {
           </div>
         </div>
       </div>
-      {showModal && <ModalOverlayEnroll onClose={handleCloseModal} />}
     </div>
   );
 };

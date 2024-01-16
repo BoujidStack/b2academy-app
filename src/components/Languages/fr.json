@@ -18,9 +18,10 @@
     "programs": {
         "titleSection": "Programmes",
         "title": "Devenez un développeur de nouvelle génération",
-        "description": "Plongez dans notre programme 'Devenez un développeur de nouvelle génération' explorant l'IA, la blockchain et bien plus encore. Acquérez une expertise pratique en élaborant des solutions pour des défis réels.",
+        "description": "Plongez dans nos programmes explorant les technologies de rupture telles que l'IA, la blockchain et bien plus encore. Acquérez une expertise pratique en élaborant des solutions pour des défis réels.",
         "button": "Découvrir",
-        "buttonTwo": "Inscriptions ouvertes"
+        "buttonTwo": "Inscriptions ouvertes",
+        "timeProgram": "3 Mois"
     },
     "Lessons": {
         "titleBlockchain": "Devenir un développeur blockchain",
@@ -108,7 +109,11 @@
     "Bdp": {
         "title": "Apprenez toutes les compétences pour développer une application blockchain",
         "description": "Tirez parti de la technologie blockchain dans le développement d'applications",
-        "button": "Inscrivez-vous maintenant"
+        "button": "Inscrivez-vous maintenant",
+        "timerDay": "Jours",
+        "timerHoure": "Heures",
+        "timerMinute": "Minutes",
+        "timerSecond": "Secondes"
     },
     "NumberCountingSection": {
         "counting-item1": "Décentralisé",
@@ -160,19 +165,45 @@
         "subtitle3": "Certification NFT : ",
         "advantages-card-NFT": "Chacun de nos participants reçoit une double certification : Recevez votre certification NFT une fois que vous avez terminé le programme, et passez éventuellement un examen supplémentaire pour recevoir la certification Blockchain par Hedera Hashgraph (certification CHHD)."
     },
+    "advantagesAi": {
+        "advantages-card5-point5": "1,5 Millions",
+        "advantages-card5-point6": "d'emplois qualifiés en IA prévus d’ici 2024",
+        "advantages-card6-point7": "90 Milliards",
+        "advantages-card6-point8": "de dollars l’intelligence artificielle devrait atteindre d'ici 2025",
+        "advantages-card-NFT": "Chacun de nos participants reçoit une double certification : Recevez votre certification NFT une fois le programme terminé, et éventuellement, réussissez un examen supplémentaire pour obtenir la certification en intelligence artificielle par Hedera Hashgraph (certification CHHD)."
+    },
     "ProgramModules": {
-        "module1": "Module 1 : Introduction à la technologie blockchain",
+        "module1": "Module 1 : Introduction à la technologie blockchain et ses différentes briques",
         "module1-description": "Bases de la blockchain Architecture décentralisée Transactions sécurisées",
-        "module2": "Module 2 : Fondamentaux d'Ethereum",
+        "module2": "Module 2 : la blockchain ethereum et son fonctionnement",
         "module2-description": "Comprendre Ethereum Puissants contrats intelligents Créer des applications décentralisées",
-        "module3": "Module 3 : Application pratique d'Ethereum",
+        "module3": "Module 3 : Notions de bases sur le développement des applications décentralises",
         "module3-description": "Mise en œuvre pratique Interaction avec la blockchain Déploiement de contrats intelligents",
-        "module4": "Module 4 : Développement avec Solidity",
+        "module4": "Module 4 : Notions avancées sur le développement des applications décentralises",
         "module4-description": "Langage de programmation Solidity Conception de contrats intelligents Création d'applications Ethereum",
-        "module5": "Module 5 : Outils de développement",
+        "module5": "Module 5 : Fondamentaux de la sécurité des applications décentralises",
         "module5-description": "Utilisation d'outils populaires Test et déploiement des contrats Développement efficace",
         "module6": "Module 6 : Tester votre application",
         "module6-description": "Tests fonctionnels avancés Assurer la qualité du contrat Préparation au déploiement"
+    },
+    "ProgramModulesAi": {
+        "module1": "Introduction aux Fondamentaux de l'IA 🚀",
+        "module1-description": "Explorez les concepts fondamentaux de l'IA, y compris une introduction aux grands modèles de langage et la construction de chatbots IA.",
+        "module2": "Traitement du Langage et de la Parole 🗣️",
+        "module2-description": "Plongez dans le traitement du langage et de la parole, couvrant la reconnaissance automatique de la parole, la transcription et la construction de chatbots pour interagir avec les PDF.",
+        "module3": "Traitement et Reconnaissance d'Images 🖼️",
+        "module3-description": "Approfondissez-vous dans les techniques de traitement et de reconnaissance d'images, comprenant les réseaux encodeurs-décodeurs, la segmentation d'images et l'identification d'objets.",
+        "module4": "Applications Créatives de l'IA 🎨🤖",
+        "module4-description": "Explorez les applications créatives de l'IA, de la génération d'images basée sur du texte à la création de voix générées par IA et de voix uniques."
+    },
+    "AI": {
+        "title": "Apprenez toutes les compétences pour développer une application AI",
+        "description": "Tirez parti de la technologie AI dans le développement d'applications",
+        "button": "Inscrivez-vous maintenant"
+    },
+    "NumberCountingSectionAi": {
+        "counting-item1": "Alimenté par l'IA",
+        "counting-item2": "Apprentissage continu"
     },
     "ModalOverlayEnroll": {
         "title": "Formulaire Développeur Blockchain",

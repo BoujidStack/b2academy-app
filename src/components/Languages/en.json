@@ -20,7 +20,8 @@
         "title": "Become a next-gen developer",
         "description": "Dive into our 'Become a next-gen developer' program, exploring AI, blockchain, and more. Gain hands-on expertise crafting solutions for real-world challenges. Join a vibrant community and shape the future of technology with us.",
         "button": "Discover more",
-        "buttonTwo": "Open Enrollment"
+        "buttonTwo": "Open Enrollment",
+        "timeProgram": "3 Months"
     },
     "Lessons": {
         "titleBlockchain": "Becoming a blockchain developer",
@@ -108,7 +109,11 @@
     "Bdp": {
         "title": "Learn all the skills to develop a blockchain application",
         "description": "Leverage blockchain technology in application development",
-        "button": "Enroll Now"
+        "button": "Enroll Now",
+        "timerDay": "Days",
+        "timerHoure": "Hours",
+        "timerMinute": "Minutes",
+        "timerSecond": "Seconds"
     },
     "NumberCountingSection": {
         "counting-item1": "Decentralized",
@@ -160,19 +165,45 @@
         "subtitle3": "NFT Certification : ",
         "advantages-card-NFT": "Each of our participants receives a Dual Certification : Receive your NFT certification once you complete the program, and optionally pass an additional exam and receive the Blockchain certification by Hedera Hashgraph (CHHD certification)"
     },
+    "advantagesAi": {
+        "advantages-card5-point5": "1.5 Millions",
+        "advantages-card5-point6": "qualified AI jobs expected by 2024",
+        "advantages-card6-point7": "90 Billion",
+        "advantages-card6-point8": "dollars artificial intelligence is projected to reach by 2025",
+        "advantages-card-NFT": "Each of our participants receives a Dual Certification : Receive your NFT certification once you complete the program, and optionally pass an additional exam and receive the AI certification by Hedera Hashgraph (CHHD certification)."
+    },
     "ProgramModules": {
-        "module1": "Module 1 : Introduction to Blockchain Technology",
-        "module1-description": "Bases of the blockchain Decentralized architecture Secure transactions",
-        "module2": "Module 2 : Fundamentals of Ethereum",
-        "module2-description": "Understanding Ethereum Powerful smart contracts Creating decentralized applications",
-        "module3": "Module 3 : Ethereum Practical Application",
-        "module3-description": "Practical implementation Interacting with the blockchain Deploying smart contracts",
-        "module4": "Module 4 : Development with Solidity",
-        "module4-description": "Solidity programming language Designing smart contracts Creating Ethereum applications",
-        "module5": "Module 5 : Development Tools",
-        "module5-description": "Using popular tools Testing and deploying contracts Efficient development",
+        "module1": "Module 1: Introduction to blockchain technology and its different components",
+        "module1-description": "Explore the foundational aspects of blockchain, including its decentralized structure and core components.",
+        "module2": "Module 2 : Ethereum blockchain and its operation",
+        "module2-description": "Learn about Ethereum's functionalities, smart contracts, and decentralized application operations.",
+        "module3": "Module 3 : Basics of decentralized application development",
+        "module3-description": "Discover the fundamentals of creating decentralized applications using essential programming languages and tools.",
+        "module4": "Module 4: Advanced concepts in decentralized application development",
+        "module4-description": "Delve into advanced topics like intricate smart contract programming and deploying DApps across various blockchain networks.",
+        "module5": "Module 5: Fundamentals of decentralized application security",
+        "module5-description": "Focus on securing DApps, covering vulnerabilities, secure coding practices, and risk mitigation strategies for robust security.",
         "module6": "Module 6 : Testing Your Application",
         "module6-description": "Advanced functional testing Ensuring contract quality Preparation for deployment"
+    },
+    "ProgramModulesAi": {
+        "module1": "Introduction to AI Essentials 🚀",
+        "module1-description": "Explore the foundational concepts of AI, including an introduction to large language models and building AI chatbots.",
+        "module2": "Speech and Language Processing 🗣️",
+        "module2-description": "Dive into speech and language processing, covering automatic speech recognition, transcription, and building chatbots for PDF interaction.",
+        "module3": "Image Processing and Recognition 🖼️",
+        "module3-description": "Delve into image processing and recognition techniques, including encoder-decoder networks, image segmentation, and object identification.",
+        "module4": "Creative AI Applications 🎨🤖",
+        "module4-description": "Explore the creative applications of AI, from generating images based on text to creating AI-generated vocals and unique voices."
+    },
+    "AI": {
+        "title": "Learn all the skills to develop a AI application",
+        "description": "Leverage AI technology in application development",
+        "button": "Enroll Now"
+    },
+    "NumberCountingSectionAi": {
+        "counting-item1": "AI-Powered",
+        "counting-item2": "Continuous Learning"
     },
     "ModalOverlayEnroll": {
         "title": "Blockchain Developer Form",

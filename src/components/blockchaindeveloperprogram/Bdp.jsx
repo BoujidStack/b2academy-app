@@ -19,10 +19,33 @@ import WhatsAppChatButton from '../WhatsApp Chat Button/WhatsAppChatButton';
 const Bdp = () => {
     const { t, i18n } = useTranslation();
     const [showModal, setShowModal] = useState(false);
+    const [prices, setPrices] = useState({
+        oldPrice: 8000,
+        newPrice: 6000,
+    });
+    const calculateCountdown = () => {
+        const targetDate = new Date('2024-01-20T23:59:59');
+        const now = new Date();
+        const difference = targetDate - now;
+        const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+        return { days, hours, minutes, seconds };
+    };
+    const [countdown, setCountdown] = useState(calculateCountdown());
 
     useEffect(() => {
         AOS.init({});
+
+        const interval = setInterval(() => {
+            setCountdown(calculateCountdown());
+        }, 1000);
+
+        return () => clearInterval(interval);
     }, []);
+
 
     const handleCloseModal = () => {
         setShowModal(false);
@@ -40,6 +63,32 @@ const Bdp = () => {
                         <p className='text-Bdp' data-aos="zoom-in" data-aos-duration="1000">
                             {t('Bdp.description')}
                         </p>
+                        <div className='timer-container'>
+                            <div className='timer'>
+                                <div className='timer-item'>
+                                    <span>{countdown.days}</span>
+                                    <span> {t('Bdp.timerDay')}</span>
+                                </div>
+                                <div className='timer-item'>
+                                    <span>{countdown.hours}</span>
+                                    <span> {t('Bdp.timerHoure')}</span>
+                                </div>
+                                <div className='timer-item'>
+                                    <span>{countdown.minutes}</span>
+                                    <span> {t('Bdp.timerMinute')}</span>
+                                </div>
+                                <div className='timer-item'>
+                                    <span>{countdown.seconds}</span>
+                                    <span> {t('Bdp.timerSecond')}</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='prices-container'>
+                            <div className='prices'>
+                                <p className='old-price'><span className='strikethrough'>{prices.oldPrice}Dh</span></p>
+                                <p className='new-price'>{prices.newPrice}Dh</p>
+                            </div>
+                        </div>
                         <button onClick={() => setShowModal(true)} className='centered-button' data-aos="fade-up" data-aos-duration="1000">
                             {t('Bdp.button')}
                         </button>

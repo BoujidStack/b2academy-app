@@ -103,11 +103,6 @@ const ProgramModules = () => {
         <h1>{t('ProgramModules.module5')}</h1>
         <p>{t('ProgramModules.module5-description')}</p>
       </div>
-
-      <div className='contentModulessix' data-aos="zoom-in" data-aos-duration="1000">
-        <h1>{t('ProgramModules.module6')}</h1>
-        <p>{t('ProgramModules.module6-description')}</p>
-      </div>
     </div>
   );
 };
