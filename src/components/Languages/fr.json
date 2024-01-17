@@ -21,13 +21,15 @@
         "description": "Plongez dans nos programmes explorant les technologies de rupture telles que l'IA, la blockchain et bien plus encore. Acquérez une expertise pratique en élaborant des solutions pour des défis réels.",
         "button": "Découvrir",
         "buttonTwo": "Inscriptions ouvertes",
-        "timeProgram": "3 Mois"
+        "timeProgram": "3 Mois",
+        "time2Programs": "6 Mois"
     },
     "Lessons": {
         "titleBlockchain": "Devenir un développeur blockchain",
         "descriptionBlockchain": "Ce cours vous permettra de devenir un développeur blockchain compétent. Vous apprendrez les bases de la technologie blockchain, les langages de programmation utilisés pour développer des applications blockchain, et vous serez introduit aux outils et aux cadres essentiels.",
         "titleSection": "Leçons",
         "titleAI": "Devenir développeur en IA",
+        "title2Programs": "Élevez vos compétences avec notre ensemble de certifications de développeur en blockchain et en IA!",
         "descriptionAI": "Plongez dans les subtilités du développement d'applications en intelligence artificielle et tirez parti de son pouvoir transformateur avec notre programme de formation complet. Adapté aux débutants, ce cours offre une plongée approfondie dans les technologies de l'IA sans nécessiter de connaissances préalables.",
         "button": "Discover more",
         "buttonTwo": "Open Enrollment"

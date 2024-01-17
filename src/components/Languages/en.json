@@ -21,13 +21,15 @@
         "description": "Dive into our 'Become a next-gen developer' program, exploring AI, blockchain, and more. Gain hands-on expertise crafting solutions for real-world challenges. Join a vibrant community and shape the future of technology with us.",
         "button": "Discover more",
         "buttonTwo": "Open Enrollment",
-        "timeProgram": "3 Months"
+        "timeProgram": "3 Months",
+        "time2Programs": "6 Months"
     },
     "Lessons": {
         "titleBlockchain": "Becoming a blockchain developer",
         "descriptionBlockchain": "This course will enable you to become a competent blockchain developer. You will learn the basics of blockchain technology, the programming languages used to develop blockchain applications, and you will be introduced to essential tools and frameworks",
         "titleSection": "Lessons",
         "titleAI": "Becoming a AI developer",
+        "title2Programs": "Elevate Your Skills with our Dual Blockchain and AI Developer Certification Bundle!",
         "descriptionAI": "Delve into the intricacies of AI application development and leverage its transformative power with our comprehensive degree program. Tailored for beginners, this course offers a deep dive into AI technologies without requiring prior background knowledge.",
         "button": "Discover more",
         "buttonTwo": "Open Enrollment"

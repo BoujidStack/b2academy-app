@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import './Lessons.css';
 import imageBlockchain from '../../../assets/blockchain image.jpeg';
 import imageAI from '../../../assets/ai image.jpeg';
+import SpecialOffer from '../../../assets/Special Offer.png';
 import { FaArrowRight } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
 import ModalOverlayEnroll from '../../ModalOverlayEnrollNow/ModalOverlayEnroll';
@@ -21,10 +22,28 @@ const Lessons = () => {
     const handleClose = () => {
         setNav(!nav);
     };
-    useEffect(() => {
-        AOS.init();
-    }, []);
+    const calculateCountdown = () => {
+        const targetDate = new Date('2024-02-18T23:59:59');
+        const now = new Date();
+        const difference = targetDate - now;
+        const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((difference % (1000 * 60)) / 1000);
 
+        return { days, hours, minutes, seconds };
+    };
+    const [countdown, setCountdown] = useState(calculateCountdown());
+
+    useEffect(() => {
+        AOS.init({});
+
+        const interval = setInterval(() => {
+            setCountdown(calculateCountdown());
+        }, 1000);
+
+        return () => clearInterval(interval);
+    }, []);
 
     const handleCloseModal = () => {
         setShowModal(false);
@@ -101,6 +120,46 @@ const Lessons = () => {
                         </div>
                         <div className="product-image">
                             <img src={imageAI} alt="" />
+                        </div>
+                    </div>
+                </div>
+
+                <div className="contentLessons">
+                    <div id="container" data-aos="fade-right" data-aos-duration="1000">
+                        <div className="product-details" data-aos="fade-zoom-in" data-aos-duration="1000">
+                            <h1>{t('Lessons.title2Programs')}</h1>
+                            <div className='timer-container'>
+                            <div className='timer'>
+                                <div className='timer-item'>
+                                    <span>{countdown.days}</span>
+                                    <span> {t('Bdp.timerDay')}</span>
+                                </div>
+                                <div className='timer-item'>
+                                    <span>{countdown.hours}</span>
+                                    <span> {t('Bdp.timerHoure')}</span>
+                                </div>
+                                <div className='timer-item'>
+                                    <span>{countdown.minutes}</span>
+                                    <span> {t('Bdp.timerMinute')}</span>
+                                </div>
+                                <div className='timer-item'>
+                                    <span>{countdown.seconds}</span>
+                                    <span> {t('Bdp.timerSecond')}</span>
+                                </div>
+                            </div>
+                        </div>
+                            <div className="button-containerLessons">
+                                <div>
+                                    <a className="open-enrollment-link" onClick={() => setShowModal(true)}>
+                                        • {t('programs.buttonTwo')}
+                                    </a>
+                                    <a className='price'>9999Dh</a>
+                                    <a className='price'>{t('programs.time2Programs')}</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="product-image">
+                            <img src={SpecialOffer} alt="" />
                         </div>
                     </div>
                 </div>
