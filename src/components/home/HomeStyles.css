@@ -244,6 +244,51 @@
     margin-top: 20px;
 }
 
+
+/* HomeStyles.css */
+/* ... (existing styles) */
+
+.custom-button {
+    display: flex;
+    align-items: center;
+    background: #0277B5;
+    color: ghostwhite;
+    border: none;
+    padding: 10px 10px; /* Increase padding for more width */
+    cursor: pointer;
+    border-radius: 5px;
+    overflow: hidden;
+    position: absolute;
+    width: 400px;
+    margin-top: 150px;
+  }
+
+  .iconright{
+    margin-left: 20px;
+  }
+  
+  .button-logo {
+    max-width: 30px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .button-titles {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .title {
+    font-family: 'Franklin Gothic Medium';
+    font-size: 14px;
+    color: #fff;
+  }
+
+  .title1 {
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium';
+  }
+  
 @keyframes floatAnimation {
     0% {
         transform: translate(0, 0);

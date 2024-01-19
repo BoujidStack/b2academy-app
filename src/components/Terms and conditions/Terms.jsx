@@ -13,11 +13,9 @@ function Terms() {
             <Navbar hideNavbarLinks={true} />
                 <div className="contentTerms">
                     <h1>{t('Terms&Conditions.title')}</h1>
-                    <h2>{t('Terms&Conditions.titleText')}</h2>
                     <h2>{t('Terms&Conditions.Text')}</h2>
                     <p>{t('Terms&Conditions.textTitle1')}</p>
                     <h2>{t('Terms&Conditions.Text1')}</h2>
-                    <h3>{t('Terms&Conditions.Text2')}</h3>
                     <p>{t('Terms&Conditions.textTitle2')}</p>
                     <h3>{t('Terms&Conditions.text3')}</h3>
                     <p>{t('Terms&Conditions.textTitle3')}</p>
@@ -31,12 +29,6 @@ function Terms() {
                     <p>{t('Terms&Conditions.textTitle7')}</p>
                     <h2>{t('Terms&Conditions.text8')}</h2>
                     <p>{t('Terms&Conditions.textTitle8')}</p>
-                    <h2>{t('Terms&Conditions.text9')}</h2>
-                    <p>{t('Terms&Conditions.textTitle9')}</p>
-                    <h2>{t('Terms&Conditions.text10')}</h2>
-                    <p>{t('Terms&Conditions.textTitle10')}</p>
-                    <h2>{t('Terms&Conditions.text11')}</h2>
-                    <p>{t('Terms&Conditions.textTitle11')}</p>
                 </div>
             </div>
             <Footer hideFooterLinks={true} />

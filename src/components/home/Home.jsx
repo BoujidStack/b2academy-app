@@ -10,6 +10,7 @@ import design5 from '../../assets/design6.png';
 import design6 from '../../assets/design7.png';
 import design7 from '../../assets/design8.png';
 import design8 from '../../assets/design9.png';
+import buttonLogo from '../../assets/logo.png';
 import { Link } from 'react-scroll'
 import { useTranslation } from 'react-i18next';
 import AOS from 'aos';
@@ -27,6 +28,14 @@ const Home = () => {
         AOS.init();
     }, []);
 
+    const handleCustomButtonClick = () => {
+        // Replace 'YOUR_YOUTUBE_VIDEO_ID' with the actual YouTube video ID
+        const youtubeVideoId = 'SsdE75J7d2Q';
+        
+        // Open the YouTube video in a new tab or window
+        window.open(`https://www.youtube.com/watch?v=${youtubeVideoId}`, '_blank');
+      };
+
     return (
         <div name='home' className='home'>
             <div className='left' data-aos="fade-right" data-aos-duration="1000">
@@ -43,6 +52,14 @@ const Home = () => {
                         <span className="hover-underline-animation">{t('home.buttonTwo')}</span>
                         <FaArrowRight />
                     </button></Link>
+                    <button className="custom-button" onClick={handleCustomButtonClick}>
+                        <img src={buttonLogo} alt='Button Logo' className='button-logo' />
+                        <div className='button-titles'>
+                            <span className='title'>le 18/01 à 18H, inscription gratuite</span>
+                            <span className='title1'>Webinar Parcours Blockchain & AI</span>
+                        </div>
+                        <div className="iconright"><FaArrowRight /></div>
+                    </button>
                 </div>
             </div>
             <div className='right' data-aos="fade-left" data-aos-duration="1000">

@@ -142,7 +142,7 @@ const NumberCountingSection = ({ i18n }) => {
           </div>
         </div>
         <div className="counting-item" data-aos="zoom-in-up" data-aos-duration="1000">
-          <h3>4-6</h3>
+          <h3>3-5</h3>
           <div>
             <p>{t('NumberCountingSection.counting-item7')}</p>
             <p>{t('NumberCountingSection.counting-item8')}</p>
