@@ -29,12 +29,9 @@ const Home = () => {
     }, []);
 
     const handleCustomButtonClick = () => {
-        // Replace 'YOUR_YOUTUBE_VIDEO_ID' with the actual YouTube video ID
         const youtubeVideoId = 'SsdE75J7d2Q';
-        
-        // Open the YouTube video in a new tab or window
         window.open(`https://www.youtube.com/watch?v=${youtubeVideoId}`, '_blank');
-      };
+    };
 
     return (
         <div name='home' className='home'>
@@ -55,8 +52,8 @@ const Home = () => {
                     <button className="custom-button" onClick={handleCustomButtonClick}>
                         <img src={buttonLogo} alt='Button Logo' className='button-logo' />
                         <div className='button-titles'>
-                            <span className='title'>le 18/01 à 18H, inscription gratuite</span>
-                            <span className='title1'>Webinar Parcours Blockchain & AI</span>
+                            <span className='title'>{t('customButton.title1')}</span>
+                            <span className='title1'>{t('customButton.title2')}</span>
                         </div>
                         <div className="iconright"><FaArrowRight /></div>
                     </button>

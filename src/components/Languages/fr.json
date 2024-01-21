@@ -291,5 +291,9 @@
         "cardd2__section2": "7 jours – Satisfait ou Remboursé",
         "cardd2__section3": "Financement en 3x",
         "button2": "JE SOUSCRIS"
+    },
+    "customButton": {
+        "title1": "le 02/02 à 18H, inscription gratuite",
+        "title2": "Webinar Parcours Blockchain & AI"
     }
 }

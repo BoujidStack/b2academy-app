@@ -291,5 +291,9 @@
         "cardd2__section2": "7 days - Satisfaction Guaranteed or Refunded",
         "cardd2__section3": "3x Installment Financing",
         "button2": "Subscribe"
+    },
+    "customButton": {
+        "title1": "02/02 at 6 PM, free registration",
+        "title2": "Webinar Blockchain & AI Journey"
     }
 }

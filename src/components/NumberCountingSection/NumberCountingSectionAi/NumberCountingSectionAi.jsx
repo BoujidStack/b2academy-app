@@ -33,9 +33,9 @@ const NumberCountingSectionAi = ({ i18n }) => {
         let fileUrl = '';
 
         if (i18n.language.toLowerCase() === 'fr') {
-          fileUrl = 'https://drive.google.com/file/d/1wizH6FEO0oaJBBOJpK4x-wnJARk9q8SR/view?usp=drive_link';
+          fileUrl = 'https://drive.google.com/file/d/1NgEcAG5RbIof0pYwjuApks3zNpqPszff/view?usp=drive_link';
         } else {
-          fileUrl = 'https://drive.google.com/file/d/1eP9CadtoXXRoiZavRBhO6fN83ixawzFy/view?usp=drive_link';
+          fileUrl = 'https://drive.google.com/file/d/17n3vBFV5G0N61VneAM-KWu8kWwxvauCT/view?usp=drive_link';
         }
 
         window.open(fileUrl, '_blank');
