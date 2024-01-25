@@ -16,16 +16,17 @@
 }
 
 .schedulingAppointment {
-    margin: 0 auto; /* Center the div horizontally */
-    width: 100rem; /* Set the width as desired */
+    margin: 0 auto;
+    width: 100rem;
     margin-top: 20px;
+    margin-left: -3%;
 }
 
 .appointment-details {
     margin-top: 20px;
     color: #211B59;
     text-align: center;
-    margin: 0 auto; /* Center the div horizontally */
+    margin: 0 auto;
 
 }
 
@@ -57,7 +58,7 @@
     }
 
     .appointment-details {
-        margin: 0 auto; 
+        margin: 0 auto;
     }
 
     .appointment-details p {
@@ -84,7 +85,7 @@
 
 
 @media (min-width: 714px) and (max-width: 992px) {
-   .appointment {
+    .appointment {
         height: 250vh;
         min-width: 196.5%;
     }
@@ -95,7 +96,7 @@
     }
 
     .appointment-details {
-        margin: 0 auto; /* Center the div horizontally */
+        margin: 0 auto;
     }
 
     .appointment-details p {
@@ -118,24 +119,24 @@
     }
 
     .schedulingAppointment {
-        margin: 0 auto; /* Center the div horizontally */
-        width: 100rem; /* Set the width as desired */
+        margin: 0 auto;
+        width: 100rem;
         margin-top: 20px;
     }
-    
+
 }
 
 @media (min-width: 1024px) and (max-width: 1366px) {
     .appointment {
-        width: 120%;
-        height: 100vh;
+        width: 100%;
+        height: 250vh;
     }
 
     .schedulingAppointment {
-        margin: 0 auto; /* Center the div horizontally */
-        width: 100rem; /* Set the width as desired */
+        margin: 0 auto;
+        width: 100rem;
         margin-top: 20px;
-        margin-left: -15%;
+        margin-left: -10%;
     }
-    
+
 }

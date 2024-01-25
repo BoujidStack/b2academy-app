@@ -435,7 +435,7 @@
 
 @media (min-width: 1024px) and (max-width: 1366px) {
     .home {
-        min-width: 120%;
+        min-width: 100%;
     }
 
     .left h1 {

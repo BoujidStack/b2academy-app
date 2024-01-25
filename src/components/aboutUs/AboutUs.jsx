@@ -22,7 +22,7 @@ const AboutUs = () => {
                             <p>B<sup>2</sup>Academy {t('AboutUs.description')}</p>
                         </div>
                     </div>
-                    <div class="image-section" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="pyramidImage-section" data-aos="fade-left" data-aos-duration="1000">
                         <div class="pyramid-loader">
                             <div class="wrapper">
                                 <span class="side side1"></span>

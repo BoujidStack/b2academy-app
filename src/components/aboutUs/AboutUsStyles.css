@@ -103,12 +103,12 @@
 	filter: blur(12px);
 }
 
-.image-section {
+.pyramidImage-section {
 	float: right;
 	width: 40%;
 }
 
-.image-section img {
+.pyramidImage-section img {
 	width: 100%;
 	height: auto;
 }
@@ -162,7 +162,6 @@
 		text-align: justify; 
 		margin-left: 20px;
 	}
-	
 
 	.content-section {
 		float: none;
@@ -170,7 +169,6 @@
 		display: block;
 		margin: auto;
 	}
-
 
 	.content-section .title {
 		text-align: left;
@@ -199,10 +197,11 @@
 	}
 }
 
+
 @media (min-width: 1024px) and (max-width: 1366px) {
 	.aboutUs {
-		width: 120%;
-		height: 100vh;
+		width: 100%;
+		height: 170vh;
 	}
 }
 
@@ -235,13 +234,13 @@
 		margin: auto;
 	}
 
-	.image-section {
+	.pyramidImage-section {
 		float: none;
 		width: 100%;
 
 	}
 
-	.image-section .img-aboutus {
+	.pyramidImage-section .img-aboutus {
 		width: 100%;
 		height: auto;
 		display: block;

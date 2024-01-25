@@ -162,7 +162,13 @@
 
 @media (min-width: 1024px) and (max-width: 1366px) {
   .enrolltoday {
-    width: 120%;
-    min-height: 100vh;
+    width: 100%;
+    min-height: 250vh;
+  }
+  .image-section img {
+    width: 55%;
+  }
+  .content h2 {
+    width: 80%;
   }
 }

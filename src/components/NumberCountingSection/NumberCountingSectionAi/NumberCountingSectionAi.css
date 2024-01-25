@@ -265,12 +265,12 @@
 
 @media (min-width: 1024px) and (max-width: 1366px) {
     .number-counting-section {
-        width: 120%;
+        width: 100%;
         min-height: 100vh;
     }
 
     .Brochure {
-        width: 120%;
+        width: 100%;
         min-height: 100vh;
     }
 }
