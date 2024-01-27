@@ -130,78 +130,70 @@
     min-width: 100%;
   }
 
-  .ProgramModulesAiImage {
-    margin-left: 10px;
-    margin-top: -30px;
-    width: 250px;
-    height: 250px;
+  .timeline {
+    flex-direction: column;
+    height: auto;
   }
 
-  .ProgramModulesAiImageRight {
+  .timeline-content {
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .timeline-content:before {
+    width: 4px;
+    height: calc(100% + 14px);
+    top: -7px;
+    left: calc(100% + 10px);
+  }
+
+  .timeline-content:after {
+    width: 25px;
+    height: 4px;
+    top: calc(50% - 10px);
+    left: 100%;
+  }
+
+  .timeline-period {
+    position: static;
+    text-align: center;
+    margin: 0 auto 20px;
+  }
+
+  .timeline-content:nth-child(even) {
+    align-self: auto;
+  }
+
+  .timeline-content:nth-child(even):before {
+    top: -15px;
+    left: calc(50% - 2px);
+  }
+
+  .timeline-content:nth-child(even):after {
+    top: calc(100% + 2px);
+    left: -25px;
+  }
+
+  .timeline-content:nth-child(even) .timeline-period {
+    top: auto;
+  }
+
+  .timeline-content:before {
+    display: none;
+  }
+  .timeline-content:after {
+    display: none;
+  }
+  .timeline-content:before {
+    display: none;
+  }
+  .timeline-period:before {
     display: none;
   }
 
-  .ProgramModulesAilignes {
-    display: none;
-  }
-
-  #rocket-icon {
-    display: none;
-  }
-
-  .contentModules,
-  .contentModulesTwo,
-  .contentModulesThree,
-  .contentModulesFourth,
-  .contentModulesFive,
-  .contentModulessix {
-    width: 70%;
-    margin: 1rem auto;
-    z-index: 10;
-  }
-
-  .ProgramModulesAi h1 {
-    font-size: 21px;
-    width: 100%;
-  }
-
-
-  .ProgramModulesAi p {
-    font-size: 19px;
-    color: #211B59;
-  }
-
-
-  .ProgramModulesAi::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 2px;
-    height: 100%;
-    background-color: #0580C2;
-    border-radius: 1px;
-    z-index: -1;
-  }
-
-  .ProgramModulesAi::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 2px;
-    height: 70%;
-    background-color: #0580C2;
-    border-radius: 1px;
-    z-index: 0;
-    margin-top: 15rem;
-  }
-
-  .ProgramModulesAi::before {
-    background-image: linear-gradient(to bottom, transparent 50%, #ccc 50%);
-    background-size: 100% 20px;
+  .timieline-title {
+    font-size: 1.2em;
   }
 }
 
@@ -210,122 +202,11 @@
   .ProgramModulesAiImage {
     margin-left: 20px;
   }
-
-  .ProgramModulesAiImageRight {
-    margin-left: 59.5rem;
-    margin-top: -26.5rem;
-  }
-
-  .ProgramModulesAilignes {
-    margin-left: -350px;
-  }
-
-  #rocket-icon {
-    margin-left: 16rem;
-  }
-
-  .contentModules {
-    margin-left: 50px;
-  }
-
-  .contentModulesTwo {
-    margin-left: 20rem;
-  }
-
-  .contentModulesThree {
-    margin-left: 34rem;
-  }
-
-  .contentModulesFourth {
-    margin-left: 41rem;
-  }
-
-  .contentModulesFive {
-    margin-left: 54rem;
-  }
-
-  .contentModulessix {
-    margin-left: 61rem;
-  }
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
   .ProgramModulesAi {
     min-width: 196.5%;
-  }
-
-  .ProgramModulesAiImage {
-    margin-left: 10px;
-    margin-top: -30px;
-    width: 250px;
-    height: 250px;
-  }
-
-  .ProgramModulesAiImageRight {
-    display: none;
-  }
-
-  .ProgramModulesAilignes {
-    display: none;
-  }
-
-  #rocket-icon {
-    display: none;
-  }
-
-  .contentModules,
-  .contentModulesTwo,
-  .contentModulesThree,
-  .contentModulesFourth,
-  .contentModulesFive,
-  .contentModulessix {
-    width: 70%;
-    margin: 1rem auto;
-    z-index: 10;
-  }
-
-  .ProgramModulesAi h1 {
-    font-size: 30px;
-    width: 110%;
-  }
-
-
-  .ProgramModulesAi p {
-    font-size: 25px;
-    color: #211B59;
-  }
-
-
-  .ProgramModulesAi::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 2px;
-    height: 100%;
-    background-color: #0580C2;
-    border-radius: 1px;
-    z-index: -1;
-  }
-
-  .ProgramModulesAi::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 2px;
-    height: 70%;
-    background-color: #0580C2;
-    border-radius: 1px;
-    z-index: 0;
-    margin-top: 15rem;
-  }
-
-  .ProgramModulesAi::before {
-    background-image: linear-gradient(to bottom, transparent 50%, #ccc 50%);
-    background-size: 100% 20px;
   }
 }
 
