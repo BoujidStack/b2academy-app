@@ -29,8 +29,7 @@ const Home = () => {
     }, []);
 
     const handleCustomButtonClick = () => {
-        const youtubeVideoId = 'SsdE75J7d2Q';
-        window.open(`https://www.youtube.com/watch?v=${youtubeVideoId}`, '_blank');
+        window.open('https://meet3.webex.com/weblink/register/r77f36fc876f9a391244bfa94b0183f7d', '_blank');
     };
 
     return (
