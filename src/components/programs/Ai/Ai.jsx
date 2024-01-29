@@ -24,7 +24,7 @@ function Ai() {
         newPrice: 6000,
     });
     const calculateCountdown = () => {
-        const targetDate = new Date('2024-01-20T23:59:59');
+        const targetDate = new Date('2024-02-25T23:59:59');
         const now = new Date();
         const difference = targetDate - now;
         const days = Math.floor(difference / (1000 * 60 * 60 * 24));
