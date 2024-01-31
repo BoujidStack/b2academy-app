@@ -1,72 +1,34 @@
 import React, { useState, useEffect } from 'react';
 import { FaTimes } from 'react-icons/fa';
-import Swal from 'sweetalert2';
-import './ModalOverlayBusinessesStyles.css';
 import { useTranslation } from 'react-i18next';
-import { saveFormDatab2academyBusinesses } from '../firebase/FirebaseUtils';
+import { saveFormDatab2academyTwoProgramm } from '../firebase/FirebaseUtils';
+import Swal from 'sweetalert2';
 
-function ModalOverlayBusinesses({ onClose }) {
+function ModalOverlayEnrollTwoProgramm({ onClose }) {
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
     const [email, setEmail] = useState('');
     const [phoneNumber, setPhoneNumber] = useState('');
-    const [fieldofactivity, setFieldofactivity] = useState('');
     const [message, setMessage] = useState('');
     const [isChecked, setIsChecked] = useState(false);
     const [errorMessage, setErrorMessage] = useState('');
     const { t } = useTranslation();
 
+    useEffect(() => {
+        const formData = JSON.parse(localStorage.getItem('formData'));
+        if (formData) {
+            setFirstName(formData.firstName);
+            setLastName(formData.lastName);
+            setEmail(formData.email);
+            setPhoneNumber(formData.phoneNumber);
+            setIsChecked(formData.isChecked);
+        }
+    }, []);
+
     const handleCheckboxChange = (e) => {
         setIsChecked(e.target.checked);
         setErrorMessage('');
     };
-
-    const handleFormSubmit = async (e) => {
-        e.preventDefault();
-    
-        try {
-            if (
-                firstName &&
-                lastName &&
-                email &&
-                phoneNumber &&
-                fieldofactivity &&
-                message &&
-                isChecked
-            ) {
-                const formData = {
-                    firstName,
-                    lastName,
-                    email,
-                    phoneNumber,
-                    fieldofactivity,
-                    message,
-                    isChecked,
-                };
-    
-                await saveFormDatab2academyBusinesses(formData);
-    
-                setFirstName('');
-                setLastName('');
-                setEmail('');
-                setPhoneNumber('');
-                setFieldofactivity('');
-                setMessage('');
-                setIsChecked(false);
-    
-                Swal.fire({
-                    icon: 'success',
-                    title: 'Success',
-                    text: 'Form data saved successfully!',
-                });
-            } else {
-                setErrorMessage('Please fill in all required fields and accept terms and conditions.');
-            }
-        } catch (error) {
-            console.error('Error saving form data:', error);
-        }
-    };
-    
 
     useEffect(() => {
         const handleClickOutside = (event) => {
@@ -82,25 +44,69 @@ function ModalOverlayBusinesses({ onClose }) {
         };
     }, [onClose]);
 
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        try {
+            if (
+                firstName &&
+                lastName &&
+                email &&
+                phoneNumber &&
+                message &&
+                isChecked
+            ) {
+                const formData = {
+                    firstName,
+                    lastName,
+                    email,
+                    phoneNumber,
+                    message,
+                    isChecked,
+                };
+
+                await saveFormDatab2academyTwoProgramm(formData);
+
+                setFirstName('');
+                setLastName('');
+                setEmail('');
+                setPhoneNumber('');
+                setMessage('');
+                setIsChecked(false);
+
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Success',
+                    text: 'Form data saved successfully!',
+                });
+            } else {
+                setErrorMessage('Please fill in all required fields and accept terms and conditions.');
+            }
+        } catch (error) {
+            console.error('Error saving form data:', error);
+        }
+    };
+
     return (
         <div className="modal-overlay">
             <div className="modal-content" data-aos="zoom-in-up" data-aos-duration="1000">
                 <div className="modal-header">
-                    <h2>{t('ModalOverlayBusinesses.title')}</h2>
-                    <p>{t('ModalOverlayBusinesses.description')}</p>
+                    <h2>{t('ModalOverlayEnrollTwoProgramm.title')}</h2>
+                    <p>{t('ModalOverlayEnrollTwoProgramm.description')}</p>
                     <br /><br />
                     <button className="close-icon" onClick={onClose}>
                         <FaTimes />
                     </button>
                 </div>
-                <form>
+                <form onSubmit={handleSubmit}>
                     <div className="form-group">
                         <div className="name-inputs">
                             <input
                                 className='input'
                                 type="text"
                                 id="firstName"
-                                placeholder={t('ModalOverlayBusinesses.firstName')}
+                                placeholder={t('ModalOverlayEnroll.firstName')}
                                 value={firstName}
                                 onChange={(e) => setFirstName(e.target.value)}
                                 required
@@ -109,7 +115,7 @@ function ModalOverlayBusinesses({ onClose }) {
                                 className='input'
                                 type="text"
                                 id="lastName"
-                                placeholder={t('ModalOverlayBusinesses.lastName')}
+                                placeholder={t('ModalOverlayEnroll.lastName')}
                                 value={lastName}
                                 onChange={(e) => setLastName(e.target.value)}
                                 required
@@ -121,7 +127,7 @@ function ModalOverlayBusinesses({ onClose }) {
                             className='input'
                             type="email"
                             id="email"
-                            placeholder={t('ModalOverlayBusinesses.email')}
+                            placeholder={t('ModalOverlayEnroll.email')}
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
                             required
@@ -132,20 +138,9 @@ function ModalOverlayBusinesses({ onClose }) {
                             className='input'
                             type="tel"
                             id="phoneNumber"
-                            placeholder={t('ModalOverlayBusinesses.phoneNumber')}
+                            placeholder={t('ModalOverlayEnroll.phoneNumber')}
                             value={phoneNumber}
                             onChange={(e) => setPhoneNumber(e.target.value)}
-                            required
-                        />
-                    </div>
-                    <div className="form-group">
-                        <input
-                            className='inputtext'
-                            type="text"
-                            id="fieldofactivity"
-                            placeholder={t('ModalOverlayBusinesses.fieldofactivity')}
-                            value={fieldofactivity}
-                            onChange={(e) => setFieldofactivity(e.target.value)}
                             required
                         />
                     </div>
@@ -153,7 +148,7 @@ function ModalOverlayBusinesses({ onClose }) {
                         <textarea
                             className='textarea'
                             id="message"
-                            placeholder={t('ModalOverlayBusinesses.message')}
+                            placeholder={t('ModalOverlayEnroll.message')}
                             value={message}
                             onChange={(e) => setMessage(e.target.value)}
                             required
@@ -165,16 +160,15 @@ function ModalOverlayBusinesses({ onClose }) {
                                 type="checkbox"
                                 checked={isChecked}
                                 onChange={handleCheckboxChange}
-                                required  
                             />
-                            {t('ModalOverlayBusinesses.Terms and Conditions')}
+                            {t('ModalOverlayEnroll.Terms and Conditions')}
                         </label>
                     </div>
                     {errorMessage && <p className={`error-message ${isChecked ? '' : 'red-text'}`}>{errorMessage}</p>}
                     <br />
                     <div className="form-group button-container">
-                        <button onClick={handleFormSubmit} type="button" className="modal-overlay-btn">
-                            <span>{t('ModalOverlayBusinesses.button')}</span>
+                        <button type="submit" className="modal-overlay-btn">
+                            <span>{t('ModalOverlayEnroll.button')}</span>
                         </button>
                     </div>
                 </form>
@@ -183,4 +177,4 @@ function ModalOverlayBusinesses({ onClose }) {
     );
 }
 
-export default ModalOverlayBusinesses;
+export default ModalOverlayEnrollTwoProgramm;

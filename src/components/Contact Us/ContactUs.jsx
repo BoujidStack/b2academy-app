@@ -39,10 +39,33 @@ function ContactUs() {
       ) {
         await saveFormDataB2academyContactUs(formData);
 
+        // Reset form data
+        setFormData({
+          firstName: '',
+          lastName: '',
+          email: '',
+          phoneNumber: '',
+          message: '',
+          isChecked: false,
+        });
+
+        // Display success message
         Swal.fire({
           icon: 'success',
           title: 'Success',
           text: 'Form data saved successfully!',
+        }).then((result) => {
+          if (result.isConfirmed || result.isDismissed) {
+            // Form data reset
+            setFormData({
+              firstName: '',
+              lastName: '',
+              email: '',
+              phoneNumber: '',
+              message: '',
+              isChecked: false,
+            });
+          }
         });
       } else {
         Swal.fire({
@@ -55,6 +78,8 @@ function ContactUs() {
       console.error('Error saving form data:', error);
     }
   };
+
+
 
   return (
     <div className="ContactUs" name="contactUs">
@@ -76,6 +101,7 @@ function ContactUs() {
               name="firstName"
               placeholder={t('ContactUs.firstName')}
               className="ContactUsinput"
+              value={formData.firstName}
               onChange={handleInputChange}
               required
             />
@@ -89,6 +115,7 @@ function ContactUs() {
               name="lastName"
               placeholder={t('ContactUs.lastName')}
               className="ContactUsinput"
+              value={formData.lastName}
               onChange={handleInputChange}
               required
             />
@@ -103,6 +130,7 @@ function ContactUs() {
             name="email"
             placeholder={t('ContactUs.email')}
             className="ContactUsinput"
+            value={formData.email}
             onChange={handleInputChange}
             required
           />
@@ -116,6 +144,7 @@ function ContactUs() {
             name="phoneNumber"
             placeholder={t('ContactUs.phoneNumber')}
             className="ContactUsinput"
+            value={formData.phoneNumber}
             onChange={handleInputChange}
             required
           />
@@ -128,6 +157,7 @@ function ContactUs() {
             name="message"
             placeholder="Message"
             className="ContactUstextarea"
+            value={formData.message}
             onChange={handleInputChange}
             required
           />
@@ -139,6 +169,7 @@ function ContactUs() {
               id="isChecked"
               name="isChecked"
               className="ContactUscheckbox"
+              checked={formData.isChecked}
               onChange={handleInputChange}
               required
             />

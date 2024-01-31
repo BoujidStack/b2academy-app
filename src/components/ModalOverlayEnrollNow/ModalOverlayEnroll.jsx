@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { FaTimes } from 'react-icons/fa';
 import './ModalOverlayEnrollStyles.css';
 import { useTranslation } from 'react-i18next';
+import { saveFormDatab2academyBlockchainProgram } from '../firebase/FirebaseUtils';
+import Swal from 'sweetalert2';
 
 
 function ModalOverlayEnroll({ onClose }) {
@@ -27,23 +29,50 @@ function ModalOverlayEnroll({ onClose }) {
 
     const handleCheckboxChange = (e) => {
         setIsChecked(e.target.checked);
-        setErrorMessage('');
     };
 
-    useEffect(() => {
-        const handleClickOutside = (event) => {
-            if (event.target.classList.contains('modal-overlay')) {
-                onClose();
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        try {
+            if (
+                firstName &&
+                lastName &&
+                email &&
+                phoneNumber &&
+                message &&
+                isChecked
+            ) {
+                const formData = {
+                    firstName,
+                    lastName,
+                    email,
+                    phoneNumber,
+                    message,
+                    isChecked,
+                };
+
+                await saveFormDatab2academyBlockchainProgram(formData);
+
+                setFirstName('');
+                setLastName('');
+                setEmail('');
+                setPhoneNumber('');
+                setMessage('');
+                setIsChecked(false);
+
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Success',
+                    text: 'Form data saved successfully!',
+                });
+            } else {
+                setErrorMessage('Please fill in all required fields and accept terms and conditions.');
             }
-        };
-
-        window.addEventListener('click', handleClickOutside);
-
-        return () => {
-            window.removeEventListener('click', handleClickOutside);
-        };
-    }, [onClose]);
-
+        } catch (error) {
+            console.error('Error saving form data:', error);
+        }
+    };
     return (
         <div className="modal-overlay">
             <div className="modal-content" data-aos="zoom-in-up" data-aos-duration="1000">
@@ -55,7 +84,7 @@ function ModalOverlayEnroll({ onClose }) {
                         <FaTimes />
                     </button>
                 </div>
-                <form >
+                <form onSubmit={handleSubmit}>
                     <div className="form-group">
                         <div className="name-inputs">
                             <input
@@ -123,7 +152,7 @@ function ModalOverlayEnroll({ onClose }) {
                     {errorMessage && <p className={`error-message ${isChecked ? '' : 'red-text'}`}>{errorMessage}</p>}
                     <br />
                     <div className="form-group button-container">
-                        <button type="button" className="modal-overlay-btn">
+                        <button type="submit" className="modal-overlay-btn">
                             <span>{t('ModalOverlayEnroll.button')}</span>
                         </button>
                     </div>

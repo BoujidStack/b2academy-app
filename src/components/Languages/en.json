@@ -217,7 +217,14 @@
         "message": "Message",
         "Terms and Conditions": "I accept the Terms and Conditions and the Privacy Policy",
         "errorMessage": "Please accept the Terms and Conditions and the Privacy Policy.",
-        "button": "Proceed to payment"
+        "button": "Sent"
+    },
+    "ModalOverlayEnrollAiProgramm":{
+        "title":"AI Developer Form"
+    },
+    "ModalOverlayEnrollTwoProgramm": {
+        "title": "Dual Blockchain and AI Developer Certification Bundle Registration",
+        "description": "Sign up now for our Dual Blockchain and AI Developer Certification Bundle! Fill out the form below to elevate your skills"
     },
     "ModalOverlayBusinesses": {
         "title": "Train Your Team On The Skills Of The Future",

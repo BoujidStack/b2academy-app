@@ -22,16 +22,24 @@ const Newsletter = () => {
 
   const handleFormSubmit = async (e) => {
     e.preventDefault();
-
+  
     try {
       if (formData.email) {
         await saveFormDatab2academyEmail(formData);
-
+  
         Swal.fire({
           icon: 'success',
           title: 'Success',
           text: 'Email subscription saved successfully!',
         });
+  
+        setFormData({
+          email: '',
+        });
+  
+        setTimeout(() => {
+          console.log("Form data cleared:", formData);
+        }, 100); 
       } else {
         Swal.fire({
           icon: 'error',
@@ -43,6 +51,7 @@ const Newsletter = () => {
       console.error('Error saving form data:', error);
     }
   };
+  
 
 
   return (
@@ -56,6 +65,7 @@ const Newsletter = () => {
           type="email"
           required
           onChange={handleInputChange}
+          value={formData.email}
         />
         <button onClick={handleFormSubmit} className="button-newsletter"><span>{t('newsletter.button')}</span></button>
       </div>

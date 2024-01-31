@@ -14,10 +14,16 @@ import Fqa from '../../FrequentlyAskedQuestions/Fqa';
 import Footer from '../../footer/Footer';
 import WhatsAppChatButton from '../../WhatsApp Chat Button/WhatsAppChatButton';
 import AOS from 'aos';
+import ModalOverlayEnrollAiProgramm from '../../ModalOverlayEnrollAiProgramm/ModalOverlayEnrollAiProgramm';
+import ModalOverlayEnrollTwoProgramm from '../../ModalOverlayEnrollTwoProgramm/ModalOverlayEnrollTwoProgramm';
 const Lessons = () => {
     const [nav, setNav] = useState(false);
     const [showModal, setShowModal] = useState(false);
     const { t } = useTranslation();
+    const [showOtherModal, setShowOtherModal] = useState(false); // State for other section modal
+    const [showTwoProgramModal, setShowTwoProgramModal] = useState(false); // State for other section modal
+
+    const [showAiModal, setShowAiModal] = useState(false); // State for AI section modal
 
     const handleClose = () => {
         setNav(!nav);
@@ -45,8 +51,16 @@ const Lessons = () => {
         return () => clearInterval(interval);
     }, []);
 
-    const handleCloseModal = () => {
-        setShowModal(false);
+    const handleCloseOtherModal = () => {
+        setShowOtherModal(false);
+    };
+
+    const handleCloseTwoProgramModal = () => {
+        setShowTwoProgramModal(false);
+    };
+
+    const handleCloseAiModal = () => {
+        setShowAiModal(false);
     };
 
     const navigate = useNavigate();
@@ -80,7 +94,7 @@ const Lessons = () => {
                                         </a>
                                         <FaArrowRight />
                                     </button>
-                                    <a className="open-enrollment-link" onClick={() => setShowModal(true)}>
+                                    <a className="open-enrollment-link" onClick={() => setShowOtherModal(true)}>
                                         • {t('programs.buttonTwo')}
                                     </a>
                                     <a className='price'>6000Dh</a>
@@ -110,7 +124,7 @@ const Lessons = () => {
                                         </a>
                                         <FaArrowRight />
                                     </button>
-                                    <a className="open-enrollment-link" onClick={() => setShowModal(true)}>
+                                    <a className="open-enrollment-link" onClick={() => setShowAiModal(true)}>
                                         • {t('programs.buttonTwo')}
                                     </a>
                                     <a className='price'>6000Dh</a>
@@ -129,28 +143,28 @@ const Lessons = () => {
                         <div className="product-details" data-aos="fade-zoom-in" data-aos-duration="1000">
                             <h1>{t('Lessons.title2Programs')}</h1>
                             <div className='timer-container'>
-                            <div className='timer'>
-                                <div className='timer-item'>
-                                    <span>{countdown.days}</span>
-                                    <span> {t('Bdp.timerDay')}</span>
-                                </div>
-                                <div className='timer-item'>
-                                    <span>{countdown.hours}</span>
-                                    <span> {t('Bdp.timerHoure')}</span>
-                                </div>
-                                <div className='timer-item'>
-                                    <span>{countdown.minutes}</span>
-                                    <span> {t('Bdp.timerMinute')}</span>
-                                </div>
-                                <div className='timer-item'>
-                                    <span>{countdown.seconds}</span>
-                                    <span> {t('Bdp.timerSecond')}</span>
+                                <div className='timer'>
+                                    <div className='timer-item'>
+                                        <span>{countdown.days}</span>
+                                        <span> {t('Bdp.timerDay')}</span>
+                                    </div>
+                                    <div className='timer-item'>
+                                        <span>{countdown.hours}</span>
+                                        <span> {t('Bdp.timerHoure')}</span>
+                                    </div>
+                                    <div className='timer-item'>
+                                        <span>{countdown.minutes}</span>
+                                        <span> {t('Bdp.timerMinute')}</span>
+                                    </div>
+                                    <div className='timer-item'>
+                                        <span>{countdown.seconds}</span>
+                                        <span> {t('Bdp.timerSecond')}</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
                             <div className="button-containerLessons">
                                 <div>
-                                    <a className="open-enrollment-link" onClick={() => setShowModal(true)}>
+                                    <a className="open-enrollment-link" onClick={() => setShowTwoProgramModal(true)}>
                                         • {t('programs.buttonTwo')}
                                     </a>
                                     <a className='pricePromotion'>9999Dh</a>
@@ -168,7 +182,9 @@ const Lessons = () => {
                 <Fqa />
                 <Footer hideFooterLinks={true} />
                 <WhatsAppChatButton />
-                {showModal && <ModalOverlayEnroll onClose={handleCloseModal} />}
+                {showAiModal && <ModalOverlayEnrollAiProgramm onClose={handleCloseAiModal} />}
+                {showOtherModal && <ModalOverlayEnroll onClose={handleCloseOtherModal} />}
+                {showTwoProgramModal && <ModalOverlayEnrollTwoProgramm onClose={handleCloseTwoProgramModal} />}
             </div>
         </>
     );

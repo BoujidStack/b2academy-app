@@ -15,6 +15,7 @@ import NumberCountingSectionAi from '../../NumberCountingSection/NumberCountingS
 import EnrolltodayAi from '../../Enrolltoday/EnrolltodayAi/EnrolltodayAi';
 import AdvantagesAi from '../../Advantages/AdvantagesAi/AdvantagesAi';
 import ProgramModulesAi from '../../programModules/ProgramModulesAI/ProgramModulesAi';
+import ModalOverlayEnrollAiProgramm from '../../ModalOverlayEnrollAiProgramm/ModalOverlayEnrollAiProgramm';
 
 function Ai() {
     const { t, i18n } = useTranslation();
@@ -93,7 +94,7 @@ function Ai() {
                     </div>
                 </div>
             </div>
-            {showModal && <ModalOverlayEnroll onClose={handleCloseModal} />}
+            {showModal && <ModalOverlayEnrollAiProgramm onClose={handleCloseModal} />}
             <NumberCountingSectionAi i18n={i18n} />
             <ProgramModulesAi />
             <EnrolltodayAi />

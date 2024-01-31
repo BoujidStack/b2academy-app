@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './EnrolltodayAi.css';
 import imgEnrolltoday from '../../../assets/Ai Image1.png';
 import { useTranslation } from 'react-i18next';
-import ModalOverlayEnroll from '../../ModalOverlayEnrollNow/ModalOverlayEnroll';
+import ModalOverlayEnrollAiProgramm from '../../ModalOverlayEnrollAiProgramm/ModalOverlayEnrollAiProgramm';
 
 const EnrolltodayAi = () => {
   const [showModal, setShowModal] = useState(false);
@@ -26,7 +26,7 @@ const EnrolltodayAi = () => {
           <img src={imgEnrolltoday} />
         </div>
       </div>
-      {showModal && <ModalOverlayEnroll onClose={handleCloseModal} />}
+      {showModal && <ModalOverlayEnrollAiProgramm onClose={handleCloseModal} />}
     </div>
   );
 };
