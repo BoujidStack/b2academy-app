@@ -61,7 +61,7 @@
 
 @media (min-width: 769px) and (max-width: 992px) {
     .B2AProgramsBrochure {
-        min-width: 100%;
+        min-width: 200%;
         height: 150vh;
     }
 
