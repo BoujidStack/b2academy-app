@@ -85,5 +85,16 @@ const saveFormDatab2academyTwoProgramm = async (formData) => {
   }
 };
 
+const saveFormDataB2AProgramsBrochure = async (formData) => {
+  try {
+    const db = getFirestore(firebaseApp);
+    const formDataRef = collection(db, 'b2academyFormB2AProgramsBrochure');
+    await addDoc(formDataRef, formData);
+    console.log('Form data saved successfully!');
+  } catch (error) {
+    console.error('Error saving form data:', error);
+  }
+};
 
-export { saveFormDataB2academyContactUs, saveFormDatab2academyBusinesses,/*saveFormDataToOtherFormPrograms,*/ saveFormDatab2academyEmail, saveFormDatab2academyBlockchainProgram, saveFormDatab2academyAiProgram, saveFormDatab2academyTwoProgramm };
+
+export { saveFormDataB2academyContactUs, saveFormDatab2academyBusinesses,/*saveFormDataToOtherFormPrograms,*/ saveFormDatab2academyEmail, saveFormDatab2academyBlockchainProgram, saveFormDatab2academyAiProgram, saveFormDatab2academyTwoProgramm, saveFormDataB2AProgramsBrochure };

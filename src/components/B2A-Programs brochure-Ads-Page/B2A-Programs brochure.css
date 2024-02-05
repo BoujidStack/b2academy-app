@@ -1,0 +1,79 @@
+.B2AProgramsBrochure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 220vh;
+    background-color: #F2FBFF;
+}
+
+.B2AProgramsBrochuretitle {
+    font-size: 24px;
+    text-align: center;
+    color: #211b59;
+}
+
+.B2AProgramsBrochureimages-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.B2AProgramsBrochureimage {
+    width: 25%;
+    height: auto;
+    margin: 0 10px;
+    border-radius: 15%;
+}
+
+.B2AProgramsBrochuredescription {
+    font-size: 16px;
+    text-align: center;
+    color: #211b59;
+    max-width: 50%;
+    margin: 0 auto;
+    text-align:left;
+}
+
+.radio-label {
+    display: inline-block;
+    align-items: center;
+    margin-right: 20px;
+    width: 150px;
+}
+
+
+@media (max-width: 768px) {
+    .B2AProgramsBrochure {
+        height: 290vh;
+    }
+
+    .B2AProgramsBrochureimage {
+        width: 35%;
+        height: auto;
+        margin: 0 10px;
+        border-radius: 15%;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 992px) {
+        .B2AProgramsBrochure {
+        height: 150vh;
+    }
+
+    .B2AProgramsBrochureimage {
+        width: 35%;
+        height: auto;
+        margin: 0 10px;
+        border-radius: 15%;
+    }
+}
+
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .B2AProgramsBrochure {
+        height: 180vh;
+    }
+}

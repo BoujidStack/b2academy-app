@@ -219,13 +219,13 @@
         "errorMessage": "Veuillez accepter les Conditions générales d'utilisation et la Politique de confidentialité.",
         "button": "Envoyer"
     },
-    "ModalOverlayEnrollAiProgramm":{
-        "title":"Formulaire Développeur IA"
+    "ModalOverlayEnrollAiProgramm": {
+        "title": "Formulaire Développeur IA"
     },
     "ModalOverlayEnrollTwoProgramm": {
         "title": "Inscription au Bundle de Certification Développeur Blockchain et IA",
         "description": "Inscrivez-vous dès maintenant à notre Bundle de Certification Développeur Blockchain et IA! Remplissez le formulaire ci-dessous pour perfectionner vos compétences"
-        },
+    },
     "ModalOverlayBusinesses": {
         "title": "Formez votre équipe aux compétences du futur",
         "description": "Obtenez plus d'informations sur nos tarifs réduits pour les entreprises. Veuillez remplir le formulaire suivant et nous prendrons contact sous peu :",
@@ -302,5 +302,13 @@
     "customButton": {
         "title1": "le 25/02 à 18:30, inscription gratuite",
         "title2": "Webinar Parcours Blockchain & AI"
+    },
+    "B2AProgramsBrochure": {
+        "Title": "Rejoignez le meilleur chemin pour devenir un développeur de nouvelle génération exclusivement à B2Academy",
+        "B2AProgramsBrochuretitle": "Veuillez remplir le formulaire ci-dessous pour recevoir la brochure B2Academy par e-mail.",
+        "radiobutton1": "Programme Blockchain",
+        "radiobutton2": "Programme IA",
+        "radiobutton3": "Programme combiné",
+        "button": "RECEVOIR LA BROCHURE"
     }
 }

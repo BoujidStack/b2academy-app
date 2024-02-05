@@ -219,8 +219,8 @@
         "errorMessage": "Please accept the Terms and Conditions and the Privacy Policy.",
         "button": "Sent"
     },
-    "ModalOverlayEnrollAiProgramm":{
-        "title":"AI Developer Form"
+    "ModalOverlayEnrollAiProgramm": {
+        "title": "AI Developer Form"
     },
     "ModalOverlayEnrollTwoProgramm": {
         "title": "Dual Blockchain and AI Developer Certification Bundle Registration",
@@ -302,5 +302,13 @@
     "customButton": {
         "title1": "25/02 at 06:30 PM, free registration",
         "title2": "Webinar Blockchain & AI Journey"
+    },
+    "B2AProgramsBrochure": {
+        "Title": "Join the best way to Become a next-gen developer only At B2Academy",
+        "B2AProgramsBrochuretitle": "Please fill out the form to receive the B2Academy brochure by email.",
+        "radiobutton1": "Blockchain Programm",
+        "radiobutton2": "AI Programm",
+        "radiobutton3": "Both Programm",
+        "button": "RECEIVE THE BROCHURE"
     }
 }

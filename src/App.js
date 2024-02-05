@@ -23,6 +23,7 @@ import ContactUs from './components/Contact Us/ContactUs';
 import WhatsAppChatButton from './components/WhatsApp Chat Button/WhatsAppChatButton';
 import Lessons from './components/programs/Lessons/Lessons';
 import Ai from './components/programs/Ai/Ai';
+import B2AProgramsBrochure from './components/B2A-Programs brochure-Ads-Page/B2A-Programs brochure';
 
 i18n.use(initReactI18next).init({
   resources: {
@@ -69,6 +70,7 @@ function App() {
           <Route path="/blockchain" element={<Bdp />} />
           <Route path="/Lessons" element={<Lessons />} />
           <Route path="/Ai" element={<Ai />} />
+          <Route path="/B2A-Programmes brochure" element={<B2AProgramsBrochure />} />
         </Routes>
       </BrowserRouter>
     </>
