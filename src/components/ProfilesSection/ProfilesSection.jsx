@@ -1,14 +1,13 @@
 import React from 'react';
 import { FaLinkedin } from 'react-icons/fa';
 import './ProfilesSection.css';
-import imgPerson1 from '../../assets/imgPerson1.jpg';
 import imgPerson2 from '../../assets/imgPerson2.jpg';
 
 function ProfilesSection() {
     return (
         <div className='ProfilesSection'>
             <div className='ProfileCard'>
-                <img src={imgPerson1} alt='Mr. Moise' className='ProfileImage' />
+                <img src={imgPerson2} alt='Mr. Moise' className='ProfileImage' />
                 <div className='ProfileInfo'>
                     <h3>Mr. Moise</h3>
                     <p>Director of Operations</p>
