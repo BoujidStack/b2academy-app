@@ -58,9 +58,9 @@ function App() {
               <Programs />
               <RoadMap />
               <AboutUs />
+              <ProfilesSection/>
               <Discord />
               <OurMethodology />
-              <ProfilesSection/>
               <Newsletter />
               <ContactUs/>
               <Fqa />
