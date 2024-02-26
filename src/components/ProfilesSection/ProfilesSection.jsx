@@ -6,7 +6,7 @@ import imgPerson2 from '../../assets/imgPerson2.jpg';
 function ProfilesSection() {
     return (
         <div className='ProfilesSection'>
-            <div data-aos="fade-right" data-aos-duration="1000" className='profileCard'>
+            <div className='profileCard'>
                 <img src={imgPerson1} alt='Mr. Ali' className='profileImage' />
                 <br/>
                 <div className='profileDetails'>
@@ -15,7 +15,7 @@ function ProfilesSection() {
                     <p>Is a visionary leader dedicated to driving innovation and growth within our organization.</p>
                 </div>
             </div>
-            <div data-aos="fade-left" data-aos-duration="1000" className='profileCard'>
+            <div className='profileCard'>
                 <img src={imgPerson2} alt='Mr. Moise' className='profileImage' />
                 <br/>
                 <div className='profileDetails'>
