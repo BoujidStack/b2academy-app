@@ -42,7 +42,7 @@
 
 @media screen and (max-width: 768px) {
   .ProfilesSection {
-    min-height: 100vh;
+    min-height: 190vh;
     flex-direction: column;
   }
 
