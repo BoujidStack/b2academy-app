@@ -48,6 +48,7 @@ const Home = () => {
                         <span className="hover-underline-animation">{t('home.buttonTwo')}</span>
                         <FaArrowRight />
                     </button></Link>
+                    {/* 
                     <button className="custom-button" onClick={handleCustomButtonClick}>
                         <img src={buttonLogo} alt='Button Logo' className='button-logo' />
                         <div className='button-titles'>
@@ -56,6 +57,7 @@ const Home = () => {
                         </div>
                         <div className="iconright"><FaArrowRight /></div>
                     </button>
+                    */}
                 </div>
             </div>
             <div className='right' data-aos="fade-left" data-aos-duration="1000">

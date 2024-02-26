@@ -155,7 +155,7 @@ function ModalOverlayEnrollTwoProgramm({ onClose }) {
                         />
                     </div>
                     <div className="form-group">
-                        <label>
+                        <label className="checkbox-label">
                             <input
                                 type="checkbox"
                                 checked={isChecked}

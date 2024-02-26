@@ -183,6 +183,12 @@
     color: red;
 }
 
+.checkbox-label {
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 8px;
+}
+
 
 @media (max-width: 600px) {
     .modal-content {

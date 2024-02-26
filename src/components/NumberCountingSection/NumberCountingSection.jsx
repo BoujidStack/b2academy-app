@@ -4,7 +4,7 @@ import logoNumberCounting from '../../assets/logoNumberCounting.png';
 import { saveFormDatab2academyEmail } from '../firebase/FirebaseUtils';
 import { useTranslation } from 'react-i18next';
 
-const NumberCountingSection = ({ i18n }) => {
+const NumberCountingSection = ({ i18n, brochureTypeblockchain  }) => {
   const countingRef = useRef(null);
   const [isChecked, setIsChecked] = useState(false);
   const [email, setEmail] = useState('');
@@ -22,24 +22,32 @@ const NumberCountingSection = ({ i18n }) => {
         setErrorMessage('Please enter a valid email address.');
         return;
       }
-
+  
       const formData = {
         email,
       };
-
+  
       try {
         await saveFormDatab2academyEmail(formData);
-
+  
         let fileUrl = '';
-
-        if (i18n.language.toLowerCase() === 'fr') {
-          fileUrl = 'https://drive.google.com/file/d/1fkflRD9NIzKvYpiN8mAET_WlvDmCzI3v/view?usp=drive_link';
+  
+        if (brochureTypeblockchain === 'consultingblockchain') {
+          if (i18n.language.toLowerCase() === 'fr') {
+            fileUrl = 'https://drive.google.com/file/d/1qkvgaqy6tHDbMoZCdXPu_cHoc2mEVVHe/view?usp=drive_link';
+          } else {
+            fileUrl = 'https://drive.google.com/file/d/1qkvgaqy6tHDbMoZCdXPu_cHoc2mEVVHe/view?usp=drive_link';
+          }
         } else {
-          fileUrl = 'https://drive.google.com/file/d/11jpifiN1h2Tl-rz0UweCEn3bXn_5SYkI/view?usp=drive_link';
+          if (i18n.language.toLowerCase() === 'fr') {
+            fileUrl = 'https://drive.google.com/file/d/1fkflRD9NIzKvYpiN8mAET_WlvDmCzI3v/view?usp=drive_link';
+          } else {
+            fileUrl = 'https://drive.google.com/file/d/11jpifiN1h2Tl-rz0UweCEn3bXn_5SYkI/view?usp=drive_link';
+          }
         }
-
+  
         window.open(fileUrl, '_blank');
-
+  
         setEmail('');
         setIsChecked(false);
         setErrorMessage('');
@@ -51,6 +59,7 @@ const NumberCountingSection = ({ i18n }) => {
       setErrorMessage('Please accept the terms and conditions.');
     }
   };
+  
 
 
   const handleFormSubmit = (e) => {

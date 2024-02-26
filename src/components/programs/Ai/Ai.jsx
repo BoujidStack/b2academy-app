@@ -21,11 +21,11 @@ function Ai() {
     const { t, i18n } = useTranslation();
     const [showModal, setShowModal] = useState(false);
     const [prices, setPrices] = useState({
-        oldPrice: 8000,
-        newPrice: 6000,
+        oldPrice: 7999,
+        newPrice: 5999,
     });
     const calculateCountdown = () => {
-        const targetDate = new Date('2024-02-25T23:59:59');
+        const targetDate = new Date('2024-03-05T23:59:59');
         const now = new Date();
         const difference = targetDate - now;
         const days = Math.floor(difference / (1000 * 60 * 60 * 24));
@@ -62,7 +62,7 @@ function Ai() {
                         <p className='text-Bdp' data-aos="zoom-in" data-aos-duration="1000">
                             {t('AI.description')}
                         </p>
-                        <div className='timer-container'>
+                        <div data-aos="zoom-in" data-aos-duration="1000" className='timer-container'>
                             <div className='timer'>
                                 <div className='timer-item'>
                                     <span>{countdown.days}</span>
@@ -82,7 +82,7 @@ function Ai() {
                                 </div>
                             </div>
                         </div>
-                        <div className='prices-container'>
+                        <div data-aos="zoom-in" data-aos-duration="1000" className='prices-container'>
                             <div className='prices'>
                                 <p className='old-price'><span className='strikethrough'>{prices.oldPrice}Dh</span></p>
                                 <p className='new-price'>{prices.newPrice}Dh</p>

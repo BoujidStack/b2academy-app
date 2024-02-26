@@ -44,7 +44,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 40px;
+  font-size: 30px;
   color: #211b59;
   margin: 0;
   margin-bottom: 10px;
@@ -53,7 +53,7 @@
 
 #container .product-details>p {
   text-align: center;
-  font-size: 22px;
+  font-size: 20px;
   color: #211b59;
   text-align: justify;
 
@@ -146,8 +146,8 @@
 
 @media (max-width: 768px) {
   .programs {
-    min-width: 100%;
-    flex-direction: row;
+    width: 100%;
+    min-height: 100vh;
   }
 
   #container {
@@ -202,11 +202,9 @@
 
 @media (min-width: 769px) and (max-width: 992px) {
   .programs {
-    min-width: 200%;
-    flex-direction: row;
-    min-height: 250vh;
+    width: 100%;
+    min-height: 100vh;
   }
-
   #container {
     width: 100%;
     margin-top: 20px;

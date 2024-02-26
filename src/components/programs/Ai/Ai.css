@@ -26,8 +26,12 @@
     font-size: 1.3rem;
     margin-bottom: 1rem;
     color: #211B59;
-    width: 100%;
+    max-width: 600px; /* Adjust the value as needed */
+    margin: 0 auto; /* Center the element horizontally */
+    text-align: center;
   }
+  
+  
   
   .centered-button {
     padding: 0.5rem 1rem;

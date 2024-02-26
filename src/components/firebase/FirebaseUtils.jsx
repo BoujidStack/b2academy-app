@@ -63,6 +63,17 @@ const saveFormDatab2academyBlockchainProgram = async (formData) => {
   }
 };
 
+const saveFormDatab2academyBlockchainConsultingProgram = async (formData) => {
+  try {
+    const db = getFirestore(firebaseApp);
+    const formDataRef = collection(db, 'b2academyFormBlockchainConsultingProgram');
+    await addDoc(formDataRef, formData);
+    console.log('Form data saved successfully!');
+  } catch (error) {
+    console.error('Error saving form data:', error);
+  }
+};
+
 const saveFormDatab2academyAiProgram = async (formData) => {
   try {
     const db = getFirestore(firebaseApp);
@@ -74,10 +85,32 @@ const saveFormDatab2academyAiProgram = async (formData) => {
   }
 };
 
+const saveFormDatab2academyAiConsultingProgram = async (formData) => {
+  try {
+    const db = getFirestore(firebaseApp);
+    const formDataRef = collection(db, 'b2academyFormAiConsultingProgram');
+    await addDoc(formDataRef, formData);
+    console.log('Form data saved successfully!');
+  } catch (error) {
+    console.error('Error saving form data:', error);
+  }
+};
+
 const saveFormDatab2academyTwoProgramm = async (formData) => {
   try {
     const db = getFirestore(firebaseApp);
     const formDataRef = collection(db, 'b2academyFormTwoProgramm');
+    await addDoc(formDataRef, formData);
+    console.log('Form data saved successfully!');
+  } catch (error) {
+    console.error('Error saving form data:', error);
+  }
+};
+
+const saveFormDatab2academyTwoProgrammAI = async (formData) => {
+  try {
+    const db = getFirestore(firebaseApp);
+    const formDataRef = collection(db, 'b2academyFormTwoProgrammAI');
     await addDoc(formDataRef, formData);
     console.log('Form data saved successfully!');
   } catch (error) {
@@ -97,4 +130,4 @@ const saveFormDataB2AProgramsBrochure = async (formData) => {
 };
 
 
-export { saveFormDataB2academyContactUs, saveFormDatab2academyBusinesses,/*saveFormDataToOtherFormPrograms,*/ saveFormDatab2academyEmail, saveFormDatab2academyBlockchainProgram, saveFormDatab2academyAiProgram, saveFormDatab2academyTwoProgramm, saveFormDataB2AProgramsBrochure };
+export { saveFormDataB2academyContactUs, saveFormDatab2academyBusinesses,/*saveFormDataToOtherFormPrograms,*/ saveFormDatab2academyEmail, saveFormDatab2academyBlockchainProgram, saveFormDatab2academyAiProgram, saveFormDatab2academyTwoProgramm, saveFormDataB2AProgramsBrochure, saveFormDatab2academyBlockchainConsultingProgram, saveFormDatab2academyAiConsultingProgram, saveFormDatab2academyTwoProgrammAI};

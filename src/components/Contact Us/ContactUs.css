@@ -109,6 +109,15 @@
   border: 2px solid #211b59;
 }
 
+.ContactUscheckbox-label {
+  display: flex;
+  align-items: center; 
+  margin-bottom: 8px; 
+}
+
+.ContactUscheckbox-label input[type="checkbox"] {
+  margin-right: 8px; 
+}
 
 
 @media (max-width: 768px) {

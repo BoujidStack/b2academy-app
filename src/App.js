@@ -24,6 +24,10 @@ import WhatsAppChatButton from './components/WhatsApp Chat Button/WhatsAppChatBu
 import Lessons from './components/programs/Lessons/Lessons';
 import Ai from './components/programs/Ai/Ai';
 import B2AProgramsBrochure from './components/B2A-Programs brochure-Ads-Page/B2A-Programs brochure';
+import ConsultingBlockchain from './components/ConsultingBlockchainProgram/ConsultingBlockchain';
+import ConsultingAi from './components/ConsultingAiProgram/ConsultingAi';
+import ProgramsAi from './components/ProgramsAI/ProgramsAi';
+import ProfilesSection from './components/ProfilesSection/ProfilesSection';
 
 i18n.use(initReactI18next).init({
   resources: {
@@ -56,6 +60,7 @@ function App() {
               <AboutUs />
               <Discord />
               <OurMethodology />
+              <ProfilesSection/>
               <Newsletter />
               <ContactUs/>
               <Fqa />
@@ -67,10 +72,13 @@ function App() {
           <Route path="/Terms&Conditions" element={<Terms />} />
           <Route path="/Subscription" element={<Subscription />} />
           <Route path="/Privacy&Policy" element={<Privacy />} />
-          <Route path="/blockchain" element={<Bdp />} />
-          <Route path="/Lessons" element={<Lessons />} />
-          <Route path="/Ai" element={<Ai />} />
-          <Route path="/B2A-Programmes brochure" element={<B2AProgramsBrochure />} />
+          <Route path="/Blockchain-Developer-Program" element={<Bdp />} />
+          <Route path="/Programs-Blockchain" element={<Lessons />} />
+          <Route path="/Programs-Ai" element={<ProgramsAi />} />
+          <Route path="/AI-Developer-Program" element={<Ai />} />
+          <Route path="/Consulting-Blockchain-Program" element={<ConsultingBlockchain />} />
+          <Route path="/Consulting-Ai-Program" element={<ConsultingAi />} />
+          <Route path="/B2A-ProgrammesBrochure" element={<B2AProgramsBrochure />} />
         </Routes>
       </BrowserRouter>
     </>

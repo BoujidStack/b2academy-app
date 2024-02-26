@@ -160,14 +160,13 @@ function ModalOverlayBusinesses({ onClose }) {
                         />
                     </div>
                     <div className="form-group">
-                        <label>
+                        <label className="checkbox-label">
                             <input
                                 type="checkbox"
                                 checked={isChecked}
                                 onChange={handleCheckboxChange}
-                                required  
                             />
-                            {t('ModalOverlayBusinesses.Terms and Conditions')}
+                            {t('ModalOverlayEnroll.Terms and Conditions')}
                         </label>
                     </div>
                     {errorMessage && <p className={`error-message ${isChecked ? '' : 'red-text'}`}>{errorMessage}</p>}

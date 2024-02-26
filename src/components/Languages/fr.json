@@ -17,20 +17,30 @@
     },
     "programs": {
         "titleSection": "Programmes",
-        "title": "Devenez un développeur de nouvelle génération",
-        "description": "Plongez dans nos programmes explorant les technologies de rupture telles que l'IA, la blockchain et bien plus encore. Acquérez une expertise pratique en élaborant des solutions pour des défis réels.",
+        "title": "Programme de Maîtrise de la Blockchain : Déverrouiller l'Avenir",
+        "description": "Dans ce programme, vous acquerrez les compétences nécessaires pour devenir un développeur ou consultant spécialisé dans la blockchain. Explorez les principes fondamentaux de la blockchain, développez des applications innovantes, et apprenez à conseiller sur les meilleures pratiques et les solutions blockchain.",
+        "titleAI": "Programme de Maîtrise en Intelligence Artificielle : Déverrouiller l'Avenir",
+        "descriptionAI": "Dans ce programme, vous acquérez les compétences nécessaires pour devenir un développeur ou consultant spécialisé en intelligence artificielle. Explorez les principes fondamentaux de l'IA, développez des applications innovantes, et apprenez à conseiller sur les meilleures pratiques et les solutions en intelligence artificielle.",
         "button": "Découvrir",
         "buttonTwo": "Inscriptions ouvertes",
-        "timeProgram": "3 Mois",
+        "timeProgram": "1999Dh/Mois",
+        "timeProgram1": "3 Mois",
         "time2Programs": "6 Mois"
     },
     "Lessons": {
-        "titleBlockchain": "Devenir un développeur blockchain",
+        "title1": "Nos Parcours Blockchain",
+        "title2": "Nos Parcours IA",
+        "titleBlockchain": "Devenir Un Développeur En Blockchain",
+        "titleBlockchainConsulting": "Devenir Un Consultant En Blockchain",
         "descriptionBlockchain": "Ce cours vous permettra de devenir un développeur blockchain compétent. Vous apprendrez les bases de la technologie blockchain, les langages de programmation utilisés pour développer des applications blockchain, et vous serez introduit aux outils et aux cadres essentiels.",
+        "descriptionConsultingBlockchain": "Un programme complet pour comprendre pleinement le fonctionnement des blockchains et les exploiter efficacement dans vos projets. Conçu pour les entrepreneurs, consultants, chefs de projet, professionnels et passionnés.",
         "titleSection": "Leçons",
-        "titleAI": "Devenir développeur en IA",
-        "title2Programs": "Élevez vos compétences avec notre ensemble de certifications de développeur en blockchain et en IA!",
-        "descriptionAI": "Plongez dans les subtilités du développement d'applications en intelligence artificielle et tirez parti de son pouvoir transformateur avec notre programme de formation complet. Adapté aux débutants, ce cours offre une plongée approfondie dans les technologies de l'IA sans nécessiter de connaissances préalables.",
+        "titleAI": "Devenir Un Développeur En IA",
+        "titleConsultingAI": "Devenir Un Consultant En IA",
+        "title2ProgramsBlockchain": "Élevez vos compétences avec notre ensemble de certifications double en développement blockchain et en consultation!",
+        "title2ProgramsAI": "Élevez vos compétences avec notre ensemble de certifications double en développement IA et en consultation!",
+        "descriptionAI": "Ce cours vous permettra de devenir un développeur en intelligence artificielle compétent. Vous apprendrez les concepts fondamentaux de l'intelligence artificielle, les langages de programmation utilisés pour le développement d'applications d'IA, et vous serez introduit aux outils et aux cadres essentiels.",
+        "descriptionConsultingAI": "Un programme complet pour comprendre pleinement le fonctionnement de l'IA et l'utiliser efficacement dans vos projets. Conçu pour les entrepreneurs, consultants, chefs de projet, professionnels et passionnés.",
         "button": "Discover more",
         "buttonTwo": "Open Enrollment"
     },
@@ -110,7 +120,11 @@
     },
     "Bdp": {
         "title": "Apprenez toutes les compétences pour développer une application blockchain",
+        "titleConsultingblockchain": "Consulting blockchain : analyser, pratiquer, créer",
+        "titleConsultingAI": "Consulting Intelligence Artificielle",
         "description": "Tirez parti de la technologie blockchain dans le développement d'applications",
+        "descriptionConsultingblockchain": "Un programme complet pour tout comprendre du fonctionnement des blockchains et pour les exploiter au mieux dans vos projets. Un programme conçu pour les entrepreneurs, les consultants, les chefs de projet, les professionnels et les passionnés.",
+        "descriptionConsultingAI": "Une formation pour vous positionner à la pointe de l'Intelligence Artificielle d'aujourd'hui et de demain",
         "button": "Inscrivez-vous maintenant",
         "timerDay": "Jours",
         "timerHoure": "Heures",
@@ -198,6 +212,17 @@
         "module4": "Applications Créatives de l'IA 🎨🤖",
         "module4-description": "Explorez les applications créatives de l'IA, de la génération d'images basée sur du texte à la création de voix générées par IA et de voix uniques."
     },
+
+    "ProgramModulesAiConsulting": {
+        "module1": "Introduction aux Concepts Fondamentaux de l'IA 🚀",
+        "module1-description": "Explorez les bases de l'intelligence artificielle, y compris les algorithmes d'apprentissage automatique et les applications potentielles dans divers domaines, pour une compréhension approfondie de son fonctionnement.",
+        "module2": "Méthodes Avancées d'Analyse de Données 📊",
+        "module2-description": "Approfondissez vos compétences en analyse de données avec des techniques avancées telles que l'apprentissage statistique et non supervisé, vous permettant d'extraire des informations pertinentes à partir de vastes ensembles de données.",
+        "module3": "Éthique et Responsabilité en IA 🤝",
+        "module3-description": "Explorez les implications éthiques et sociales de l'intelligence artificielle, y compris la confidentialité des données et l'impact sur la société, pour concevoir et mettre en œuvre des systèmes d'IA de manière responsable.",
+        "module4": "Stratégies de Consultation en IA 💼",
+        "module4-description": "Apprenez les meilleures pratiques de consultation en IA, notamment l'identification des besoins des clients et la communication efficace avec les parties prenantes, pour développer des solutions personnalisées répondant aux défis spécifiques de l'IA."
+    },
     "AI": {
         "title": "Apprenez toutes les compétences pour développer une application AI",
         "description": "Tirez parti de la technologie AI dans le développement d'applications",
@@ -220,11 +245,23 @@
         "button": "Envoyer"
     },
     "ModalOverlayEnrollAiProgramm": {
-        "title": "Formulaire Développeur IA"
+        "title": "Formulaire Développeur En IA"
+    },
+
+    "ModalOverlayEnrollBlockchainConsultingProgram": {
+        "title": "Formulaire Consultant En Blockchain"
+    },
+
+    "ModalOverlayEnrollAIConsultingProgram": {
+        "title": "Formulaire Consultant En IA"
     },
     "ModalOverlayEnrollTwoProgramm": {
-        "title": "Inscription au Bundle de Certification Développeur Blockchain et IA",
-        "description": "Inscrivez-vous dès maintenant à notre Bundle de Certification Développeur Blockchain et IA! Remplissez le formulaire ci-dessous pour perfectionner vos compétences"
+        "title": "Inscription au Bundle de Certification Développeur et Consultant En Blockchain ",
+        "description": "Inscrivez-vous dès maintenant à notre Bundle de Certification Développeur et Consultant En Blockchain! Remplissez le formulaire ci-dessous pour perfectionner vos compétences"
+    },
+    "ModalOverlayEnrollTwoProgrammAI": {
+        "title": "Inscription au Bundle de Certification Développeur et Consultant En IA ",
+        "description": "Inscrivez-vous dès maintenant à notre Bundle de Certification Développeur et Consultant En IA! Remplissez le formulaire ci-dessous pour perfectionner vos compétences"
     },
     "ModalOverlayBusinesses": {
         "title": "Formez votre équipe aux compétences du futur",
