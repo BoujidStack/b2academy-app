@@ -27,8 +27,16 @@
   text-align: center;
 }
 
-.ProfileLink {
+.ProfileInfo p{
   color: #211b59;
+}
+
+.ProfileInfo h3{
+  color: #211b59;
+}
+
+.ProfileLink {
+  color: #0277b5;
   font-size: 24px;
 }
 
