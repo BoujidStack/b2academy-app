@@ -2,9 +2,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 100px; 
-  min-height: 100vh;
+  gap: 20px;
+  min-height: 150vh;
   background-color: #F2FBFF;
+  flex-direction: column;
+}
+
+.Title {
+  font-size: 36px;
+  color: #211b59;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.ProfileCardsContainer {
+  display: flex;
+  gap: 100px;
 }
 
 .ProfileCard {
@@ -12,7 +25,7 @@
   height: 400px;
   border: 1px solid #ccc;
   border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
 
@@ -27,11 +40,11 @@
   text-align: center;
 }
 
-.ProfileInfo p{
+.ProfileInfo p {
   color: #211b59;
 }
 
-.ProfileInfo h3{
+.ProfileInfo h3 {
   color: #211b59;
 }
 
@@ -40,10 +53,23 @@
   font-size: 24px;
 }
 
-@media screen and (max-width: 768px) {
-  .ProfilesSection {
-    min-height: 190vh;
+@media (max-width: 768px) {
+  .ProfileCardsContainer {
     flex-direction: column;
   }
 
+  .ProfileCard {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .Title h1 {
+    font-size: 25px;
+  }
+
+  .Title h3 {
+    font-size: 20px;
+  }
 }
