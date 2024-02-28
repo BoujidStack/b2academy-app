@@ -221,7 +221,7 @@
         "module3-description": "Explore the ethical and social implications of artificial intelligence, including data privacy and societal impact, to design and implement AI systems responsibly.",
         "module4": "AI Consulting Strategies 💼",
         "module4-description": "Learn best practices in AI consulting, including identifying client needs and effectively communicating with stakeholders, to develop customized solutions addressing specific AI challenges."
-    },    
+    },
     "AI": {
         "title": "Learn all the skills to develop a AI application",
         "description": "Leverage AI technology in application development",
@@ -246,11 +246,9 @@
     "ModalOverlayEnrollAiProgramm": {
         "title": "AI Developer Form"
     },
-
     "ModalOverlayEnrollBlockchainConsultingProgram": {
         "title": "Blockchain Consulting Form"
     },
-
     "ModalOverlayEnrollAIConsultingProgram": {
         "title": "AI Consulting Form"
     },
@@ -346,5 +344,11 @@
         "radiobutton2": "AI Programm",
         "radiobutton3": "Both Programm",
         "button": "RECEIVE THE BROCHURE"
+    },
+    "ProfilesSection": {
+        "ProfileInfo1": "Director of Operations",
+        "ProfileInfo2": "President",
+        "title1": "TEAM",
+        "title2": "B2Academy Team"
     }
 }

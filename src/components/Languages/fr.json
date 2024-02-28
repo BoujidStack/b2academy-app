@@ -212,7 +212,6 @@
         "module4": "Applications Créatives de l'IA 🎨🤖",
         "module4-description": "Explorez les applications créatives de l'IA, de la génération d'images basée sur du texte à la création de voix générées par IA et de voix uniques."
     },
-
     "ProgramModulesAiConsulting": {
         "module1": "Introduction aux Concepts Fondamentaux de l'IA 🚀",
         "module1-description": "Explorez les bases de l'intelligence artificielle, y compris les algorithmes d'apprentissage automatique et les applications potentielles dans divers domaines, pour une compréhension approfondie de son fonctionnement.",
@@ -247,11 +246,9 @@
     "ModalOverlayEnrollAiProgramm": {
         "title": "Formulaire Développeur En IA"
     },
-
     "ModalOverlayEnrollBlockchainConsultingProgram": {
         "title": "Formulaire Consultant En Blockchain"
     },
-
     "ModalOverlayEnrollAIConsultingProgram": {
         "title": "Formulaire Consultant En IA"
     },
@@ -347,5 +344,11 @@
         "radiobutton2": "Programme IA",
         "radiobutton3": "Programme combiné",
         "button": "RECEVOIR LA BROCHURE"
+    },
+    "ProfilesSection": {
+        "ProfileInfo1": "Directeur des opérations",
+        "ProfileInfo2": "Président",
+        "title1": "ÉQUIPE",
+        "title2": "Équipe B2Academy"
     }
 }
