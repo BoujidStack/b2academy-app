@@ -14,6 +14,7 @@ import Footer from '../footer/Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import WhatsAppChatButton from '../WhatsApp Chat Button/WhatsAppChatButton';
+import ProgramModulesBlockchainConsulting from '../programModules/ProgramModulesBlockchainConsulting/ProgramModulesBlockchainConsulting';
 
 
 function ConsultingBlockchain() {
@@ -96,7 +97,7 @@ function ConsultingBlockchain() {
             </div>
             {showModal && <ModalOverlayEnroll onClose={handleCloseModal} />}
             <NumberCountingSection i18n={i18n} brochureTypeblockchain="consultingblockchain"/>
-            <ProgramModules />
+            <ProgramModulesBlockchainConsulting/>
             <Enrolltoday />
             <Advantages />
             <Business />

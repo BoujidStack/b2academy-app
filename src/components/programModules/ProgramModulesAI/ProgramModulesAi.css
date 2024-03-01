@@ -1,199 +1,210 @@
 .ProgramModulesAi {
-  position: relative;
-  height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.ProgramModulesAi::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
+  flex-direction: column;
+  align-items: flex-start;
   width: 100%;
-  height: 100%;
-  background-image: url('../../../assets/AiBg1.png');
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  filter: blur(3px);
-  z-index: -1;
-}
-
-
-.timeline {
-  width: 100%;
-  height: 480px;
-  padding: 20px;
+  min-height: 100vh;
+  background-color: #F2FBFF;
   position: relative;
-  box-sizing: border-box;
-  overflow: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-.timieline-title {
-  font-size: 1.3em;
-  font-weight: bold;
-  margin-bottom: 15px;
-  color: #0277B5;
+.ProgramModulesAiImage {
+  margin-left: 150px;
+  margin-top: -50px;
+  animation: floatAnimation 2s ease-in-out infinite 3.5s;
 }
 
-.timieline-description {
-  font-size: 0.9em;
+.ProgramModulesAiImageRight {
+  position: absolute;
+  margin-left: 70rem;
+  margin-top: -25.5rem;
+  animation: floatAnimation 2s ease-in-out infinite 2.5s;
+
 }
 
-.timeline-content {
-  max-width: 300px;
-  height: 200px;
+.ProgramModulesAilignes {
+  margin-left: -200px;
+  margin-top: -4rem;
+  position: absolute;
+}
+
+
+
+#rocket-icon {
+  width: 140px;
+  transform: rotate(-10deg);
+  margin-top: 165px;
+  margin-left: 415px;
+}
+
+.ProgramModulesAicontentModules {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  flex-shrink: 0;
-  flex-grow: 0;
-  align-self: flex-start;
-  background: #FFF;
-  position: relative;
+  margin-top: -22rem;
+  width: 300px;
+  margin-left: 210px;
+}
+
+.ProgramModulesAicontentModules h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #0580C2;
+
+}
+
+.ProgramModulesAicontentModules p {
+  font-size: 15px;
+  color: #211B59;
+}
+
+.ProgramModulesAicontentModulesTwo {
+  background-color: #ffffff;
   border-radius: 10px;
-  margin-right: 10px;
-  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 8.5rem;
+  width: 300px;
+  margin-left: 31rem;
 }
 
-.timeline-content:before {
-  position: absolute;
-  width: calc(100% + 14px);
-  height: 4px;
-  top: calc(100% + 10px);
-  background: #FFF;
-  content: "";
-  left: -7px;
-  border-radius: 5px;
+.ProgramModulesAicontentModulesTwo h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #0580C2;
 }
 
-.timeline-content:after {
-  position: absolute;
-  width: 4px;
-  height: 25px;
-  top: 100%;
-  left: calc(50% - 10px);
-  background: #FFF;
-  content: "";
+.ProgramModulesAicontentModulesTwo p {
+  font-size: 15px;
+  color: #211B59;
 }
 
-.timeline-period {
-  position: absolute;
-  top: calc(100% + 25px);
-  background: #FFF;
-  font-weight: bold;
-  padding: 10px;
-  width: 100px;
-  text-align: center;
+
+.ProgramModulesAicontentModulesThree {
+  background-color: #ffffff;
   border-radius: 10px;
-  left: calc(50% - 60px);
-  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: -35rem;
+  width: 350px;
+  margin-left: 42rem;
 }
 
-.timeline-period:before {
-  width: 15px;
-  height: 15px;
-  background: #FFF;
-  border-radius: 50%;
-  content: "";
-  position: absolute;
-  top: -20px;
-  left: calc(50% - 6px);
-  z-index: 2;
+.ProgramModulesAicontentModulesThree h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #0580C2;
+
 }
 
-.timeline-content:nth-child(even) {
-  align-self: flex-end;
+.ProgramModulesAicontentModulesThree p {
+  font-size: 15px;
+  color: #211B59;
 }
 
-.timeline-content:nth-child(even):before {
-  top: -15px;
+
+
+.ProgramModulesAicontentModulesFourth {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 9rem;
+  width: 350px;
+  margin-left: 53rem;
 }
 
-.timeline-content:nth-child(even):after {
-  top: -25px;
+.ProgramModulesAicontentModulesFourth h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #0580C2;
 }
 
-.timeline-content:nth-child(even) .timeline-period {
-  top: -60px;
+.ProgramModulesAicontentModulesFourth p {
+  font-size: 15px;
+  color: #211B59;
 }
 
-.timeline-content:nth-child(even) .timeline-period:before {
-  top: calc(100% + 2px);
-}
+
 
 @media (max-width: 768px) {
   .ProgramModulesAi {
     min-width: 100%;
+    }
+
+  .ProgramModulesAiImage {
+    margin-left: 10px;
+    margin-top: -30px;
+    width: 250px;
+    height: 250px;
   }
 
-  .timeline {
-    flex-direction: column;
-    height: auto;
-  }
-
-  .timeline-content {
-    max-width: 100%;
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
-
-  .timeline-content:before {
-    width: 4px;
-    height: calc(100% + 14px);
-    top: -7px;
-    left: calc(100% + 10px);
-  }
-
-  .timeline-content:after {
-    width: 25px;
-    height: 4px;
-    top: calc(50% - 10px);
-    left: 100%;
-  }
-
-  .timeline-period {
-    position: static;
-    text-align: center;
-    margin: 0 auto 20px;
-  }
-
-  .timeline-content:nth-child(even) {
-    align-self: auto;
-  }
-
-  .timeline-content:nth-child(even):before {
-    top: -15px;
-    left: calc(50% - 2px);
-  }
-
-  .timeline-content:nth-child(even):after {
-    top: calc(100% + 2px);
-    left: -25px;
-  }
-
-  .timeline-content:nth-child(even) .timeline-period {
-    top: auto;
-  }
-
-  .timeline-content:before {
-    display: none;
-  }
-  .timeline-content:after {
-    display: none;
-  }
-  .timeline-content:before {
-    display: none;
-  }
-  .timeline-period:before {
+  .ProgramModulesAiImageRight {
     display: none;
   }
 
-  .timieline-title {
-    font-size: 1.1em;
+  .ProgramModulesAilignes {
+    display: none;
+  }
+
+  #rocket-icon {
+    display: none;
+  }
+
+  .ProgramModulesAicontentModules,
+  .ProgramModulesAicontentModulesTwo,
+  .ProgramModulesAicontentModulesThree,
+  .ProgramModulesAicontentModulesFourth,
+  .ProgramModulesAicontentModulesFive,
+  .ProgramModulesAicontentModulessix {
+    width: 70%;
+    margin: 1rem auto;
+    z-index: 10;
+  }
+
+  .ProgramModulesAi h1 {
+    font-size: 21px;
+    width: 100%;
+  }
+
+
+  .ProgramModulesAi p {
+    font-size: 19px;
+    color: #211B59;
+  }
+
+
+  .ProgramModulesAi::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: #0580C2;
+    border-radius: 1px;
+    z-index: -1;
+  }
+
+  .ProgramModulesAi::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 70%;
+    background-color: #0580C2;
+    border-radius: 1px;
+    z-index: 0;
+    margin-top: 15rem;
+  }
+
+  .ProgramModulesAi::before {
+    background-image: linear-gradient(to bottom, transparent 50%, #ccc 50%);
+    background-size: 100% 20px;
   }
 }
 
@@ -202,11 +213,122 @@
   .ProgramModulesAiImage {
     margin-left: 20px;
   }
+
+  .ProgramModulesAiImageRight {
+    margin-left: 59.5rem;
+    margin-top: -26.5rem;
+  }
+
+  .ProgramModulesAilignes {
+    margin-left: -350px;
+  }
+
+  #rocket-icon {
+    margin-left: 16rem;
+  }
+
+  .ProgramModulesAicontentModules {
+    margin-left: 50px;
+  }
+
+  .ProgramModulesAicontentModulesTwo {
+    margin-left: 20rem;
+  }
+
+  .ProgramModulesAicontentModulesThree {
+    margin-left: 34rem;
+  }
+
+  .ProgramModulesAicontentModulesFourth {
+    margin-left: 41rem;
+  }
+
+  .ProgramModulesAicontentModulesFive {
+    margin-left: 54rem;
+  }
+
+  .ProgramModulesAicontentModulessix {
+    margin-left: 61rem;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
   .ProgramModulesAi {
     min-width: 196.5%;
+  }
+
+  .ProgramModulesAiImage {
+    margin-left: 10px;
+    margin-top: -30px;
+    width: 250px;
+    height: 250px;
+  }
+
+  .ProgramModulesAiImageRight {
+    display: none;
+  }
+
+  .ProgramModulesAilignes {
+    display: none;
+  }
+
+  #rocket-icon {
+    display: none;
+  }
+
+  .ProgramModulesAicontentModules,
+  .ProgramModulesAicontentModulesTwo,
+  .ProgramModulesAicontentModulesThree,
+  .ProgramModulesAicontentModulesFourth,
+  .ProgramModulesAicontentModulesFive,
+  .ProgramModulesAicontentModulessix {
+    width: 70%;
+    margin: 1rem auto;
+    z-index: 10;
+  }
+
+  .ProgramModulesAi h1 {
+    font-size: 30px;
+    width: 110%;
+  }
+
+
+  .ProgramModulesAi p {
+    font-size: 25px;
+    color: #211B59;
+  }
+
+
+  .ProgramModulesAi::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: #0580C2;
+    border-radius: 1px;
+    z-index: -1;
+  }
+
+  .ProgramModulesAi::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 70%;
+    background-color: #0580C2;
+    border-radius: 1px;
+    z-index: 0;
+    margin-top: 15rem;
+  }
+
+  .ProgramModulesAi::before {
+    background-image: linear-gradient(to bottom, transparent 50%, #ccc 50%);
+    background-size: 100% 20px;
   }
 }
 

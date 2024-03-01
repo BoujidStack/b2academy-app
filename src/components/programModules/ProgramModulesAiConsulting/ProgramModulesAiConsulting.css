@@ -1,0 +1,381 @@
+.ProgramModulesAiConsulting {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #F2FBFF;
+    position: relative;
+  }
+  
+  .ProgramModulesAiConsultingImage {
+    margin-left: 150px;
+    margin-top: -50px;
+    animation: floatAnimation 2s ease-in-out infinite 3.5s;
+  }
+  
+  .ProgramModulesAiConsultingImageRight {
+    position: absolute;
+    margin-left: 70rem;
+    margin-top: -25.5rem;
+    animation: floatAnimation 2s ease-in-out infinite 2.5s;
+  
+  }
+  
+  .ProgramModulesAiConsultinglignes {
+    margin-left: -200px;
+    margin-top: -4rem;
+    position: absolute;
+  }
+  
+  
+  
+  #rocket-icon {
+    width: 140px;
+    transform: rotate(-10deg);
+    margin-top: 165px;
+    margin-left: 415px;
+  }
+  
+  .ProgramModulesAiConsultingcontentModules {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: -22rem;
+    width: 300px;
+    margin-left: 210px;
+  }
+  
+  .ProgramModulesAiConsultingcontentModules h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #0580C2;
+  
+  }
+  
+  .ProgramModulesAiConsultingcontentModules p {
+    font-size: 15px;
+    color: #211B59;
+  }
+  
+  .ProgramModulesAiConsultingcontentModulesTwo {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 9rem;
+    width: 300px;
+    margin-left: 31rem;
+  }
+  
+  .ProgramModulesAiConsultingcontentModulesTwo h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #0580C2;
+  }
+  
+  .ProgramModulesAiConsultingcontentModulesTwo p {
+    font-size: 15px;
+    color: #211B59;
+  }
+  
+  
+  .ProgramModulesAiConsultingcontentModulesThree {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: -36rem;
+    width: 300px;
+    margin-left: 42rem;
+  }
+  
+  .ProgramModulesAiConsultingcontentModulesThree h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #0580C2;
+  
+  }
+  
+  .ProgramModulesAiConsultingcontentModulesThree p {
+    font-size: 15px;
+    color: #211B59;
+  }
+  
+  
+  
+  .ProgramModulesAiConsultingcontentModulesFourth {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 8rem;
+    width: 300px;
+    margin-left: 53rem;
+  }
+  
+  .ProgramModulesAiConsultingcontentModulesFourth h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #0580C2;
+  }
+  
+  .ProgramModulesAiConsultingcontentModulesFourth p {
+    font-size: 15px;
+    color: #211B59;
+  }
+  
+  .ProgramModulesAiConsultingcontentModulesFive {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: -39rem;
+    width: 350px;
+    margin-left: 61rem;
+  }
+  
+  .ProgramModulesAiConsultingcontentModulesFive h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #0580C2;
+  }
+  
+  .ProgramModulesAiConsultingcontentModulesFive p {
+    font-size: 15px;
+    color: #211B59;
+  }
+  
+  .ProgramModulesAiConsultingcontentModulessix {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 6.5rem;
+    width: 300px;
+    margin-left: 73rem;
+  }
+  
+  .ProgramModulesAiConsultingcontentModulessix h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #0580C2;
+  }
+  
+  .ProgramModulesAiConsultingcontentModulessix p {
+    font-size: 15px;
+    color: #211B59;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .ProgramModulesAiConsulting {
+      min-width: 100%;
+      }
+  
+    .ProgramModulesAiConsultingImage {
+      margin-left: 10px;
+      margin-top: -30px;
+      width: 250px;
+      height: 250px;
+    }
+  
+    .ProgramModulesAiConsultingImageRight {
+      display: none;
+    }
+  
+    .ProgramModulesAiConsultinglignes {
+      display: none;
+    }
+  
+    #rocket-icon {
+      display: none;
+    }
+  
+    .ProgramModulesAiConsultingcontentModules,
+    .ProgramModulesAiConsultingcontentModulesTwo,
+    .ProgramModulesAiConsultingcontentModulesThree,
+    .ProgramModulesAiConsultingcontentModulesFourth,
+    .ProgramModulesAiConsultingcontentModulesFive,
+    .ProgramModulesAiConsultingcontentModulessix {
+      width: 70%;
+      margin: 1rem auto;
+      z-index: 10;
+    }
+  
+    .ProgramModulesAiConsulting h1 {
+      font-size: 21px;
+      width: 100%;
+    }
+  
+  
+    .ProgramModulesAiConsulting p {
+      font-size: 19px;
+      color: #211B59;
+    }
+  
+  
+    .ProgramModulesAiConsulting::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 2px;
+      height: 100%;
+      background-color: #0580C2;
+      border-radius: 1px;
+      z-index: -1;
+    }
+  
+    .ProgramModulesAiConsulting::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 2px;
+      height: 70%;
+      background-color: #0580C2;
+      border-radius: 1px;
+      z-index: 0;
+      margin-top: 15rem;
+    }
+  
+    .ProgramModulesAiConsulting::before {
+      background-image: linear-gradient(to bottom, transparent 50%, #ccc 50%);
+      background-size: 100% 20px;
+    }
+  }
+  
+  
+  @media screen and (max-width: 1366px) and (min-width: 769px) {
+    .ProgramModulesAiConsultingImage {
+      margin-left: 20px;
+    }
+  
+    .ProgramModulesAiConsultingImageRight {
+      margin-left: 59.5rem;
+      margin-top: -26.5rem;
+    }
+  
+    .ProgramModulesAiConsultinglignes {
+      margin-left: -350px;
+    }
+  
+    #rocket-icon {
+      margin-left: 16rem;
+    }
+  
+    .ProgramModulesAiConsultingcontentModules {
+      margin-left: 50px;
+    }
+  
+    .ProgramModulesAiConsultingcontentModulesTwo {
+      margin-left: 20rem;
+    }
+  
+    .ProgramModulesAiConsultingcontentModulesThree {
+      margin-left: 34rem;
+    }
+  
+    .ProgramModulesAiConsultingcontentModulesFourth {
+      margin-left: 41rem;
+    }
+  
+    .ProgramModulesAiConsultingcontentModulesFive {
+      margin-left: 54rem;
+    }
+  
+    .ProgramModulesAiConsultingcontentModulessix {
+      margin-left: 61rem;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 992px) {
+    .ProgramModulesAiConsulting {
+      min-width: 196.5%;
+    }
+  
+    .ProgramModulesAiConsultingImage {
+      margin-left: 10px;
+      margin-top: -30px;
+      width: 250px;
+      height: 250px;
+    }
+  
+    .ProgramModulesAiConsultingImageRight {
+      display: none;
+    }
+  
+    .ProgramModulesAiConsultinglignes {
+      display: none;
+    }
+  
+    #rocket-icon {
+      display: none;
+    }
+  
+    .ProgramModulesAiConsultingcontentModules,
+    .ProgramModulesAiConsultingcontentModulesTwo,
+    .ProgramModulesAiConsultingcontentModulesThree,
+    .ProgramModulesAiConsultingcontentModulesFourth,
+    .ProgramModulesAiConsultingcontentModulesFive,
+    .ProgramModulesAiConsultingcontentModulessix {
+      width: 70%;
+      margin: 1rem auto;
+      z-index: 10;
+    }
+  
+    .ProgramModulesAiConsulting h1 {
+      font-size: 30px;
+      width: 110%;
+    }
+  
+  
+    .ProgramModulesAiConsulting p {
+      font-size: 25px;
+      color: #211B59;
+    }
+  
+  
+    .ProgramModulesAiConsulting::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 2px;
+      height: 100%;
+      background-color: #0580C2;
+      border-radius: 1px;
+      z-index: -1;
+    }
+  
+    .ProgramModulesAiConsulting::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 2px;
+      height: 70%;
+      background-color: #0580C2;
+      border-radius: 1px;
+      z-index: 0;
+      margin-top: 15rem;
+    }
+  
+    .ProgramModulesAiConsulting::before {
+      background-image: linear-gradient(to bottom, transparent 50%, #ccc 50%);
+      background-size: 100% 20px;
+    }
+  }
+  
+  @media (min-width: 1024px) and (max-width: 1366px) {
+    .ProgramModulesAiConsulting {
+      width: 100%;
+      min-height: 100vh;
+    }
+  }

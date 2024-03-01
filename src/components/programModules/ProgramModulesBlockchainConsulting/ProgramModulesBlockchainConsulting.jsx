@@ -3,9 +3,8 @@ import planet1 from '../../../assets/planet1.png';
 import planet2 from '../../../assets/planet2.png';
 import lignes from '../../../assets/lignes.png';
 import { useTranslation } from 'react-i18next';
-import './ProgramModulesAi.css';
 
-const ProgramModulesAi = () => {
+const ProgramModulesBlockchainConsulting = () => {
   const { t } = useTranslation();
   const rocketRef = useRef(null);
   const flameRef = useRef(null);
@@ -60,10 +59,10 @@ const ProgramModulesAi = () => {
   }, []);
 
   return (
-    <div name="ProgramModules" className="ProgramModulesAi">
-      <div data-aos="fade-down" data-aos-duration="1000"><img src={planet1} alt="planet1" width={300} height={300} className="ProgramModulesAiImage" /></div>
-      <div data-aos="fade-left" data-aos-duration="1000"><img src={planet2} alt="planet2" width={700} height={700} className="ProgramModulesAiImageRight" /></div>
-      <img src={lignes} alt="lignes" width={2000} height={1000} className="ProgramModulesAilignes" data-aos="zoom-in" data-aos-duration="1000" />
+    <div name="programModules" className="programModules">
+      <div data-aos="fade-down" data-aos-duration="1000"><img src={planet1} alt="planet1" width={300} height={300} className="programModulesImage" /></div>
+      <div data-aos="fade-left" data-aos-duration="1000"><img src={planet2} alt="planet2" width={700} height={700} className="programModulesImageRight" /></div>
+      <img src={lignes} alt="lignes" width={2000} height={1000} className="programModuleslignes" data-aos="zoom-in" data-aos-duration="1000" />
       <div data-aos="zoom-in" data-aos-duration="1000">
         <svg id="rocket-icon" viewBox="0 0 75 75" ref={rocketRef} >
           <polygon fill="#0277B5" points="18 21 35 21 44 30 27 30" />
@@ -79,27 +78,32 @@ const ProgramModulesAi = () => {
           <path fill="#0277B5" d="M21 37.5c0-10.04-11 0-12 0 1 0 12 10.04 12 0" ref={flameRef} />
         </svg>
       </div>
-      <div className='ProgramModulesAicontentModules' data-aos="zoom-in" data-aos-duration="1000">
-        <h1>{t('ProgramModulesAi.module1')}</h1>
-        <p>{t('ProgramModulesAi.module1-description')}</p>
+      <div className='contentModules' data-aos="zoom-in" data-aos-duration="1000">
+        <h1>{t('ProgramModulesBlockchainConsulting.module1')}</h1>
+        <p>{t('ProgramModulesBlockchainConsulting.module1-description')}</p>
       </div>
 
-      <div className='ProgramModulesAicontentModulesTwo' data-aos="zoom-in" data-aos-duration="1000">
-        <h1>{t('ProgramModulesAi.module2')}</h1>
-        <p>{t('ProgramModulesAi.module2-description')}</p>
+      <div className='contentModulesTwo' data-aos="zoom-in" data-aos-duration="1000">
+        <h1>{t('ProgramModulesBlockchainConsulting.module2')}</h1>
+        <p>{t('ProgramModulesBlockchainConsulting.module2-description')}</p>
       </div>
 
-      <div className='ProgramModulesAicontentModulesThree' data-aos="zoom-in" data-aos-duration="1000">
-        <h1>{t('ProgramModulesAi.module3')}</h1>
-        <p>{t('ProgramModulesAi.module3-description')}</p>
+      <div className='contentModulesThree' data-aos="zoom-in" data-aos-duration="1000">
+        <h1>{t('ProgramModulesBlockchainConsulting.module3')}</h1>
+        <p>{t('ProgramModulesBlockchainConsulting.module3-description')}</p>
       </div>
 
-      <div className='ProgramModulesAicontentModulesFourth' data-aos="zoom-in" data-aos-duration="1000">
-        <h1>{t('ProgramModulesAi.module4')}</h1>
-        <p>{t('ProgramModulesAi.module4-description')}</p>
+      <div className='contentModulesFourth' data-aos="zoom-in" data-aos-duration="1000">
+        <h1>{t('ProgramModulesBlockchainConsulting.module4')}</h1>
+        <p>{t('ProgramModulesBlockchainConsulting.module4-description')}</p>
+      </div>
+
+      <div className='contentModulesFive' data-aos="zoom-in" data-aos-duration="1000">
+        <h1>{t('ProgramModulesBlockchainConsulting.module5')}</h1>
+        <p>{t('ProgramModulesBlockchainConsulting.module5-description')}</p>
       </div>
     </div>
   );
 };
 
-export default ProgramModulesAi;
+export default ProgramModulesBlockchainConsulting;

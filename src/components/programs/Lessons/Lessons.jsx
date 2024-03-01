@@ -2,11 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Lessons.css';
 import imageBlockchain from '../../../assets/blockchain image.jpeg';
-import imageAiConsulting from '../../../assets/Ai Consulting.jpg';
 import imageBlockchainConsulting from '../../../assets/imageBlockchainConsulting.jpg';
-import imageAI from '../../../assets/ai image.jpeg';
 import SpecialOffer from '../../../assets/SpecialOfferBlockchain.png';
-import SpecialOffer1 from '../../../assets/SpecialOfferAI.png';
 import { FaArrowRight } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
 import ModalOverlayEnroll from '../../ModalOverlayEnrollNow/ModalOverlayEnroll';
@@ -17,7 +14,6 @@ import Fqa from '../../FrequentlyAskedQuestions/Fqa';
 import Footer from '../../footer/Footer';
 import WhatsAppChatButton from '../../WhatsApp Chat Button/WhatsAppChatButton';
 import AOS from 'aos';
-import ModalOverlayEnrollAiProgramm from '../../ModalOverlayEnrollAiProgramm/ModalOverlayEnrollAiProgramm';
 import ModalOverlayEnrollTwoProgramm from '../../ModalOverlayEnrollTwoProgramm/ModalOverlayEnrollTwoProgramm';
 import ModalOverlayEnrollBlockchainConsultingProgram from '../../ModalOverlayEnrollBlockchainConsultingProgram/ModalOverlayEnrollBlockchainConsultingProgram';
 
@@ -26,10 +22,10 @@ const Lessons = () => {
     const [nav, setNav] = useState(false);
     const [showModal, setShowModal] = useState(false);
     const { t } = useTranslation();
-    const [showOtherModal, setShowOtherModal] = useState(false); // State for other section modal
-    const [showTwoProgramModal, setShowTwoProgramModal] = useState(false); // State for other section modal
+    const [showOtherModal, setShowOtherModal] = useState(false);
+    const [showTwoProgramModal, setShowTwoProgramModal] = useState(false);
 
-    const [showAiModal, setShowAiModal] = useState(false); // State for AI section modal
+    const [showAiModal, setShowAiModal] = useState(false);
 
     const handleClose = () => {
         setNav(!nav);
@@ -195,7 +191,7 @@ const Lessons = () => {
                         </div>
                     </div>
                 </div>
-                
+
                 <Newsletter />
                 <ContactUs />
                 <Fqa />

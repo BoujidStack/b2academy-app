@@ -9,8 +9,6 @@ import Fqa from '../FrequentlyAskedQuestions/Fqa';
 import Footer from '../footer/Footer';
 import WhatsAppChatButton from '../WhatsApp Chat Button/WhatsAppChatButton';
 import ModalOverlayEnrollAiProgramm from '../ModalOverlayEnrollAiProgramm/ModalOverlayEnrollAiProgramm';
-import ModalOverlayEnroll from '../ModalOverlayEnrollNow/ModalOverlayEnroll';
-import ModalOverlayEnrollTwoProgramm from '../ModalOverlayEnrollTwoProgramm/ModalOverlayEnrollTwoProgramm';
 import Navbar from '../navbar/Navbar';
 import imageAI from '../../assets/ai image.jpeg';
 import SpecialOffer1 from '../../assets/SpecialOfferAI.png';
@@ -23,12 +21,12 @@ import ModalOverlayEnrollTwoProgramAI from '../ModalOverlayEnrollTwoProgramAI/Mo
 function ProgramsAi() {
 
     const { t } = useTranslation();
-    const [showConsultingProgram, setShowConsultingProgram] = useState(false); // State for other section modal
-    const [showTwoProgramModal, setShowTwoProgramModal] = useState(false); // State for other section modal
+    const [showConsultingProgram, setShowConsultingProgram] = useState(false);
+    const [showTwoProgramModal, setShowTwoProgramModal] = useState(false);
 
-    const [showAiModal, setShowAiModal] = useState(false); // State for AI section modal
+    const [showAiModal, setShowAiModal] = useState(false);
 
-  
+
     const calculateCountdown = () => {
         const targetDate = new Date('2024-03-18T23:59:59');
         const now = new Date();
@@ -78,41 +76,12 @@ function ProgramsAi() {
     };
 
 
-  return (
-    <>
-    <Navbar hideNavbarLinks={true} />
-    <div name="Lessons" className="Lessons">
-        <div className="contentLessons">
-                    <h1 data-aos="fade-down" data-aos-duration="1000">{t('Lessons.title2')}</h1>
-                    <div id="container" data-aos="fade-right" data-aos-duration="1000">
-                        <div className="product-details" data-aos="fade-zoom-in" data-aos-duration="1000">
-                            <h1>{t('Lessons.titleConsultingAI')}</h1>
-                            <p className="information">
-                                {t('Lessons.descriptionConsultingAI')}
-                            </p>
-                            <div className="button-containerLessons">
-                                <div>
-                                    <button className="ctaLessons" onClick={handleGoToConsultingAiProgram}>
-                                        <a>
-                                            <span className="hover-underline-animation">{t('programs.button')}</span>
-                                        </a>
-                                        <FaArrowRight />
-                                    </button>
-                                    <a className="open-enrollment-link" onClick={() => setShowConsultingProgram(true)}>
-                                        • {t('programs.buttonTwo')}
-                                    </a>
-                                    <a className='price'>{t('programs.timeProgram')}</a>
-                                    <a className='price'>{t('programs.timeProgram1')}</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="product-image">
-                            <img src={imageAiConsulting} alt="" />
-                        </div>
-                    </div>
-                </div>
-
+    return (
+        <>
+            <Navbar hideNavbarLinks={true} />
+            <div name="Lessons" className="Lessons">
                 <div className="contentLessons">
+                    <h1 data-aos="fade-down" data-aos-duration="1000">{t('Lessons.title2')}</h1>
                     <div id="container" data-aos="fade-right" data-aos-duration="1000">
                         <div className="product-details" data-aos="fade-zoom-in" data-aos-duration="1000">
                             <h1>{t('Lessons.titleAI')}</h1>
@@ -137,6 +106,34 @@ function ProgramsAi() {
                         </div>
                         <div className="product-image">
                             <img src={imageAI} alt="" />
+                        </div>
+                    </div>
+                </div>
+                <div className="contentLessons">
+                    <div id="container" data-aos="fade-right" data-aos-duration="1000">
+                        <div className="product-details" data-aos="fade-zoom-in" data-aos-duration="1000">
+                            <h1>{t('Lessons.titleConsultingAI')}</h1>
+                            <p className="information">
+                                {t('Lessons.descriptionConsultingAI')}
+                            </p>
+                            <div className="button-containerLessons">
+                                <div>
+                                    <button className="ctaLessons" onClick={handleGoToConsultingAiProgram}>
+                                        <a>
+                                            <span className="hover-underline-animation">{t('programs.button')}</span>
+                                        </a>
+                                        <FaArrowRight />
+                                    </button>
+                                    <a className="open-enrollment-link" onClick={() => setShowConsultingProgram(true)}>
+                                        • {t('programs.buttonTwo')}
+                                    </a>
+                                    <a className='price'>{t('programs.timeProgram')}</a>
+                                    <a className='price'>{t('programs.timeProgram1')}</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="product-image">
+                            <img src={imageAiConsulting} alt="" />
                         </div>
                     </div>
                 </div>
@@ -190,7 +187,7 @@ function ProgramsAi() {
                 {showTwoProgramModal && <ModalOverlayEnrollTwoProgramAI onClose={handleCloseTwoProgramModal} />}
             </div>
         </>
-  )
+    )
 }
 
 export default ProgramsAi

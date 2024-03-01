@@ -115,6 +115,21 @@ const Navbar = ({ hideNavbarLinks }) => {
                     onClick={handleClose}
                     className="animated-ligne"
                     activeClass="active"
+                    to="ProfilesSection"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                  >
+                    {t('navbar.TEAM')}
+                  </Link>
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  <Link
+                    onClick={handleClose}
+                    className="animated-ligne"
+                    activeClass="active"
                     to="ourMethodology"
                     spy={true}
                     smooth={true}

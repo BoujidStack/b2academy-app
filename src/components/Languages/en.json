@@ -2,6 +2,7 @@
     "navbar": {
         "programs": "Programs",
         "aboutUs": "About Us",
+        "TEAM": "Team",
         "ourMethodology": "Our Methodology",
         "login": "Login",
         "letsTalk": "Let's Talk",
@@ -17,9 +18,9 @@
     },
     "programs": {
         "titleSection": "Programs",
-        "title": "Blockchain Mastery Program: Unlocking the Future",
+        "title": "Blockchain Program: Revolutionizing the Future",
         "description": "In this program, you'll acquire the skills needed to become a specialized blockchain developer or consultant. Explore the fundamental principles of blockchain, develop innovative applications, and learn to advise on best practices and blockchain solutions.",
-        "titleAI": "Artificial Intelligence Mastery Program: Unlocking the Future",
+        "titleAI": "AI Program: Revolutionizing the Future",
         "descriptionAI": "In this program, you'll gain the necessary skills to become a specialized AI developer or consultant. Explore the fundamental principles of AI, develop innovative applications, and learn to advise on best practices and AI solutions.",
         "button": "Discover more",
         "buttonTwo": "Open Enrollment",
@@ -28,17 +29,17 @@
         "time2Programs": "6 Months"
     },
     "Lessons": {
-        "title1": "Our Blockchain Courses",
-        "title2": "Our AI Courses",
+        "title1": "Our Blockchain Journeys",
+        "title2": "Our AI Journeys",
         "titleBlockchain": "Becoming A Blockchain Developer",
-        "titleBlockchainConsulting": "Becoming A Consulting Blockchain",
+        "titleBlockchainConsulting": "Becoming A Blockchain Consultant",
         "descriptionBlockchain": "This course will enable you to become a competent blockchain developer. You will learn the basics of blockchain technology, the programming languages used to develop blockchain applications, and you will be introduced to essential tools and frameworks",
         "descriptionConsultingBlockchain": "A comprehensive program to fully understand how blockchains operate and to leverage them effectively in your projects. Designed for entrepreneurs, consultants, project managers, professionals, and enthusiasts.",
         "titleSection": "Lessons",
-        "titleAI": "Becoming A AI Developer",
-        "titleConsultingAI": "Becoming A Consulting AI",
-        "title2ProgramsBlockchain": "Elevate Your Skills with our Dual Blockchain Developer and Consulting Certification Bundle!",
-        "title2ProgramsAI": "Elevate Your Skills with our Dual AI Developer and Consulting Certification Bundle!",
+        "titleAI": "Becoming an AI Developer",
+        "titleConsultingAI": "Becoming an AI Consultant",
+        "title2ProgramsBlockchain": "Elevate Your Skills with our Dual Blockchain Developer and consultant Certification Bundle!",
+        "title2ProgramsAI": "Elevate Your Skills with our Dual AI Developer and consultant Certification Bundle!",
         "descriptionAI": "This course will enable you to become a proficient AI developer. You will learn the fundamental concepts of artificial intelligence, programming languages used for AI application development, and be introduced to essential tools and frameworks.",
         "descriptionConsultingAI": "A comprehensive program to fully understand how AI operate and to leverage them effectively in your projects. Designed for entrepreneurs, consultants, project managers, professionals, and enthusiasts.",
         "button": "Discover more",
@@ -120,10 +121,10 @@
     },
     "Bdp": {
         "title": "Learn all the skills to develop a blockchain application",
-        "titleConsultingblockchain": "Consulting blockchain: analyzing, practicing, creating.",
-        "titleConsultingAI": "Artificial Intelligence Consulting",
+        "titleConsultingblockchain": "consultant blockchain: analyzing, practicing, creating.",
+        "titleConsultingAI": "Artificial Intelligence consultant",
         "description": "Harness blockchain technology in application development.",
-        "descriptionConsultingblockchain": "A comprehensive program to fully understand how blockchains operate and how to leverage them effectively in your projects. A program designed for entrepreneurs, consultants, project managers, professionals, and enthusiasts.",
+        "descriptionConsultingblockchain": "Unlock the power of blockchain with our dynamic training, perfect for entrepreneurs, consultants, project managers, professionals, and enthusiasts.",
         "descriptionConsultingAI": "A training program to position you at the forefront of today's and tomorrow's Artificial Intelligence",
         "button": "Enroll Now",
         "timerDay": "Days",
@@ -189,41 +190,55 @@
         "advantages-card-NFT": "Each of our participants receives a Dual Certification : Receive your NFT certification once you complete the program, and optionally pass an additional exam and receive the AI certification by Hedera Hashgraph (CHHD certification)."
     },
     "ProgramModules": {
-        "module1": "Module 1: Introduction to blockchain technology and its different components",
+        "module1": "Module 1: Introduction to blockchain technology and its different components 📚",
         "module1-description": "Explore the foundational aspects of blockchain, including its decentralized structure and core components.",
-        "module2": "Module 2 : Ethereum blockchain and its operation",
+        "module2": "Module 2 : Ethereum blockchain and its operation 💻",
         "module2-description": "Learn about Ethereum's functionalities, smart contracts, and decentralized application operations.",
-        "module3": "Module 3 : Basics of decentralized application development",
+        "module3": "Module 3 : Basics of decentralized application development 🛠️",
         "module3-description": "Discover the fundamentals of creating decentralized applications using essential programming languages and tools.",
-        "module4": "Module 4: Advanced concepts in decentralized application development",
+        "module4": "Module 4: Advanced concepts in decentralized application development 🔬",
         "module4-description": "Delve into advanced topics like intricate smart contract programming and deploying DApps across various blockchain networks.",
-        "module5": "Module 5: Fundamentals of decentralized application security",
+        "module5": "Module 5: Fundamentals of decentralized application security 🔒",
         "module5-description": "Focus on securing DApps, covering vulnerabilities, secure coding practices, and risk mitigation strategies for robust security.",
-        "module6": "Module 6 : Testing Your Application",
+        "module6": "Module 6 : Testing Your Application 🧪",
         "module6-description": "Advanced functional testing Ensuring contract quality Preparation for deployment"
+    },    
+    "ProgramModulesBlockchainConsulting": {
+        "module1": "Module 1: Introductory Module 📘",
+        "module1-description": "Provides foundational knowledge on blockchain technology, covering basic principles and terminology.",
+        "module2": "Module 2: Exploring Public Blockchains 🌐",
+        "module2-description": "Delves into decentralized networks, consensus mechanisms, and the significance of transparency in public blockchains.",
+        "module3": "Module 3: Bitcoin, Value-Oriented Blockchain ₿",
+        "module3-description": "Focuses on Bitcoin's architecture, mining process, and its role as a digital store of value.",
+        "module4": "Module 4: Ethereum, Application-Oriented Blockchain 🛠️",
+        "module4-description": "Highlights Ethereum's smart contract functionality, decentralized applications (DApps), and its impact on various industries.",
+        "module5": "Module 5: Other Protocols and Public Blockchains 🔄",
+        "module5-description": "Explores diverse blockchain protocols beyond Bitcoin and Ethereum, examining their unique features and use cases."
     },
     "ProgramModulesAi": {
-        "module1": "Introduction to AI Essentials 🚀",
+        "module1": "Module 1: Introduction to AI Essentials 🚀",
         "module1-description": "Explore the foundational concepts of AI, including an introduction to large language models and building AI chatbots.",
-        "module2": "Speech and Language Processing 🗣️",
+        "module2": "Module 2: Speech and Language Processing 🗣️",
         "module2-description": "Dive into speech and language processing, covering automatic speech recognition, transcription, and building chatbots for PDF interaction.",
-        "module3": "Image Processing and Recognition 🖼️",
+        "module3": "Module 3: Image Processing and Recognition 🖼️",
         "module3-description": "Delve into image processing and recognition techniques, including encoder-decoder networks, image segmentation, and object identification.",
-        "module4": "Creative AI Applications 🎨🤖",
+        "module4": "Module 4: Creative AI Applications 🎨🤖",
         "module4-description": "Explore the creative applications of AI, from generating images based on text to creating AI-generated vocals and unique voices."
     },
     "ProgramModulesAiConsulting": {
-        "module1": "Introduction to Fundamental Concepts of AI 🚀",
-        "module1-description": "Explore the basics of artificial intelligence, including machine learning algorithms and potential applications in various domains, for a thorough understanding of its operation.",
-        "module2": "Advanced Data Analysis Methods 📊",
-        "module2-description": "Deepen your data analysis skills with advanced techniques such as statistical and unsupervised learning, enabling you to extract relevant information from large datasets.",
-        "module3": "Ethics and Responsibility in AI 🤝",
-        "module3-description": "Explore the ethical and social implications of artificial intelligence, including data privacy and societal impact, to design and implement AI systems responsibly.",
-        "module4": "AI Consulting Strategies 💼",
-        "module4-description": "Learn best practices in AI consulting, including identifying client needs and effectively communicating with stakeholders, to develop customized solutions addressing specific AI challenges."
+        "module1": "Module 1: Introduction to AI 🤖",
+        "module1-description": "This module provides a foundational understanding of artificial intelligence, its applications, and its impact on various industries.",
+        "module2": "Module 2: Basic Tools: Getting Started 🛠️",
+        "module2-description": "Participants will learn the fundamental tools and techniques necessary to begin working with AI, including programming languages, frameworks, and basic algorithms.",
+        "module3": "Module 3: Theory and Technical Operation 📚💻",
+        "module3-description": "Delving deeper, this module explores the theoretical underpinnings of AI algorithms and their technical implementation.",
+        "module4": "Module 4: Theory and Technical Operation 🧠💡",
+        "module4-description": "Building upon Module 3, this module further explores the theoretical concepts and technical operations crucial for effective AI development and deployment.",
+        "module5": "Module 5: Use Cases of AI in Professional Sectors 🏢🤖",
+        "module5-description": "Participants will examine real-world applications of AI across diverse professional sectors, gaining insights into its practical implications."
     },
     "AI": {
-        "title": "Learn all the skills to develop a AI application",
+        "title": "Learn all the skills to develop an AI application",
         "description": "Leverage AI technology in application development",
         "button": "Enroll Now"
     },
@@ -247,18 +262,18 @@
         "title": "AI Developer Form"
     },
     "ModalOverlayEnrollBlockchainConsultingProgram": {
-        "title": "Blockchain Consulting Form"
+        "title": "Blockchain consultant Form"
     },
     "ModalOverlayEnrollAIConsultingProgram": {
-        "title": "AI Consulting Form"
+        "title": "AI consultant Form"
     },
     "ModalOverlayEnrollTwoProgramm": {
-        "title": "Dual Developer and Consulting Blockchain Certification Bundle Registration",
-        "description": "Sign up now for our Dual Developer and Consulting Blockchain Certification Bundle! Fill out the form below to elevate your skills"
+        "title": "Dual Developer and consultant Blockchain Certification Bundle Registration",
+        "description": "Sign up now for our Dual Developer and consultant Blockchain Certification Bundle! Fill out the form below to elevate your skills"
     },
     "ModalOverlayEnrollTwoProgrammAI": {
-        "title": "Dual Developer and Consulting AI Certification Bundle Registration",
-        "description": "Sign up now for our Dual Developer and Consulting AI Certification Bundle! Fill out the form below to elevate your skills"
+        "title": "Dual Developer and consultant AI Certification Bundle Registration",
+        "description": "Sign up now for our Dual Developer and consultant AI Certification Bundle! Fill out the form below to elevate your skills"
     },
     "ModalOverlayBusinesses": {
         "title": "Train Your Team On The Skills Of The Future",
@@ -346,9 +361,11 @@
         "button": "RECEIVE THE BROCHURE"
     },
     "ProfilesSection": {
-        "ProfileInfo1": "Director of Operations",
+        "ProfileInfo1": "Head of business developpement B2 Academy Africa",
         "ProfileInfo2": "President",
         "title1": "TEAM",
-        "title2": "B2Academy Team"
+        "title2": "B2Academy Team",
+        "title3": "Management Team",
+        "description": "B2Academy's experienced staff includes business, design and tech industry leaders and innovators."
     }
 }

@@ -2,6 +2,7 @@
     "navbar": {
         "programs": "Programmes",
         "aboutUs": "A propos",
+        "TEAM": "Équipe",
         "ourMethodology": "Methodologie",
         "login": "Login",
         "letsTalk": "Prise de rendez-vous",
@@ -17,9 +18,9 @@
     },
     "programs": {
         "titleSection": "Programmes",
-        "title": "Programme de Maîtrise de la Blockchain : Déverrouiller l'Avenir",
+        "title": "Programme de Blockchain: Révolutionner l'Avenir",
         "description": "Dans ce programme, vous acquerrez les compétences nécessaires pour devenir un développeur ou consultant spécialisé dans la blockchain. Explorez les principes fondamentaux de la blockchain, développez des applications innovantes, et apprenez à conseiller sur les meilleures pratiques et les solutions blockchain.",
-        "titleAI": "Programme de Maîtrise en Intelligence Artificielle : Déverrouiller l'Avenir",
+        "titleAI": "Programme d'IA: Révolutionner l'Avenir",
         "descriptionAI": "Dans ce programme, vous acquérez les compétences nécessaires pour devenir un développeur ou consultant spécialisé en intelligence artificielle. Explorez les principes fondamentaux de l'IA, développez des applications innovantes, et apprenez à conseiller sur les meilleures pratiques et les solutions en intelligence artificielle.",
         "button": "Découvrir",
         "buttonTwo": "Inscriptions ouvertes",
@@ -30,15 +31,15 @@
     "Lessons": {
         "title1": "Nos Parcours Blockchain",
         "title2": "Nos Parcours IA",
-        "titleBlockchain": "Devenir Un Développeur En Blockchain",
-        "titleBlockchainConsulting": "Devenir Un Consultant En Blockchain",
+        "titleBlockchain": "Devenir Développeur Blockchain",
+        "titleBlockchainConsulting": "Devenir Consulting Blockchain",
         "descriptionBlockchain": "Ce cours vous permettra de devenir un développeur blockchain compétent. Vous apprendrez les bases de la technologie blockchain, les langages de programmation utilisés pour développer des applications blockchain, et vous serez introduit aux outils et aux cadres essentiels.",
         "descriptionConsultingBlockchain": "Un programme complet pour comprendre pleinement le fonctionnement des blockchains et les exploiter efficacement dans vos projets. Conçu pour les entrepreneurs, consultants, chefs de projet, professionnels et passionnés.",
         "titleSection": "Leçons",
-        "titleAI": "Devenir Un Développeur En IA",
-        "titleConsultingAI": "Devenir Un Consultant En IA",
-        "title2ProgramsBlockchain": "Élevez vos compétences avec notre ensemble de certifications double en développement blockchain et en consultation!",
-        "title2ProgramsAI": "Élevez vos compétences avec notre ensemble de certifications double en développement IA et en consultation!",
+        "titleAI": "Devenir Développeur IA",
+        "titleConsultingAI": "Devenir Consulting IA",
+        "title2ProgramsBlockchain": "Élevez vos compétences avec notre ensemble de certifications double en développement blockchain et en consulting!",
+        "title2ProgramsAI": "Élevez vos compétences avec notre ensemble de certifications double en développement IA et en consulting!",
         "descriptionAI": "Ce cours vous permettra de devenir un développeur en intelligence artificielle compétent. Vous apprendrez les concepts fondamentaux de l'intelligence artificielle, les langages de programmation utilisés pour le développement d'applications d'IA, et vous serez introduit aux outils et aux cadres essentiels.",
         "descriptionConsultingAI": "Un programme complet pour comprendre pleinement le fonctionnement de l'IA et l'utiliser efficacement dans vos projets. Conçu pour les entrepreneurs, consultants, chefs de projet, professionnels et passionnés.",
         "button": "Discover more",
@@ -123,7 +124,7 @@
         "titleConsultingblockchain": "Consulting blockchain : analyser, pratiquer, créer",
         "titleConsultingAI": "Consulting Intelligence Artificielle",
         "description": "Tirez parti de la technologie blockchain dans le développement d'applications",
-        "descriptionConsultingblockchain": "Un programme complet pour tout comprendre du fonctionnement des blockchains et pour les exploiter au mieux dans vos projets. Un programme conçu pour les entrepreneurs, les consultants, les chefs de projet, les professionnels et les passionnés.",
+        "descriptionConsultingblockchain": "Libérez le potentiel de la blockchain avec notre formation dynamique, idéale pour les entrepreneurs, consultants, chefs de projet, professionnels et passionnés.",
         "descriptionConsultingAI": "Une formation pour vous positionner à la pointe de l'Intelligence Artificielle d'aujourd'hui et de demain",
         "button": "Inscrivez-vous maintenant",
         "timerDay": "Jours",
@@ -189,39 +190,53 @@
         "advantages-card-NFT": "Chacun de nos participants reçoit une double certification : Recevez votre certification NFT une fois le programme terminé, et éventuellement, réussissez un examen supplémentaire pour obtenir la certification en intelligence artificielle par Hedera Hashgraph (certification CHHD)."
     },
     "ProgramModules": {
-        "module1": "Module 1 : Introduction à la technologie blockchain et ses différentes briques",
+        "module1": "Module 1 : Introduction à la technologie blockchain et ses différentes briques 📚",
         "module1-description": "Bases de la blockchain Architecture décentralisée Transactions sécurisées",
-        "module2": "Module 2 : la blockchain ethereum et son fonctionnement",
+        "module2": "Module 2 : La blockchain Ethereum et son fonctionnement 💻",
         "module2-description": "Comprendre Ethereum Puissants contrats intelligents Créer des applications décentralisées",
-        "module3": "Module 3 : Notions de bases sur le développement des applications décentralises",
+        "module3": "Module 3 : Notions de bases sur le développement des applications décentralisées 🛠️",
         "module3-description": "Mise en œuvre pratique Interaction avec la blockchain Déploiement de contrats intelligents",
-        "module4": "Module 4 : Notions avancées sur le développement des applications décentralises",
+        "module4": "Module 4 : Notions avancées sur le développement des applications décentralisées 🔬",
         "module4-description": "Langage de programmation Solidity Conception de contrats intelligents Création d'applications Ethereum",
-        "module5": "Module 5 : Fondamentaux de la sécurité des applications décentralises",
+        "module5": "Module 5 : Fondamentaux de la sécurité des applications décentralisées 🔒",
         "module5-description": "Utilisation d'outils populaires Test et déploiement des contrats Développement efficace",
-        "module6": "Module 6 : Tester votre application",
+        "module6": "Module 6 : Tester votre application 🧪",
         "module6-description": "Tests fonctionnels avancés Assurer la qualité du contrat Préparation au déploiement"
+    },    
+    "ProgramModulesBlockchainConsulting": {
+        "module1": "Module 1 : Module d'introduction 📘",
+        "module1-description": "Fournit des connaissances fondamentales sur la technologie blockchain, couvrant les principes de base et la terminologie.",
+        "module2": "Module 2 : Exploration des blockchains publiques 🌐",
+        "module2-description": "Plonge dans les réseaux décentralisés, les mécanismes de consensus et l'importance de la transparence dans les blockchains publiques.",
+        "module3": "Module 3 : Bitcoin, Blockchain axée sur la valeur ₿",
+        "module3-description": "Se concentre sur l'architecture de Bitcoin, le processus de minage et son rôle en tant que magasin de valeur numérique.",
+        "module4": "Module 4 : Ethereum, Blockchain orientée application 🛠️",
+        "module4-description": "Met en évidence la fonctionnalité des contrats intelligents d'Ethereum, les applications décentralisées (DApps) et son impact sur divers secteurs.",
+        "module5": "Module 5 : Autres protocoles et blockchains publiques 🔄",
+        "module5-description": "Explore divers protocoles blockchain au-delà de Bitcoin et Ethereum, examinant leurs fonctionnalités uniques et leurs cas d'utilisation."
     },
     "ProgramModulesAi": {
-        "module1": "Introduction aux Fondamentaux de l'IA 🚀",
+        "module1": "Module 1: Introduction aux Fondamentaux de l'IA 🚀",
         "module1-description": "Explorez les concepts fondamentaux de l'IA, y compris une introduction aux grands modèles de langage et la construction de chatbots IA.",
-        "module2": "Traitement du Langage et de la Parole 🗣️",
+        "module2": "Module 2: Traitement du Langage et de la Parole 🗣️",
         "module2-description": "Plongez dans le traitement du langage et de la parole, couvrant la reconnaissance automatique de la parole, la transcription et la construction de chatbots pour interagir avec les PDF.",
-        "module3": "Traitement et Reconnaissance d'Images 🖼️",
-        "module3-description": "Approfondissez-vous dans les techniques de traitement et de reconnaissance d'images, comprenant les réseaux encodeurs-décodeurs, la segmentation d'images et l'identification d'objets.",
-        "module4": "Applications Créatives de l'IA 🎨🤖",
+        "module3": "Module 3: Traitement et Reconnaissance d'Images 🖼️",
+        "module3-description": "Approfondissez-vous dans les techniques de traitement et de reconnaissance d'images, comprenant les réseaux encodeurs-décodeurs.",
+        "module4": "Module 4: Applications Créatives de l'IA 🎨🤖",
         "module4-description": "Explorez les applications créatives de l'IA, de la génération d'images basée sur du texte à la création de voix générées par IA et de voix uniques."
     },
     "ProgramModulesAiConsulting": {
-        "module1": "Introduction aux Concepts Fondamentaux de l'IA 🚀",
-        "module1-description": "Explorez les bases de l'intelligence artificielle, y compris les algorithmes d'apprentissage automatique et les applications potentielles dans divers domaines, pour une compréhension approfondie de son fonctionnement.",
-        "module2": "Méthodes Avancées d'Analyse de Données 📊",
-        "module2-description": "Approfondissez vos compétences en analyse de données avec des techniques avancées telles que l'apprentissage statistique et non supervisé, vous permettant d'extraire des informations pertinentes à partir de vastes ensembles de données.",
-        "module3": "Éthique et Responsabilité en IA 🤝",
-        "module3-description": "Explorez les implications éthiques et sociales de l'intelligence artificielle, y compris la confidentialité des données et l'impact sur la société, pour concevoir et mettre en œuvre des systèmes d'IA de manière responsable.",
-        "module4": "Stratégies de Consultation en IA 💼",
-        "module4-description": "Apprenez les meilleures pratiques de consultation en IA, notamment l'identification des besoins des clients et la communication efficace avec les parties prenantes, pour développer des solutions personnalisées répondant aux défis spécifiques de l'IA."
-    },
+        "module1": "Module 1: Introduction à l'IA 🤖",
+        "module1-description": "Ce module offre une compréhension fondamentale de l'intelligence artificielle, de ses applications et de son impact sur diverses industries.",
+        "module2": "Module 2: Outils de base: Démarrage 🛠️",
+        "module2-description": "Les participants apprendront les outils et techniques fondamentaux nécessaires pour commencer à travailler avec l'IA, y compris les langages de programmation, les frameworks et les algorithmes de base.",
+        "module3": "Module 3: Théorie et Opération Technique 📚💻",
+        "module3-description": "Approfondissant davantage, ce module explore les fondements théoriques des algorithmes d'IA et leur mise en œuvre technique.",
+        "module4": "Module 4: Théorie et Opération Technique 🧠💡",
+        "module4-description": "En s'appuyant sur le Module 3, ce module explore plus en profondeur les concepts théoriques et les opérations techniques cruciales pour le développement et le déploiement efficaces de l'IA.",
+        "module5": "Module 5: Cas d'utilisation de l'IA dans les secteurs professionnels 🏢🤖",
+        "module5-description": "Les participants examineront les applications réelles de l'IA dans divers secteurs professionnels, en acquérant des connaissances sur ses implications pratiques."
+    },    
     "AI": {
         "title": "Apprenez toutes les compétences pour développer une application AI",
         "description": "Tirez parti de la technologie AI dans le développement d'applications",
@@ -247,18 +262,18 @@
         "title": "Formulaire Développeur En IA"
     },
     "ModalOverlayEnrollBlockchainConsultingProgram": {
-        "title": "Formulaire Consultant En Blockchain"
+        "title": "Formulaire consulting En Blockchain"
     },
     "ModalOverlayEnrollAIConsultingProgram": {
-        "title": "Formulaire Consultant En IA"
+        "title": "Formulaire consulting En IA"
     },
     "ModalOverlayEnrollTwoProgramm": {
-        "title": "Inscription au Bundle de Certification Développeur et Consultant En Blockchain ",
-        "description": "Inscrivez-vous dès maintenant à notre Bundle de Certification Développeur et Consultant En Blockchain! Remplissez le formulaire ci-dessous pour perfectionner vos compétences"
+        "title": "Inscription au Bundle de Certification Développeur et consulting En Blockchain ",
+        "description": "Inscrivez-vous dès maintenant à notre Bundle de Certification Développeur et consulting En Blockchain! Remplissez le formulaire ci-dessous pour perfectionner vos compétences"
     },
     "ModalOverlayEnrollTwoProgrammAI": {
-        "title": "Inscription au Bundle de Certification Développeur et Consultant En IA ",
-        "description": "Inscrivez-vous dès maintenant à notre Bundle de Certification Développeur et Consultant En IA! Remplissez le formulaire ci-dessous pour perfectionner vos compétences"
+        "title": "Inscription au Bundle de Certification Développeur et consulting En IA ",
+        "description": "Inscrivez-vous dès maintenant à notre Bundle de Certification Développeur et consulting En IA! Remplissez le formulaire ci-dessous pour perfectionner vos compétences"
     },
     "ModalOverlayBusinesses": {
         "title": "Formez votre équipe aux compétences du futur",
@@ -346,9 +361,11 @@
         "button": "RECEVOIR LA BROCHURE"
     },
     "ProfilesSection": {
-        "ProfileInfo1": "Directeur des opérations",
+        "ProfileInfo1": "Chef du développement commercial B2 Academy Afrique",
         "ProfileInfo2": "Président",
         "title1": "ÉQUIPE",
-        "title2": "Équipe B2Academy"
+        "title2": "Équipe B2Academy",
+        "title3": "Management Team",
+        "description": "Le personnel expérimenté de B2Academy comprend des leaders et des innovateurs de l'industrie des affaires, du design et de la technologie."
     }
 }

@@ -149,7 +149,7 @@
 @media screen and (max-width: 768px) {
 	.aboutUs {
 		min-width: 100%;
-        min-height: 150vh;
+        min-height: 170vh;
 	}
 
 	.titleAboutUs h1 {
@@ -160,7 +160,7 @@
 		font-size: 1.3rem;
 		width: 140%;
 		text-align: justify; 
-		margin-left: 20px;
+		margin-left: 27px;
 	}
 
 	.content-section {
@@ -173,7 +173,7 @@
 	.content-section .title {
 		text-align: left;
 		font-size: 28px;
-		margin-left: 20px;
+		margin-left: 27px;
 	}
 
 	.pyramid-loader {
