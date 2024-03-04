@@ -361,11 +361,11 @@
         "button": "RECEIVE THE BROCHURE"
     },
     "ProfilesSection": {
-        "ProfileInfo1": "Head of business developpement B2 Academy Africa",
+        "ProfileInfo1": "Head of business developpement B<sup>2</sup>Academy Africa",
         "ProfileInfo2": "President",
         "title1": "TEAM",
         "title2": "B2Academy Team",
         "title3": "Management Team",
-        "description": "B2Academy's experienced staff includes business, design and tech industry leaders and innovators."
+        "description": "B<sup>2</sup>Academy's experienced staff includes business, design and tech industry leaders and innovators."
     }
 }

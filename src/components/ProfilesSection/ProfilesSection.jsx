@@ -2,8 +2,8 @@ import React from 'react';
 import { FaLinkedin } from 'react-icons/fa';
 import './ProfilesSection.css';
 import imgPerson1 from '../../assets/AliIMAGE.jpeg';
-import imgPerson2 from '../../assets/ZongoIMAGE.jpeg';
-import imgPerson3 from '../../assets/AliIMAGE.jpeg';
+import imgPerson2 from '../../assets/imgPerson1.png';
+import imgPerson3 from '../../assets/imgPerson2.png';
 
 import { useTranslation } from 'react-i18next';
 
@@ -11,12 +11,11 @@ function ProfilesSection() {
     const { t } = useTranslation();
     return (
         <div name="ProfilesSection" className='ProfilesSection'>
-            <div className='Title'>
-                <h3>{t('ProfilesSection.title1')}</h3>
+            <div data-aos="fade-down" data-aos-duration="1000" className='Title'>
                 <h1>{t('ProfilesSection.title3')}</h1>
-                <p>{t('ProfilesSection.description')}</p>
+                <p dangerouslySetInnerHTML={{ __html: t('ProfilesSection.description')}}></p>
             </div>
-            <div className='ProfileCardsContainer'>
+            <div data-aos="fade-down" data-aos-duration="1000" className='ProfileCardsContainer'>
                 <div className='ProfileCard'>
                     <img src={imgPerson1} alt='Mr. Ali' className='ProfileImage' />
                     <div className='ProfileInfo'>
@@ -28,7 +27,7 @@ function ProfilesSection() {
                     </div>
                 </div>
                 <div className='ProfileCard'>
-                    <img src={imgPerson2} alt='Mr. Moise' className='ProfileImage' />
+                    <img src={imgPerson3} alt='Mr. Moise' className='ProfileImage' />
                     <div className='ProfileInfo'>
                         <h3>Madou DIALLO</h3>
                         <p>COO</p>
@@ -38,10 +37,10 @@ function ProfilesSection() {
                     </div>
                 </div>
                 <div className='ProfileCard'>
-                    <img src={imgPerson3} alt='Mr. Moise' className='ProfileImage' />
+                    <img src={imgPerson2} alt='Mr. Moise' className='ProfileImage' />
                     <div className='ProfileInfo'>
                         <h3>Zongo Antoine</h3>
-                        <p>{t('ProfilesSection.ProfileInfo1')}</p>
+                        <p dangerouslySetInnerHTML={{ __html: t('ProfilesSection.ProfileInfo1')}}></p>
                         <a href='https://www.linkedin.com/in/antoine-zongo-a0a0b137/?originalSubdomain=ml' className='ProfileLink'>
                             <FaLinkedin />
                         </a>

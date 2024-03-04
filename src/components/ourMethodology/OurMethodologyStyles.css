@@ -1,6 +1,6 @@
 .ourMethodology {
 	width: 100%;
-	height: 120vh;
+	height: 141vh;
 	display: flex;
 	align-items: center;
 	background-color: #F2FBFF;
@@ -140,7 +140,7 @@
 
 @media screen and (max-width: 768px) {
 	.ourMethodology {
-		height: 270vh;
+		height: 210vh;
 	}
 
 	.image-section {

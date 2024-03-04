@@ -361,11 +361,11 @@
         "button": "RECEVOIR LA BROCHURE"
     },
     "ProfilesSection": {
-        "ProfileInfo1": "Chef du développement commercial B2 Academy Afrique",
+        "ProfileInfo1": "Directeur du développement commercial B<sup>2</sup>Academy Afrique",
         "ProfileInfo2": "Président",
         "title1": "ÉQUIPE",
         "title2": "Équipe B2Academy",
         "title3": "Management Team",
-        "description": "Le personnel expérimenté de B2Academy comprend des leaders et des innovateurs de l'industrie des affaires, du design et de la technologie."
+        "description": "Le personnel expérimenté de B<sup>2</sup>Academy comprend des leaders et des innovateurs de l'industrie des affaires, du design et de la technologie."
     }
 }

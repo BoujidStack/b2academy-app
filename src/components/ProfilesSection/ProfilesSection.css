@@ -3,16 +3,22 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
-  min-height: 120vh;
+  min-height: 129vh;
   background-color: #F2FBFF;
   flex-direction: column;
 }
 
-.Title {
-  font-size: 36px;
+.Title h1{
   color: #211b59;
   text-align: center;
   margin: 20px 0;
+}
+
+.Title p{
+  color: #211b59;
+  text-align: center;
+  margin: 20px 0;
+  font-size: 18px;
 }
 
 .ProfileCardsContainer {
@@ -54,12 +60,10 @@
 }
 
 @media (max-width: 768px) {
-
   .ProfilesSection {
-    min-height: 200vh;
+    min-height: 240vh;
   }
 
-  
   .ProfileCardsContainer {
     flex-direction: column;
   }
@@ -72,11 +76,14 @@
   }
 
   .Title h1 {
-    font-size: 25px;
+		font-size: 3rem;
   }
 
-  .Title h3 {
-    font-size: 20px;
+  .Title p{
+    color: #211b59;
+    text-align: center;
+    margin: 20px 0;
+		font-size: 1.3rem;
   }
 }
 
