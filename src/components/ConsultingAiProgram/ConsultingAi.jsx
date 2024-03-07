@@ -19,11 +19,11 @@ function ConsultingAi() {
   const { t, i18n } = useTranslation();
   const [showModal, setShowModal] = useState(false);
   const [prices, setPrices] = useState({
-      oldPrice: 7999,
-      newPrice: 5999,
+    oldPrice: 199,
+    newPrice: 99,
   });
   const calculateCountdown = () => {
-      const targetDate = new Date('2024-03-05T23:59:59');
+      const targetDate = new Date('2024-03-10T23:59:59');
       const now = new Date();
       const difference = targetDate - now;
       const days = Math.floor(difference / (1000 * 60 * 60 * 24));
@@ -83,8 +83,8 @@ function ConsultingAi() {
                         </div>
                         <div data-aos="zoom-in" data-aos-duration="1000" className='prices-container'>
                             <div className='prices'>
-                                <p className='old-price'><span className='strikethrough'>{prices.oldPrice}Dh</span></p>
-                                <p className='new-price'>{prices.newPrice}Dh</p>
+                                <p className='old-price'><span className='strikethrough'>{prices.oldPrice}$</span></p>
+                                <p className='new-price'>{prices.newPrice}$</p>
                             </div>
                         </div>
                         <button onClick={() => setShowModal(true)} className='centered-button' data-aos="fade-up" data-aos-duration="1000">

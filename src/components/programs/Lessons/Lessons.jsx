@@ -181,7 +181,7 @@ const Lessons = () => {
                                     <a className="open-enrollment-link" onClick={() => setShowTwoProgramModal(true)}>
                                         • {t('programs.buttonTwo')}
                                     </a>
-                                    <a className='pricePromotion'>9999Dh</a>
+                                    <a className='pricePromotion'>159$</a>
                                     <a className='pricePromotion'>{t('programs.time2Programs')}</a>
                                 </div>
                             </div>
