@@ -61,7 +61,7 @@
 
 @media (max-width: 768px) {
   .ProfilesSection {
-    min-height: 240vh;
+    min-height: 300vh;
   }
 
   .ProfileCardsContainer {
