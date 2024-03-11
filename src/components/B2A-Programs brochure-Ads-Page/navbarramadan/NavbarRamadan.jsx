@@ -22,10 +22,11 @@ const NavbarRamadan = ({ hideNavbarLinks }) => {
     const handleClose = () => {
         setNav(!nav);
     };
+    const phoneNumber = '617946100';
 
     const handleGoToTalkPage = () => {
-        navigate(' ');
-        window.scrollTo(0, 0);
+        const url = `https://wa.me/${phoneNumber}`;
+        window.open(url, '_blank');
     };
 
     const handleGoToHomePage = () => {
@@ -163,8 +164,9 @@ const NavbarRamadan = ({ hideNavbarLinks }) => {
 
                     <div className="mobile-menu">
                         <button onClick={handleGoToTalkPage} id="nav-menu-btn">
-                            
-                            <span><FaPhone /> {t('navbar.letsTalkRamadan')}</span>
+
+                            <a src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1200px-WhatsApp.svg.png"
+                            ><span><FaPhone /> {t('navbar.letsTalkRamadan')}</span></a>
                         </button>
                         <div className="social-icons">
                             <a className="icon" href="https://www.facebook.com/profile.php?id=61553818017478"><FaFacebook /></a>
@@ -178,7 +180,6 @@ const NavbarRamadan = ({ hideNavbarLinks }) => {
                 <ul className="nav-menu hide">
                     <li>
                         <button onClick={handleGoToTalkPage} id="nav-menu-btn">
-                            
                             <span><FaPhone /> {t('navbar.letsTalkRamadan')}</span>
                         </button>
                     </li>
