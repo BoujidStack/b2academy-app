@@ -18,6 +18,7 @@ import ProgramModules from '../programModules/ProgramModules';
 import ProgramModulesAi from '../programModules/ProgramModulesAI/ProgramModulesAi';
 import ProgramModulesAiConsulting from '../programModules/ProgramModulesAiConsulting/ProgramModulesAiConsulting';
 import ProgramModulesBlockchainConsulting from '../programModules/ProgramModulesBlockchainConsulting/ProgramModulesBlockchainConsulting';
+import NavbarRamadan from './navbarramadan/NavbarRamadan';
 
 function B2AProgramsBrochure() {
   const [showModal, setShowModal] = useState(false);
@@ -160,7 +161,7 @@ function B2AProgramsBrochure() {
 
   return (
     <>
-      <Navbar hideNavbarLinks={true} />
+      <NavbarRamadan hideNavbarLinks={true} />
       <div className='B2AProgramsBrochure'>
         <h1 data-aos='fade-down' data-aos-duration='1000' className='B2AProgramsBrochuretitle'>{t('B2AProgramsBrochure.Title')}</h1>
         <div className='B2AProgramsBrochureimages-container'>
