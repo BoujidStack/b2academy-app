@@ -28,6 +28,7 @@ import ConsultingBlockchain from './components/ConsultingBlockchainProgram/Consu
 import ConsultingAi from './components/ConsultingAiProgram/ConsultingAi';
 import ProgramsAi from './components/ProgramsAI/ProgramsAi';
 import ProfilesSection from './components/ProfilesSection/ProfilesSection';
+import RamadanBlockchainPromo from './components/ramadanBlockchainPromo/RamadanBlockchainPromo';
 
 i18n.use(initReactI18next).init({
   resources: {
@@ -78,7 +79,8 @@ function App() {
           <Route path="/AI-Developer-Program" element={<Ai />} />
           <Route path="/Consulting-Blockchain-Program" element={<ConsultingBlockchain />} />
           <Route path="/Consulting-Ai-Program" element={<ConsultingAi />} />
-          <Route path="/B2A-ProgrammesBrochure" element={<B2AProgramsBrochure />} />
+          <Route path="/RamadanBlockchainProgramPromotion" element={<B2AProgramsBrochure />} />
+          <Route path="/RamadanBlockchainPromo" element={<RamadanBlockchainPromo />} />
         </Routes>
       </BrowserRouter>
     </>

@@ -19,9 +19,9 @@
     "programs": {
         "titleSection": "Programmes",
         "title": "Programme de Blockchain: Révolutionner l'Avenir",
-        "description": "Dans ce programme, vous acquerrez les compétences nécessaires pour devenir un développeur ou consultant spécialisé dans la blockchain. Explorez les principes fondamentaux de la blockchain, développez des applications innovantes, et apprenez à conseiller sur les meilleures pratiques et les solutions blockchain.",
+        "description": "Dans ce programme, embrassez l'esprit du Ramadan et plongez dans un voyage transformateur avec notre promotion exclusive ! Que vous aspiriez à devenir développeur Blockchain ou consulting spécialisé dans la blockchain, rejoignez-nous et développez votre expertise dès aujourd'hui !",
         "titleAI": "Programme d'IA: Révolutionner l'Avenir",
-        "descriptionAI": "Dans ce programme, vous acquérez les compétences nécessaires pour devenir un développeur ou consultant spécialisé en intelligence artificielle. Explorez les principes fondamentaux de l'IA, développez des applications innovantes, et apprenez à conseiller sur les meilleures pratiques et les solutions en intelligence artificielle.",
+        "descriptionAI": "Dans ce programme, vous acquérez les compétences nécessaires pour devenir un développeur ou consulting spécialisé en intelligence artificielle. Explorez les principes fondamentaux de l'IA, développez des applications innovantes, et apprenez à conseiller sur les meilleures pratiques et les solutions en intelligence artificielle.",
         "button": "Découvrir",
         "buttonTwo": "Inscriptions ouvertes",
         "timeProgram": "99$/Mois",
@@ -353,7 +353,7 @@
         "title2": "Webinar Parcours Blockchain & AI"
     },
     "B2AProgramsBrochure": {
-        "Title": "Rejoignez le meilleur chemin pour devenir un développeur de nouvelle génération exclusivement à B2Academy",
+        "Title": "Debloquez Votre Avenir : Promotion Speciale Ramadan sur les Programmes de Pointe",
         "B2AProgramsBrochuretitle": "Veuillez remplir le formulaire ci-dessous pour recevoir la brochure B2Academy par e-mail.",
         "radiobutton1": "Programme Blockchain",
         "radiobutton2": "Programme IA",
