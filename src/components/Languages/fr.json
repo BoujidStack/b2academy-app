@@ -355,11 +355,15 @@
     },
     "B2AProgramsBrochure": {
         "Title": "Debloquez Votre Avenir : Promotion Speciale Ramadan sur les Programmes de Pointe",
-        "B2AProgramsBrochuretitle": "Veuillez remplir le formulaire ci-dessous pour recevoir la brochure B2Academy par e-mail.",
-        "radiobutton1": "Programme Blockchain",
-        "radiobutton2": "Programme IA",
+        "B2AProgramsBrochuretitle": "Veuillez remplir le formulaire ci-dessous pour bénéficier de notre promotion Ramadan sur nos Programmes Avancés",
+        "radiobutton1": "Programme Developer Blockchain ",
+        "radiobutton2": "Programme Developer Consulting ",
         "radiobutton3": "Programme combiné",
-        "button": "Rejoindre le programme"
+        "button": "Rejoindre le programme",
+        "selectOption":"Quel est votre statut actuel ?",
+        "student":"Étudiant",
+        "professional":"Professionnel"
+
     },
     "ProfilesSection": {
         "ProfileInfo1": "Directeur du développement commercial",
