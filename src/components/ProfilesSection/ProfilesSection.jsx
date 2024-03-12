@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaLinkedin } from 'react-icons/fa';
 import './ProfilesSection.css';
-import imgPerson1 from '../../assets/AliIMAGE.jpeg';
+import imgPerson1 from '../../assets/AliIMAGE.png';
 import imgPerson2 from '../../assets/imgPerson1.png';
 import imgPerson3 from '../../assets/imgPerson2.png';
 
