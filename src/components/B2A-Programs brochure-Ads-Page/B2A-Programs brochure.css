@@ -4,18 +4,30 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 130vh; 
+    height: 150vh; 
     background-image: url('../../assets/bg-b2a-ramdan.png'); 
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
 }
 
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; 
+  }
+  
+  .logoRamadan {
+    width: 850px; 
+    height: auto;
+  }  
+
 
 .B2AProgramsBrochuretitle {
-    font-size: 24px;
+    font-size: 35px;
     text-align: center;
     color: #211b59;
+    max-width: 60%;
 }
 
 .B2AProgramsBrochureimages-container {
@@ -32,7 +44,7 @@
 }
 
 .B2AProgramsBrochuredescription {
-    font-size: 16px;
+    font-size: 22px;
     text-align: center;
     color: #211b59;
     max-width: 50%;
@@ -46,6 +58,400 @@
     width: 150px;
 }
 
+
+
+.programModules {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #F2FBFF;
+    position: relative;
+  }
+  
+  .programModulesImage {
+    margin-left: 150px;
+    margin-top: -50px;
+    animation: floatAnimation 2s ease-in-out infinite 3.5s;
+  }
+  
+  .programModulesImageRight {
+    position: absolute;
+    margin-left: 70rem;
+    margin-top: -25.5rem;
+    animation: floatAnimation 2s ease-in-out infinite 2.5s;
+  
+  }
+  
+  .programModuleslignes {
+    margin-left: -200px;
+    margin-top: -4rem;
+    position: absolute;
+  }
+  
+  
+  
+  #rocket-icon {
+    width: 140px;
+    transform: rotate(-10deg);
+    margin-top: 165px;
+    margin-left: 415px;
+  }
+  
+  .contentModules {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: -22rem;
+    width: 300px;
+    margin-left: 210px;
+  }
+  
+  .contentModules h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #0580C2;
+  
+  }
+  
+  .contentModules p {
+    font-size: 15px;
+    color: #211B59;
+  }
+  
+  .contentModulesTwo {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 9rem;
+    width: 300px;
+    margin-left: 31rem;
+  }
+  
+  .contentModulesTwo h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #0580C2;
+  }
+  
+  .contentModulesTwo p {
+    font-size: 15px;
+    color: #211B59;
+  }
+  
+  
+  .contentModulesThree {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: -36rem;
+    width: 300px;
+    margin-left: 42rem;
+  }
+  
+  .contentModulesThree h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #0580C2;
+  
+  }
+  
+  .contentModulesThree p {
+    font-size: 15px;
+    color: #211B59;
+  }
+  
+  
+  
+  .contentModulesFourth {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 8.5rem;
+    width: 320px;
+    margin-left: 53rem;
+  }
+  
+  .contentModulesFourth h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #0580C2;
+  }
+  
+  .contentModulesFourth p {
+    font-size: 15px;
+    color: #211B59;
+  }
+  
+  .contentModulesFive {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: -38rem;
+    width: 300px;
+    margin-left: 61rem;
+  }
+  
+  .contentModulesFive h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #0580C2;
+  }
+  
+  .contentModulesFive p {
+    font-size: 15px;
+    color: #211B59;
+  }
+  
+  .contentModulessix {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 6.5rem;
+    width: 300px;
+    margin-left: 73rem;
+  }
+  
+  .contentModulessix h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #0580C2;
+  }
+  
+  .contentModulessix p {
+    font-size: 15px;
+    color: #211B59;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .B2AProgramsBrochure {
+        min-height: 150vh; 
+    }
+    
+    .programModules {
+      min-width: 100%;
+      }
+  
+    .programModulesImage {
+      margin-left: 10px;
+      margin-top: -30px;
+      width: 250px;
+      height: 250px;
+    }
+
+
+    .B2AProgramsBrochuretitle {
+        font-size: 30px;
+        max-width: 80%;
+    }
+    
+  
+    .programModulesImageRight {
+      display: none;
+    }
+  
+    .programModuleslignes {
+      display: none;
+    }
+  
+    #rocket-icon {
+      display: none;
+    }
+  
+    .contentModules,
+    .contentModulesTwo,
+    .contentModulesThree,
+    .contentModulesFourth,
+    .contentModulesFive,
+    .contentModulessix {
+      width: 70%;
+      margin: 1rem auto;
+      z-index: 10;
+    }
+  
+    .programModules h1 {
+      font-size: 21px;
+      width: 100%;
+    }
+  
+  
+    .programModules p {
+      font-size: 19px;
+      color: #211B59;
+    }
+  
+  
+    .programModules::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 2px;
+      height: 100%;
+      background-color: #0580C2;
+      border-radius: 1px;
+      z-index: -1;
+    }
+  
+    .programModules::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 2px;
+      height: 70%;
+      background-color: #0580C2;
+      border-radius: 1px;
+      z-index: 0;
+      margin-top: 15rem;
+    }
+  
+    .programModules::before {
+      background-image: linear-gradient(to bottom, transparent 50%, #ccc 50%);
+      background-size: 100% 20px;
+    }
+  }
+  
+  
+  @media screen and (max-width: 1366px) and (min-width: 769px) {
+    .programModulesImage {
+      margin-left: 20px;
+    }
+  
+    .programModulesImageRight {
+      margin-left: 59.5rem;
+      margin-top: -26.5rem;
+    }
+  
+    .programModuleslignes {
+      margin-left: -350px;
+    }
+  
+    #rocket-icon {
+      margin-left: 16rem;
+    }
+  
+    .contentModules {
+      margin-left: 50px;
+    }
+  
+    .contentModulesTwo {
+      margin-left: 20rem;
+    }
+  
+    .contentModulesThree {
+      margin-left: 34rem;
+    }
+  
+    .contentModulesFourth {
+      margin-left: 41rem;
+    }
+  
+    .contentModulesFive {
+      margin-left: 54rem;
+    }
+  
+    .contentModulessix {
+      margin-left: 61rem;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 992px) {
+    .programModules {
+      min-width: 196.5%;
+    }
+  
+    .programModulesImage {
+      margin-left: 10px;
+      margin-top: -30px;
+      width: 250px;
+      height: 250px;
+    }
+  
+    .programModulesImageRight {
+      display: none;
+    }
+  
+    .programModuleslignes {
+      display: none;
+    }
+  
+    #rocket-icon {
+      display: none;
+    }
+  
+    .contentModules,
+    .contentModulesTwo,
+    .contentModulesThree,
+    .contentModulesFourth,
+    .contentModulesFive,
+    .contentModulessix {
+      width: 70%;
+      margin: 1rem auto;
+      z-index: 10;
+    }
+  
+    .programModules h1 {
+      font-size: 30px;
+      width: 110%;
+    }
+  
+  
+    .programModules p {
+      font-size: 25px;
+      color: #211B59;
+    }
+  
+  
+    .programModules::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 2px;
+      height: 100%;
+      background-color: #0580C2;
+      border-radius: 1px;
+      z-index: -1;
+    }
+  
+    .programModules::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 2px;
+      height: 70%;
+      background-color: #0580C2;
+      border-radius: 1px;
+      z-index: 0;
+      margin-top: 15rem;
+    }
+  
+    .programModules::before {
+      background-image: linear-gradient(to bottom, transparent 50%, #ccc 50%);
+      background-size: 100% 20px;
+    }
+  }
+  
+  @media (min-width: 1024px) and (max-width: 1366px) {
+    .programModules {
+      width: 100%;
+      min-height: 100vh;
+    }
+  }
 
 @media (max-width: 768px) {
     .B2AProgramsBrochure {

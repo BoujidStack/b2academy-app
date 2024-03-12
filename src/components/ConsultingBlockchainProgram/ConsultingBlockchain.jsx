@@ -21,11 +21,11 @@ function ConsultingBlockchain() {
   const { t, i18n } = useTranslation();
     const [showModal, setShowModal] = useState(false);
     const [prices, setPrices] = useState({
-        oldPrice: 199,
-        newPrice: 99,
+        oldPrice: 299,
+        newPrice: 199,
     });
     const calculateCountdown = () => {
-        const targetDate = new Date('2024-03-10T23:59:59');
+        const targetDate = new Date('2024-04-12T23:59:59');
         const now = new Date();
         const difference = targetDate - now;
         const days = Math.floor(difference / (1000 * 60 * 60 * 24));

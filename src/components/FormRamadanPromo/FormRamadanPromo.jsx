@@ -4,56 +4,8 @@ import AOS from 'aos';
 import { useTranslation } from 'react-i18next';
 import Swal from 'sweetalert2';
 import { saveFormDataB2AProgramsBrochure } from '../firebase/FirebaseUtils';
-import { useNavigate } from 'react-router-dom';
 
 function FormRamadanPromo() {
-  const [nav, setNav] = useState(false);
-  const [showModal, setShowModal] = useState(false);
-  const [showOtherModal, setShowOtherModal] = useState(false);
-  const [showTwoProgramModal, setShowTwoProgramModal] = useState(false);
-
-  const [showAiModal, setShowAiModal] = useState(false);
-
-  const handleClose = () => {
-    setNav(!nav);
-  };
-  const calculateCountdown = () => {
-    const targetDate = new Date('2024-03-18T23:59:59');
-    const now = new Date();
-    const difference = targetDate - now;
-    const days = Math.floor(difference / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((difference % (1000 * 60)) / 1000);
-
-    return { days, hours, minutes, seconds };
-  };
-  const [countdown, setCountdown] = useState(calculateCountdown());
-
-  useEffect(() => {
-    AOS.init({});
-
-    const interval = setInterval(() => {
-      setCountdown(calculateCountdown());
-    }, 1000);
-
-    return () => clearInterval(interval);
-  }, []);
-
-  const navigate = useNavigate();
-  const handleGoToBdp = () => {
-    navigate('/Blockchain-Developer-Program');
-    window.scrollTo(0, 0);
-  };
-
-
-  const handleGoToConsultingBlockchainProgram = () => {
-    navigate('/Consulting-Blockchain-Program');
-    window.scrollTo(0, 0);
-  };
-
-
-
   const { t } = useTranslation();
   const [formData, setFormData] = useState({
     firstName: '',
@@ -62,8 +14,8 @@ function FormRamadanPromo() {
     phoneNumber: '',
     message: '',
     isChecked: false,
-    selectedOption: '',
-    selectedOptionBoth: ''
+    selectedOptionRadio: '',
+    selectedOptionSelect: ''
   });
 
   const handleInputChange = (e) => {
@@ -76,28 +28,23 @@ function FormRamadanPromo() {
     });
   };
 
-  const handleOptionChange = (e) => {
+  const handleRadioChange = (e) => {
     const { name, value } = e.target;
 
-    if (name === 'selectedOption') {
-      setFormData({
-        ...formData,
-        selectedOption: value
-      });
-    } else if (name === 'selectedOptionBoth') {
-      if (value === 'both') {
-        setFormData({
-          ...formData,
-          selectedOption: 'both',
-          selectedOptionBoth: value
-        });
-      } else {
-        const { selectedOptionBoth, ...updatedFormData } = formData;
-        setFormData(updatedFormData);
-      }
-    }
+    setFormData({
+      ...formData,
+      selectedOptionRadio: value,
+    });
   };
 
+  const handleSelectChange = (e) => {
+    const { name, value } = e.target;
+
+    setFormData({
+      ...formData,
+      selectedOptionSelect: value,
+    });
+  };
 
   const handleFormSubmit = async (e) => {
     e.preventDefault();
@@ -110,7 +57,8 @@ function FormRamadanPromo() {
         formData.phoneNumber &&
         formData.message &&
         formData.isChecked &&
-        formData.selectedOption !== ''
+        formData.selectedOptionRadio !== '' &&
+        formData.selectedOptionSelect !== ''
       ) {
         await saveFormDataB2AProgramsBrochure(formData);
 
@@ -121,19 +69,20 @@ function FormRamadanPromo() {
           phoneNumber: '',
           message: '',
           isChecked: false,
-          selectedOption: ''
+          selectedOptionRadio: '',
+          selectedOptionSelect: ''
         });
 
         Swal.fire({
           icon: 'success',
           title: 'Your request saved successfully!',
-          html: 'Thank you for your interest in our program. You will receive an email with the link to download the brochure shortly. Please do not hesitate to contact us, should you have any questions related to the program.',
+          html: "Merci pour votre intérêt pour notre programme ! 🌟 Vous allez recevoir un e-mail avec le lien pour télécharger la brochure et le prospectus sous peu. Nous vous contacterons également pour plus d'informations. 📧",
         });
       } else {
         Swal.fire({
           icon: 'error',
-          title: 'Error',
-          text: 'Please fill in all required fields and select an option!',
+          title: 'Erreur',
+          text: 'Veuillez remplir tous les champs obligatoires et sélectionner une option !',
         });
       }
     } catch (error) {
@@ -141,15 +90,12 @@ function FormRamadanPromo() {
     }
   };
 
-
-
   useEffect(() => {
-    AOS.init({
-    });
+    AOS.init({});
   }, []);
 
   return (
-    <div className='FormRamadanPromo'>
+    <div name="FormRamadanPromo" className='FormRamadanPromo'>
       <h2 data-aos='fade-down' data-aos-duration='1000' className='B2AProgramsBrochuretitle'>{t('B2AProgramsBrochure.B2AProgramsBrochuretitle')}</h2>
       <form className="ContactUsform" onSubmit={handleFormSubmit}>
         <div className="ContactUsform-group ContactUsname-inputs">
@@ -211,47 +157,42 @@ function FormRamadanPromo() {
           />
         </div>
         <div className="ContactUsform-group">
-          <label data-aos="fade-up" data-aos-duration="1000" className="radio-label">
+          <div>
             <input
-              data-aos="fade-up"
-              data-aos-duration="1000"
               type="radio"
-              name="selectedOption"
-              value="blockchain"
-              checked={formData.selectedOption === 'blockchain'}
-              onChange={handleOptionChange}
+              name="selectedOptionRadio"
+              value="Programme Developer Blockchain"
+              checked={formData.selectedOptionRadio === 'Programme Developer Blockchain'}
+              onChange={handleRadioChange}
             />
-            {t('B2AProgramsBrochure.radiobutton1')}
-          </label>
-          <label data-aos="fade-up" data-aos-duration="1000" className="radio-label">
+            <label>{t('B2AProgramsBrochure.radiobutton1')}</label>
+          </div>
+          <div>
             <input
-              data-aos="fade-up"
-              data-aos-duration="1000"
               type="radio"
-              name="selectedOption"
-              value="AI"
-              checked={formData.selectedOption === 'AI'}
-              onChange={handleOptionChange}
+              name="selectedOptionRadio"
+              value="Programme Developer Consulting"
+              checked={formData.selectedOptionRadio === 'Programme Developer Consulting'}
+              onChange={handleRadioChange}
             />
-            {t('B2AProgramsBrochure.radiobutton2')}
-          </label>
+            <label>{t('B2AProgramsBrochure.radiobutton2')}</label>
+          </div>
         </div>
         <div className="ContactUsform-group">
           <select
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            id="selectedOption"
-            name="selectedOption"
+            id="selectedOptionSelect"
+            name="selectedOptionSelect"
             className="ContactUsinput"
-            value={formData.selectedOption}
-            onChange={handleInputChange}
+            value={formData.selectedOptionSelect}
+            onChange={handleSelectChange}
             required
           >
-            <option value="" disabled selected>{t('B2AProgramsBrochure.selectOption')}</option>
+            <option value="" disabled>{t('B2AProgramsBrochure.selectOption')}</option>
             <option value="student">{t('B2AProgramsBrochure.student')}</option>
             <option value="professional">{t('B2AProgramsBrochure.professional')}</option>
           </select>
         </div>
+
 
         <div className="ContactUsform-group">
           <textarea

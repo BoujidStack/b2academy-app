@@ -6,7 +6,6 @@ import imageBlockchainConsulting from '../../../assets/imageBlockchainConsulting
 import SpecialOffer from '../../../assets/SpecialOfferBlockchain.png';
 import { FaArrowRight } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
-import ModalOverlayEnroll from '../../ModalOverlayEnrollNow/ModalOverlayEnroll';
 import Navbar from '../../navbar/Navbar';
 import Newsletter from '../../newsletter/Newsletter';
 import ContactUs from '../../Contact Us/ContactUs';
@@ -16,6 +15,7 @@ import WhatsAppChatButton from '../../WhatsApp Chat Button/WhatsAppChatButton';
 import AOS from 'aos';
 import ModalOverlayEnrollTwoProgramm from '../../ModalOverlayEnrollTwoProgramm/ModalOverlayEnrollTwoProgramm';
 import ModalOverlayEnrollBlockchainConsultingProgram from '../../ModalOverlayEnrollBlockchainConsultingProgram/ModalOverlayEnrollBlockchainConsultingProgram';
+import ModalOverlayEnroll from '../../ModalOverlayEnrollNow/ModalOverlayEnroll';
 
 
 const Lessons = () => {
@@ -181,7 +181,7 @@ const Lessons = () => {
                                     <a className="open-enrollment-link" onClick={() => setShowTwoProgramModal(true)}>
                                         • {t('programs.buttonTwo')}
                                     </a>
-                                    <a className='pricePromotion'>159$</a>
+                                    <a className='pricePromotion'>299$</a>
                                     <a className='pricePromotion'>{t('programs.time2Programs')}</a>
                                 </div>
                             </div>
