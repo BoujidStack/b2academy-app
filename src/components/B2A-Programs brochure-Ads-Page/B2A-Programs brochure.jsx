@@ -77,7 +77,7 @@ function B2AProgramsBrochure() {
     <>
       <NavbarRamadan hideNavbarLinks={true} />
       <div className='B2AProgramsBrochure'>
-        <div className='logo-container'>
+        <div className='logoRamadan-container'>
           <img src={logoRamadan} alt='logoRamadan' className='logoRamadan' />
         </div>
         <br /><br /><br /><br /><br /><br /><br />

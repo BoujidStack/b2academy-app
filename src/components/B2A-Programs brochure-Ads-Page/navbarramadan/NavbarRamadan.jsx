@@ -4,7 +4,7 @@ import { Link } from 'react-scroll';
 import logo from '../../../assets/B2Academy-logo.png';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { FaPhone } from 'react-icons/fa'; // Import the phone icon component
+import { FaPhone } from 'react-icons/fa'; 
 
 const NavbarRamadan = ({ hideNavbarLinks }) => {
     const [nav, setNav] = useState(false);
