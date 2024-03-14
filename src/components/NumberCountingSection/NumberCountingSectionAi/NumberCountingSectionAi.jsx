@@ -3,6 +3,7 @@ import './NumberCountingSectionAi.css';
 import logoNumberCounting from '../../../assets/logoNumberCounting.png';
 import { saveFormDatab2academyEmail } from '../../firebase/FirebaseUtils';
 import { useTranslation } from 'react-i18next';
+import PropTypes from 'prop-types'; // Import PropTypes
 
 const NumberCountingSectionAi = ({ i18n, brochureAI }) => {
   const countingRef = useRef(null);
@@ -198,6 +199,12 @@ const NumberCountingSectionAi = ({ i18n, brochureAI }) => {
     </>
 
   );
+};
+
+// Add PropTypes validation
+NumberCountingSectionAi.propTypes = {
+  i18n: PropTypes.object.isRequired,
+  brochureAI: PropTypes.string.isRequired,
 };
 
 export default NumberCountingSectionAi;

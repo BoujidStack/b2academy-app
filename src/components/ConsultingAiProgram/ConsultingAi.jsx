@@ -18,7 +18,7 @@ import AdvantagesAi from '../Advantages/AdvantagesAi/AdvantagesAi';
 function ConsultingAi() {
   const { t, i18n } = useTranslation();
   const [showModal, setShowModal] = useState(false);
-  const [prices, setPrices] = useState({
+  const [prices] = useState({
     oldPrice: 299,
     newPrice: 199,
   });

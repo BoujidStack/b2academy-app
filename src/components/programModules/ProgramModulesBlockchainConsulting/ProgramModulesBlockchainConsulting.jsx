@@ -45,7 +45,6 @@ const ProgramModulesBlockchainConsulting = () => {
     };
 
     const $rocket = rocketRef.current;
-    const $flame = flameRef.current;
     const $stars = Array.from({ length: 10 }).map(() => createCircle());
 
     $stars.forEach(($star) => {

@@ -18,23 +18,11 @@ import { Link } from 'react-scroll';
 
 
 function B2AProgramsBrochure() {
-  const [showModal, setShowModal] = useState(false);
   const [showOtherModal, setShowOtherModal] = useState(false);
-  const [showTwoProgramModal, setShowTwoProgramModal] = useState(false);
-  const [showAiModal, setShowAiModal] = useState(false);
   const [nav, setNav] = useState(false);
 
   const { t } = useTranslation();
-  const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
-    phoneNumber: '',
-    message: '',
-    isChecked: false,
-    selectedOption: '',
-    selectedOptionBoth: ''
-  });
+  
 
   const handleClose = () => {
     setNav(!nav);
@@ -58,7 +46,7 @@ function B2AProgramsBrochure() {
 
   const [countdownRamadan, setCountdownRamadan] = useState(calculateCountdownRamadan());
 
-  const [prices, setPrices] = useState({
+  const [prices] = useState({
     oldPrice: 1999,
     newPrice: 999,
   });

@@ -29,7 +29,7 @@ function FormRamadanPromo() {
   };
 
   const handleRadioChange = (e) => {
-    const { name, value } = e.target;
+    const { value } = e.target;
 
     setFormData({
       ...formData,
@@ -38,7 +38,7 @@ function FormRamadanPromo() {
   };
 
   const handleSelectChange = (e) => {
-    const { name, value } = e.target;
+    const { value } = e.target;
 
     setFormData({
       ...formData,

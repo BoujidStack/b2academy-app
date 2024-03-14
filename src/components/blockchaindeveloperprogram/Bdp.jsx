@@ -19,7 +19,7 @@ import WhatsAppChatButton from '../WhatsApp Chat Button/WhatsAppChatButton';
 const Bdp = () => {
     const { t, i18n } = useTranslation();
     const [showModal, setShowModal] = useState(false);
-    const [prices, setPrices] = useState({
+    const [prices] = useState({
         oldPrice: 299,
         newPrice: 199,
     });

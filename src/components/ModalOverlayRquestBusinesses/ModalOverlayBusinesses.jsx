@@ -4,6 +4,7 @@ import Swal from 'sweetalert2';
 import './ModalOverlayBusinessesStyles.css';
 import { useTranslation } from 'react-i18next';
 import { saveFormDatab2academyBusinesses } from '../firebase/FirebaseUtils';
+import PropTypes from 'prop-types';
 
 function ModalOverlayBusinesses({ onClose }) {
     const [firstName, setFirstName] = useState('');
@@ -181,5 +182,10 @@ function ModalOverlayBusinesses({ onClose }) {
         </div>
     );
 }
+
+// Define PropTypes
+ModalOverlayBusinesses.propTypes = {
+    onClose: PropTypes.func.isRequired, // onClose should be a function and is required
+};
 
 export default ModalOverlayBusinesses;

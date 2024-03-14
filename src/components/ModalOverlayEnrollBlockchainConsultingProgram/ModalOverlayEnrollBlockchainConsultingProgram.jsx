@@ -3,6 +3,7 @@ import { FaTimes } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
 import { saveFormDatab2academyBlockchainConsultingProgram } from '../firebase/FirebaseUtils';
 import Swal from 'sweetalert2';
+import PropTypes from 'prop-types';
 
 function ModalOverlayEnrollBlockchainConsultingProgram({ onClose }) {
     const [firstName, setFirstName] = useState('');
@@ -177,5 +178,10 @@ function ModalOverlayEnrollBlockchainConsultingProgram({ onClose }) {
         </div>
     );
 }
+
+// Define PropTypes
+ModalOverlayEnrollBlockchainConsultingProgram.propTypes = {
+    onClose: PropTypes.func.isRequired, // onClose should be a function and is required
+};
 
 export default ModalOverlayEnrollBlockchainConsultingProgram;

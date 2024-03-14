@@ -10,7 +10,6 @@ import design5 from '../../assets/design6.png';
 import design6 from '../../assets/design7.png';
 import design7 from '../../assets/design8.png';
 import design8 from '../../assets/design9.png';
-import buttonLogo from '../../assets/logo.png';
 import { Link } from 'react-scroll'
 import { useTranslation } from 'react-i18next';
 import AOS from 'aos';
@@ -28,9 +27,9 @@ const Home = () => {
         AOS.init();
     }, []);
 
-    const handleCustomButtonClick = () => {
+   {/*  const handleCustomButtonClick = () => {
         window.open('https://meet3.webex.com/weblink/register/r77f36fc876f9a391244bfa94b0183f7d', '_blank');
-    };
+    }; */}
 
     return (
         <div name='home' className='home'>

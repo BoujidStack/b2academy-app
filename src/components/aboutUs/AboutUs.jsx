@@ -35,7 +35,7 @@ const AboutUs = () => {
                     </div>
                 </div>
             </div>
-            <div classNameName="video-container">
+            <div className="video-container">
                 <YouTube videoId={videoId}/>
             </div>
         </div>

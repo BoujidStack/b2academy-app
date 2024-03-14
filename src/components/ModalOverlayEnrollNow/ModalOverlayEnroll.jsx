@@ -4,6 +4,7 @@ import './ModalOverlayEnrollStyles.css';
 import { useTranslation } from 'react-i18next';
 import { saveFormDatab2academyBlockchainProgram } from '../firebase/FirebaseUtils';
 import Swal from 'sweetalert2';
+import PropTypes from 'prop-types';
 
 
 function ModalOverlayEnroll({ onClose }) {
@@ -161,5 +162,10 @@ function ModalOverlayEnroll({ onClose }) {
         </div>
     );
 }
+
+// Define PropTypes
+ModalOverlayEnroll.propTypes = {
+    onClose: PropTypes.func.isRequired, // onClose should be a function and is required
+};
 
 export default ModalOverlayEnroll;

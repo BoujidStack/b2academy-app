@@ -5,6 +5,7 @@ import logo from '../../assets/B2Academy-logo.png';
 import { Link } from 'react-scroll'
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import PropTypes from 'prop-types'; // Import PropTypes
 
 const Footer = ({ hideFooterLinks }) => {
     const [nav, setNav] = useState(false);
@@ -81,6 +82,11 @@ const Footer = ({ hideFooterLinks }) => {
             </div>
         </footer>
     );
+};
+
+// Add PropTypes validation
+Footer.propTypes = {
+    hideFooterLinks: PropTypes.bool.isRequired,
 };
 
 export default Footer;

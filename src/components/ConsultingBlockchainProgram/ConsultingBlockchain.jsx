@@ -4,7 +4,6 @@ import NumberCountingSection from '../NumberCountingSection/NumberCountingSectio
 import Advantages from '../Advantages/Advantages';
 import Enrolltoday from '../Enrolltoday/Enrolltoday';
 import Business from '../B2AcademyForBusiness/Business';
-import ProgramModules from '../programModules/ProgramModules';
 import Fqa from '../FrequentlyAskedQuestions/Fqa';
 import ModalOverlayEnroll from '../ModalOverlayEnrollNow/ModalOverlayEnroll';
 import { useTranslation } from 'react-i18next';
@@ -20,7 +19,7 @@ import ProgramModulesBlockchainConsulting from '../programModules/ProgramModules
 function ConsultingBlockchain() {
   const { t, i18n } = useTranslation();
     const [showModal, setShowModal] = useState(false);
-    const [prices, setPrices] = useState({
+    const [prices] = useState({
         oldPrice: 299,
         newPrice: 199,
     });

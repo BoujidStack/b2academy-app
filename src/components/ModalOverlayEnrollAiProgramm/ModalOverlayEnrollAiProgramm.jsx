@@ -3,6 +3,7 @@ import { FaTimes } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
 import { saveFormDatab2academyAiProgram } from '../firebase/FirebaseUtils';
 import Swal from 'sweetalert2';
+import PropTypes from 'prop-types';
 
 function ModalOverlayEnrollAiProgramm({ onClose }) {
     const [firstName, setFirstName] = useState('');
@@ -177,5 +178,10 @@ function ModalOverlayEnrollAiProgramm({ onClose }) {
         </div>
     );
 }
+
+// Define PropTypes
+ModalOverlayEnrollAiProgramm.propTypes = {
+    onClose: PropTypes.func.isRequired, // onClose should be a function and is required
+};
 
 export default ModalOverlayEnrollAiProgramm;

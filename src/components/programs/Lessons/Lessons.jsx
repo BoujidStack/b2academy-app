@@ -19,17 +19,12 @@ import ModalOverlayEnroll from '../../ModalOverlayEnrollNow/ModalOverlayEnroll';
 
 
 const Lessons = () => {
-    const [nav, setNav] = useState(false);
-    const [showModal, setShowModal] = useState(false);
     const { t } = useTranslation();
     const [showOtherModal, setShowOtherModal] = useState(false);
     const [showTwoProgramModal, setShowTwoProgramModal] = useState(false);
 
     const [showAiModal, setShowAiModal] = useState(false);
 
-    const handleClose = () => {
-        setNav(!nav);
-    };
     const calculateCountdown = () => {
         const targetDate = new Date('2024-03-18T23:59:59');
         const now = new Date();
@@ -71,23 +66,10 @@ const Lessons = () => {
         window.scrollTo(0, 0);
     };
 
-    const handleGoToAi = () => {
-        navigate('/AI-Developer-Program');
-        window.scrollTo(0, 0);
-    };
-
     const handleGoToConsultingBlockchainProgram = () => {
         navigate('/Consulting-Blockchain-Program');
         window.scrollTo(0, 0);
     };
-
-
-    const handleGoToConsultingAiProgram = () => {
-        navigate('/Consulting-Ai-Program');
-        window.scrollTo(0, 0);
-    };
-
-
 
     return (
         <>

@@ -5,6 +5,7 @@ import logo from '../../../assets/B2Academy-logo.png';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { FaPhone } from 'react-icons/fa'; 
+import PropTypes from 'prop-types'; // Import PropTypes
 
 const NavbarRamadan = ({ hideNavbarLinks }) => {
     const [nav, setNav] = useState(false);
@@ -191,6 +192,11 @@ const NavbarRamadan = ({ hideNavbarLinks }) => {
             </div>
         </div>
     );
+};
+
+// Add PropTypes validation
+NavbarRamadan.propTypes = {
+    hideNavbarLinks: PropTypes.bool.isRequired,
 };
 
 export default NavbarRamadan;

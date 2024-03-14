@@ -3,6 +3,7 @@ import './NumberCountingSectionStyles.css';
 import logoNumberCounting from '../../assets/logoNumberCounting.png';
 import { saveFormDatab2academyEmail } from '../firebase/FirebaseUtils';
 import { useTranslation } from 'react-i18next';
+import PropTypes from 'prop-types'; // Import PropTypes
 
 const NumberCountingSection = ({ i18n, brochureTypeblockchain  }) => {
   const countingRef = useRef(null);
@@ -198,6 +199,11 @@ const NumberCountingSection = ({ i18n, brochureTypeblockchain  }) => {
     </>
 
   );
+};
+
+NumberCountingSection.propTypes = {
+  i18n: PropTypes.object.isRequired,
+  brochureTypeblockchain: PropTypes.string.isRequired,
 };
 
 export default NumberCountingSection;

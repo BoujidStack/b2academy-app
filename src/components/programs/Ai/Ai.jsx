@@ -4,7 +4,6 @@ import { useTranslation } from 'react-i18next';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Navbar from '../../navbar/Navbar';
-import ModalOverlayEnroll from '../../ModalOverlayEnrollNow/ModalOverlayEnroll';
 import Business from '../../B2AcademyForBusiness/Business';
 import Newsletter from '../../newsletter/Newsletter';
 import ContactUs from '../../Contact Us/ContactUs';
@@ -20,7 +19,7 @@ import ModalOverlayEnrollAiProgramm from '../../ModalOverlayEnrollAiProgramm/Mod
 function Ai() {
     const { t, i18n } = useTranslation();
     const [showModal, setShowModal] = useState(false);
-    const [prices, setPrices] = useState({
+    const [prices] = useState({
         oldPrice: 299,
         newPrice: 199,
     });

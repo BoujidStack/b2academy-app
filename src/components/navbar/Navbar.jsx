@@ -5,6 +5,7 @@ import { Link } from 'react-scroll';
 import logo from '../../assets/B2Academy-logo.png';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import PropTypes from 'prop-types'; // Import PropTypes
 
 const Navbar = ({ hideNavbarLinks }) => {
   const [nav, setNav] = useState(false);
@@ -189,5 +190,11 @@ const Navbar = ({ hideNavbarLinks }) => {
     </div>
   );
 };
+
+// Add PropTypes validation
+Navbar.propTypes = {
+  hideNavbarLinks: PropTypes.bool.isRequired,
+};
+
 
 export default Navbar;
