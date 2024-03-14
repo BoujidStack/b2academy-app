@@ -20,9 +20,9 @@
     "programs": {
         "titleSection": "Programmes",
         "title": "Programme de Blockchain: Révolutionner l'Avenir",
-        "description": "Dans ce programme, embrassez l'esprit du Ramadan et plongez dans un voyage transformateur avec notre promotion exclusive ! Que vous aspiriez à devenir développeur Blockchain ou consulting spécialisé dans la blockchain, rejoignez-nous et développez votre expertise dès aujourd'hui !",
+        "description": "Dans ce programme, embrassez l'esprit du Ramadan et plongez dans un voyage transformateur avec notre promotion exclusive ! Que vous aspiriez à devenir développeur Blockchain ou consultant spécialisé dans la blockchain, rejoignez-nous et développez votre expertise dès aujourd'hui !",
         "titleAI": "Programme d'IA: Révolutionner l'Avenir",
-        "descriptionAI": "Dans ce programme, vous acquérez les compétences nécessaires pour devenir un développeur ou consulting spécialisé en intelligence artificielle. Explorez les principes fondamentaux de l'IA, développez des applications innovantes, et apprenez à conseiller sur les meilleures pratiques et les solutions en intelligence artificielle.",
+        "descriptionAI": "Dans ce programme, vous acquérez les compétences nécessaires pour devenir un développeur ou consultant spécialisé en intelligence artificielle. Explorez les principes fondamentaux de l'IA, développez des applications innovantes, et apprenez à conseiller sur les meilleures pratiques et les solutions en intelligence artificielle.",
         "button": "Découvrir",
         "buttonTwo": "Inscriptions ouvertes",
         "timeProgram": "199$/Mois",
@@ -33,14 +33,14 @@
         "title1": "Nos Parcours Blockchain",
         "title2": "Nos Parcours IA",
         "titleBlockchain": "Devenir Développeur Blockchain",
-        "titleBlockchainConsulting": "Devenir Consulting Blockchain",
+        "titleBlockchainConsulting": "Devenir Consultant Blockchain",
         "descriptionBlockchain": "Ce cours vous permettra de devenir un développeur blockchain compétent. Vous apprendrez les bases de la technologie blockchain, les langages de programmation utilisés pour développer des applications blockchain, et vous serez introduit aux outils et aux cadres essentiels.",
         "descriptionConsultingBlockchain": "Un programme complet pour comprendre pleinement le fonctionnement des blockchains et les exploiter efficacement dans vos projets. Conçu pour les entrepreneurs, consultants, chefs de projet, professionnels et passionnés.",
         "titleSection": "Leçons",
         "titleAI": "Devenir Développeur IA",
-        "titleConsultingAI": "Devenir Consulting IA",
-        "title2ProgramsBlockchain": "Élevez vos compétences avec notre ensemble de certifications double en développement blockchain et en consulting!",
-        "title2ProgramsAI": "Élevez vos compétences avec notre ensemble de certifications double en développement IA et en consulting!",
+        "titleConsultingAI": "Devenir Consultant IA",
+        "title2ProgramsBlockchain": "Élevez vos compétences avec notre ensemble de certifications double en développement blockchain et en consultant!",
+        "title2ProgramsAI": "Élevez vos compétences avec notre ensemble de certifications double en développement IA et en consultant!",
         "descriptionAI": "Ce cours vous permettra de devenir un développeur en intelligence artificielle compétent. Vous apprendrez les concepts fondamentaux de l'intelligence artificielle, les langages de programmation utilisés pour le développement d'applications d'IA, et vous serez introduit aux outils et aux cadres essentiels.",
         "descriptionConsultingAI": "Un programme complet pour comprendre pleinement le fonctionnement de l'IA et l'utiliser efficacement dans vos projets. Conçu pour les entrepreneurs, consultants, chefs de projet, professionnels et passionnés.",
         "button": "Discover more",
@@ -122,8 +122,8 @@
     },
     "Bdp": {
         "title": "Apprenez toutes les compétences pour développer une application blockchain",
-        "titleConsultingblockchain": "Consulting blockchain : analyser, pratiquer, créer",
-        "titleConsultingAI": "Consulting Intelligence Artificielle",
+        "titleConsultingblockchain": "Consultant blockchain : analyser, pratiquer, créer",
+        "titleConsultingAI": "Consultant Intelligence Artificielle",
         "description": "Tirez parti de la technologie blockchain dans le développement d'applications",
         "descriptionConsultingblockchain": "Libérez le potentiel de la blockchain avec notre formation dynamique, idéale pour les entrepreneurs, consultants, chefs de projet, professionnels et passionnés.",
         "descriptionConsultingAI": "Une formation pour vous positionner à la pointe de l'Intelligence Artificielle d'aujourd'hui et de demain",
@@ -263,18 +263,18 @@
         "title": "Formulaire Développeur En IA"
     },
     "ModalOverlayEnrollBlockchainConsultingProgram": {
-        "title": "Formulaire consulting En Blockchain"
+        "title": "Formulaire consultant En Blockchain"
     },
     "ModalOverlayEnrollAIConsultingProgram": {
-        "title": "Formulaire consulting En IA"
+        "title": "Formulaire consultant En IA"
     },
     "ModalOverlayEnrollTwoProgramm": {
-        "title": "Inscription au Bundle de Certification Développeur et consulting En Blockchain ",
-        "description": "Inscrivez-vous dès maintenant à notre Bundle de Certification Développeur et consulting En Blockchain! Remplissez le formulaire ci-dessous pour perfectionner vos compétences"
+        "title": "Inscription au Bundle de Certification Développeur et consultant En Blockchain ",
+        "description": "Inscrivez-vous dès maintenant à notre Bundle de Certification Développeur et consultant En Blockchain! Remplissez le formulaire ci-dessous pour perfectionner vos compétences"
     },
     "ModalOverlayEnrollTwoProgrammAI": {
-        "title": "Inscription au Bundle de Certification Développeur et consulting En IA ",
-        "description": "Inscrivez-vous dès maintenant à notre Bundle de Certification Développeur et consulting En IA! Remplissez le formulaire ci-dessous pour perfectionner vos compétences"
+        "title": "Inscription au Bundle de Certification Développeur et consultant En IA ",
+        "description": "Inscrivez-vous dès maintenant à notre Bundle de Certification Développeur et consultant En IA! Remplissez le formulaire ci-dessous pour perfectionner vos compétences"
     },
     "ModalOverlayBusinesses": {
         "title": "Formez votre équipe aux compétences du futur",
@@ -356,8 +356,8 @@
     "B2AProgramsBrochure": {
         "Title": "Debloquez Votre Avenir : Promotion Speciale Ramadan sur les Programmes de Pointe",
         "B2AProgramsBrochuretitle": "Veuillez remplir le formulaire ci-dessous pour bénéficier de notre promotion Ramadan sur nos Programmes Avancés",
-        "radiobutton1": "Programme Developer Blockchain ",
-        "radiobutton2": "Programme Developer Consulting ",
+        "radiobutton1": "Programme Developer Blockchain",
+        "radiobutton2": "Programme Developer Consultant",
         "radiobutton3": "Programme combiné",
         "button": "Rejoindre le programme",
         "selectOption":"Quel est votre statut actuel ?",
