@@ -149,7 +149,7 @@
 @media screen and (max-width: 768px) {
 	.aboutUs {
 		min-width: 100%;
-        min-height: 130vh;
+        min-height: 150vh;
 	}
 
 	.titleAboutUs h1 {
