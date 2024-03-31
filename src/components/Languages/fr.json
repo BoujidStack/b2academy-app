@@ -203,7 +203,7 @@
         "module5-description": "Utilisation d'outils populaires Test et déploiement des contrats Développement efficace",
         "module6": "Module 6 : Tester votre application 🧪",
         "module6-description": "Tests fonctionnels avancés Assurer la qualité du contrat Préparation au déploiement"
-    },    
+    },
     "ProgramModulesBlockchainConsulting": {
         "module1": "Module 1 : Module d'introduction 📘",
         "module1-description": "Fournit des connaissances fondamentales sur la technologie blockchain, couvrant les principes de base et la terminologie.",
@@ -237,7 +237,7 @@
         "module4-description": "En s'appuyant sur le Module 3, ce module explore plus en profondeur les concepts théoriques et les opérations techniques cruciales pour le développement et le déploiement efficaces de l'IA.",
         "module5": "Module 5: Cas d'utilisation de l'IA dans les secteurs professionnels 🏢🤖",
         "module5-description": "Les participants examineront les applications réelles de l'IA dans divers secteurs professionnels, en acquérant des connaissances sur ses implications pratiques."
-    },    
+    },
     "AI": {
         "title": "Apprenez toutes les compétences pour développer une application AI",
         "description": "Tirez parti de la technologie AI dans le développement d'applications",
@@ -356,14 +356,13 @@
     "B2AProgramsBrochure": {
         "Title": "Debloquez Votre Avenir : Promotion Speciale Ramadan sur les Programmes de Pointe",
         "B2AProgramsBrochuretitle": "Veuillez remplir le formulaire ci-dessous pour bénéficier de notre promotion Ramadan sur nos Programmes Avancés",
-        "radiobutton1": "Programme Developer Blockchain",
-        "radiobutton2": "Programme Developer Consultant",
+        "radiobutton1": "Programme Développeur Blockchain",
+        "radiobutton2": "Programme Consultant Blockchain",
         "radiobutton3": "Programme combiné",
         "button": "Rejoindre le programme",
-        "selectOption":"Quel est votre statut actuel ?",
-        "student":"Étudiant",
-        "professional":"Professionnel"
-
+        "selectOption": "Quel est votre statut actuel ?",
+        "student": "Étudiant",
+        "professional": "Professionnel"
     },
     "ProfilesSection": {
         "ProfileInfo1": "Directeur du développement commercial",

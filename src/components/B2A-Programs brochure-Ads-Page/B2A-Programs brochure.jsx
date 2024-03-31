@@ -10,11 +10,11 @@ import imageBlockchain from '../../assets/blockchain image.jpeg';
 import imageBlockchainConsulting from '../../assets/imageBlockchainConsulting.jpg';
 import FormRamadanPromo from '../FormRamadanPromo/FormRamadanPromo';
 import ProgramModules from '../programModules/ProgramModules';
-import ProgramModulesAi from '../programModules/ProgramModulesAI/ProgramModulesAi';
 import NavbarRamadan from './navbarramadan/NavbarRamadan';
 import logoRamadan from '../../assets/logoRamadan.png';
 import ModalOverlayEnroll from '../ModalOverlayEnrollNow/ModalOverlayEnroll';
 import { Link } from 'react-scroll';
+import ProgramModulesBlockchainConsulting from '../programModules/ProgramModulesBlockchainConsulting/ProgramModulesBlockchainConsulting';
 
 
 function B2AProgramsBrochure() {
@@ -186,9 +186,9 @@ function B2AProgramsBrochure() {
             </div>
           </div>
         </div>
-        <ProgramModulesAi />
+        <ProgramModulesBlockchainConsulting/>
+        <br/><br/><br/><br/><br/><br/>
       </div>
-
       <FormRamadanPromo />
       <Fqa />
       <WhatsAppChatButton />

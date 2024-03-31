@@ -157,7 +157,7 @@ function FormRamadanPromo() {
           />
         </div>
         <div className="ContactUsform-group">
-          <div>
+          <div data-aos="fade-right" data-aos-duration="1000">
             <input
               type="radio"
               name="selectedOptionRadio"
@@ -167,7 +167,7 @@ function FormRamadanPromo() {
             />
             <label>{t('B2AProgramsBrochure.radiobutton1')}</label>
           </div>
-          <div>
+          <div data-aos="fade-left" data-aos-duration="1000">
             <input
               type="radio"
               name="selectedOptionRadio"
@@ -178,7 +178,7 @@ function FormRamadanPromo() {
             <label>{t('B2AProgramsBrochure.radiobutton2')}</label>
           </div>
         </div>
-        <div className="ContactUsform-group">
+        <div className="ContactUsform-group" data-aos="fade-up" data-aos-duration="1000">
           <select
             id="selectedOptionSelect"
             name="selectedOptionSelect"
